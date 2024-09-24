@@ -1,1 +1,2 @@
-execute if data block 0 0 0 Items[{Slot:1b}].id run function mine:logs/warped_stem/mine_wart
+execute if score dimension mine matches 0 if data block 0 -64 0 Items[{Slot:1b}].id run function mine:logs/warped_stem/mine_wart
+execute if score dimension mine matches -1 if data block 0 0 0 Items[{Slot:1b}].id run function mine:logs/warped_stem/mine_wart

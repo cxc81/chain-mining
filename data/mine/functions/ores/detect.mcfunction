@@ -1,19 +1,19 @@
-execute as @a[scores={mine_coal=1..}] at @s run function mine:ores/coal_ore/if_to_start
-execute as @a[scores={mine_coal2=1..}] at @s run function mine:ores/coal_ore/if_to_start
-execute as @a[scores={mine_iron=1..}] at @s run function mine:ores/iron_ore/if_to_start
-execute as @a[scores={mine_iron2=1..}] at @s run function mine:ores/iron_ore/if_to_start
-execute as @a[scores={mine_copper=1..}] at @s run function mine:ores/copper_ore/if_to_start
-execute as @a[scores={mine_copper2=1..}] at @s run function mine:ores/copper_ore/if_to_start
-execute as @a[scores={mine_lapis=1..}] at @s run function mine:ores/lapis_ore/if_to_start
-execute as @a[scores={mine_lapis2=1..}] at @s run function mine:ores/lapis_ore/if_to_start
-execute as @a[scores={mine_gold=1..}] at @s run function mine:ores/gold_ore/if_to_start
-execute as @a[scores={mine_gold2=1..}] at @s run function mine:ores/gold_ore/if_to_start
-execute as @a[scores={mine_redstone=1..}] at @s run function mine:ores/redstone_ore/if_to_start
-execute as @a[scores={mine_redstone2=1..}] at @s run function mine:ores/redstone_ore/if_to_start
-execute as @a[scores={mine_diamond=1..}] at @s run function mine:ores/diamond_ore/if_to_start
-execute as @a[scores={mine_diamond2=1..}] at @s run function mine:ores/diamond_ore/if_to_start
-execute as @a[scores={mine_emerald=1..}] at @s run function mine:ores/emerald_ore/if_to_start
-execute as @a[scores={mine_emerald2=1..}] at @s run function mine:ores/emerald_ore/if_to_start
-execute as @a[scores={mine_n_quartz=1..}] at @s run function mine:ores/nether_quartz_ore/if_to_start
-execute as @a[scores={mine_n_gold=1..}] at @s run function mine:ores/nether_gold_ore/if_to_start
-execute as @a[scores={mine_ancient=1..}] at @s run function mine:ores/ancient_debris/if_to_start
+execute if entity @s[scores={mine_coal=1..}] run function mine:ores/coal_ore/if_to_start
+execute if entity @s[scores={mine_coal2=1..}] run function mine:ores/coal_ore/if_to_start
+execute if entity @s[scores={mine_iron=1..}] run function mine:ores/iron_ore/if_to_start
+execute if entity @s[scores={mine_iron2=1..}] run function mine:ores/iron_ore/if_to_start
+execute if entity @s[scores={mine_copper=1..}] run function mine:ores/copper_ore/if_to_start
+execute if entity @s[scores={mine_copper2=1..}] run function mine:ores/copper_ore/if_to_start
+execute if entity @s[scores={mine_lapis=1..}] run function mine:ores/lapis_ore/if_to_start
+execute if entity @s[scores={mine_lapis2=1..}] run function mine:ores/lapis_ore/if_to_start
+execute if entity @s[scores={mine_gold=1..}] run function mine:ores/gold_ore/if_to_start
+execute if entity @s[scores={mine_gold2=1..}] run function mine:ores/gold_ore/if_to_start
+execute if entity @s[scores={mine_redstone=1..}] run function mine:ores/redstone_ore/if_to_start
+execute if entity @s[scores={mine_redstone2=1..}] run function mine:ores/redstone_ore/if_to_start
+execute if entity @s[scores={mine_diamond=1..}] run function mine:ores/diamond_ore/if_to_start
+execute if entity @s[scores={mine_diamond2=1..}] run function mine:ores/diamond_ore/if_to_start
+execute if entity @s[scores={mine_emerald=1..}] run function mine:ores/emerald_ore/if_to_start
+execute if entity @s[scores={mine_emerald2=1..}] run function mine:ores/emerald_ore/if_to_start
+execute if entity @s[scores={mine_nether_quartz=1..}] run function mine:ores/nether_quartz_ore/if_to_start
+execute if entity @s[scores={mine_nether_gold=1..}] run function mine:ores/nether_gold_ore/if_to_start
+execute if entity @s[scores={mine_ancient=1..}] run function mine:ores/ancient_debris/if_to_start
