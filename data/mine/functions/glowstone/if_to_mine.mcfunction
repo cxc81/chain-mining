@@ -1,4 +1,3 @@
-function mine:generic/get_if_to_mine
-execute if score if_to_mine mine matches 1 run function mine:glowstone/mine
-#下面这条命令：空手也能连锁采集
-execute if score empty_hand mine matches 1 run function mine:glowstone/mine
+# 分有工具和无工具采集(由damage_multiplier_mainhand决定)
+execute if score damage_multiplier_mainhand mine matches 1.. if score damage_mainhand mine < max_durability_mainhand mine run function mine:glowstone/mine
+execute if score damage_multiplier_mainhand mine matches 0 run function mine:glowstone/mine

@@ -1,0 +1,27 @@
+#只能连锁会自然枯萎且不含水的树叶
+execute positioned ~-1 ~ ~ if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~ ~ if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~ ~ ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~ ~ ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~-1 ~ ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~-1 ~ ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~ ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~ ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~ ~-1 ~ if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~-1 ~-1 ~ if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~-1 ~ if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~ ~-1 ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~ ~-1 ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~-1 ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~-1 ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~ ~1 ~ if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~1 ~ if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~ ~1 ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~-1 ~1 ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~1 ~-1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves
+execute positioned ~1 ~1 ~1 if block ~ ~ ~ #minecraft:leaves[persistent=false,waterlogged=false] run function mine:logs/generic/mine_leaves

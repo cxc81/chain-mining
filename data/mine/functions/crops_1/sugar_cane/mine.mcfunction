@@ -1,3 +1,4 @@
+loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
 setblock ~ ~ ~ minecraft:air destroy
 
 scoreboard players add count mine 1

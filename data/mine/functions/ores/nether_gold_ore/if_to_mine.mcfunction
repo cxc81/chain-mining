@@ -1,2 +1,1 @@
-function mine:generic/get_if_to_mine
-execute if score if_to_mine mine matches 1 run function mine:ores/nether_gold_ore/mine
+execute if score damage_mainhand mine < max_durability_mainhand mine run function mine:ores/nether_gold_ore/mine

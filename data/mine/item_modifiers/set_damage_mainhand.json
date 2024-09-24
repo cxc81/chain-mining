@@ -1,0 +1,16 @@
+[
+  {
+    "function": "copy_nbt",
+    "source": {
+      "type": "storage",
+      "source": "mine:items"
+    },
+    "ops": [
+      {
+        "source": "mainhand.tag.Damage",
+        "target": "Damage",
+        "op": "replace"
+      }
+    ]
+  }
+]
