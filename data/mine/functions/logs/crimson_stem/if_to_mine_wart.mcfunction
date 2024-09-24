@@ -1,0 +1,1 @@
+execute if data block 0 0 0 Items[{Slot:1b}].id run function mine:logs/crimson_stem/mine_wart
