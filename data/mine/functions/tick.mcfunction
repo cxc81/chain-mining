@@ -14,7 +14,8 @@ execute as @a if score @s mine_setting_crops_2 matches 1 at @s run function mine
 tag @e[type=minecraft:item,tag=!detected] add detected
 
 #数据包加载成功的信息反馈
-execute as @a unless score @s mine_enter = @s mine_enter run tellraw @s ["",{"text":"\u6210\u529f\u52a0\u8f7d\u8fde\u9501\u91c7\u96c6\u6570\u636e\u5305\uff01 ","color":"gold"},{"text":"[\u70b9\u51fb\u67e5\u770b\u8bbe\u7f6e] ","color":"green","clickEvent":{"action":"run_command","value":"/trigger mine_trigger set 1"}},{"text":"[\u70b9\u51fb\u67e5\u770b\u8bf4\u660e]","color":"green","clickEvent":{"action":"run_command","value":"/trigger mine_trigger set 2"}}]
+# 效果：成功加载连锁采集数据包！ [设置] [使用说明] [更新日志]
+execute as @a unless score @s mine_enter = @s mine_enter run tellraw @s ["",{"text":"\u6210\u529f\u52a0\u8f7d\u8fde\u9501\u91c7\u96c6\u6570\u636e\u5305\uff01 ","color":"gold"},{"text":"[\u8bbe\u7f6e]","color":"green","clickEvent":{"action":"run_command","value":"/trigger mine_trigger set 1"},"hoverEvent":{"action":"show_text","value":"\u70b9\u51fb\u67e5\u770b"}}," ",{"text":"[\u4f7f\u7528\u8bf4\u660e]","color":"green","clickEvent":{"action":"run_command","value":"/trigger mine_trigger set 2"},"hoverEvent":{"action":"show_text","value":"\u70b9\u51fb\u67e5\u770b"}}," ",{"text":"[\u66f4\u65b0\u65e5\u5fd7]","color":"green","clickEvent":{"action":"run_command","value":"/trigger mine_trigger set 3"},"hoverEvent":{"action":"show_text","value":"\u70b9\u51fb\u67e5\u770b"}}]
 scoreboard players set @a mine_enter 0
 
 #玩家如果是第一次进入此世界，要给设置赋初值
@@ -23,6 +24,7 @@ execute as @a unless score @s mine_setting_ores = @s mine_setting_ores run funct
 #对玩家/trigger的数值进行回应
 execute as @a if score @s mine_trigger matches 1 run function mine:tellraw/settings/main
 execute as @a if score @s mine_trigger matches 2 run function mine:tellraw/instruction/main
+execute as @a if score @s mine_trigger matches 3 run function mine:tellraw/changelog/main
 execute as @a if score @s mine_trigger matches 10 run scoreboard players set @s mine_setting_ores 0
 execute as @a if score @s mine_trigger matches 11 run scoreboard players set @s mine_setting_ores 1
 execute as @a if score @s mine_trigger matches 20 run scoreboard players set @s mine_setting_logs 0

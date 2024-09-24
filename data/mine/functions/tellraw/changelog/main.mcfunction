@@ -1,0 +1,4 @@
+# 这里展示了版本号；在pack.mcteta中也有一个
+tellraw @s ["",{"text":"---------------------------------------------\n","color":"gray"},{"text":"\u8fde\u9501\u91c7\u96c6\u6570\u636e\u5305","color":"gold","bold":true},{"text":" - \u66f4\u65b0\u65e5\u5fd7\n","color":"gold"},{"text":" \u6570\u636e\u5305\u7248\u672c\uff1a3.1.1  \uff08Minecraft\u7248\u672c\uff1a1.19.2\uff09\n","color":"green"},{"text":" \u66f4\u65b0\u5185\u5bb9\uff1a","color":"aqua"}]
+tellraw @s ["",{"text":"  1. \u4fee\u590d\u4e86\u80e1\u841d\u535c\u6709\u65f6\u65e0\u6cd5\u89e6\u53d1\u8fde\u9501\u7684\u6f0f\u6d1e\uff1b","color":"aqua"},"\n",{"text":"  2. \u4f18\u5316\u4e86\u9a6c\u94c3\u85af\u7684\u8fde\u9501\u89e6\u53d1\u673a\u5236\u3002","color":"aqua"}]
+tellraw @s {"text":"---------------------------------------------","color":"gray"}
