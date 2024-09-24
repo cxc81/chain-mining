@@ -21,8 +21,8 @@ scoreboard players set @a mine_enter 0
 execute as @a unless score @s mine_setting_ores = @s mine_setting_ores run function mine:player_first_enter
 
 #对玩家/trigger的数值进行回应
-execute as @a if score @s mine_trigger matches 1 run function mine:info/settings
-execute as @a if score @s mine_trigger matches 2 run function mine:info/instruction
+execute as @a if score @s mine_trigger matches 1 run function mine:tellraw/settings/main
+execute as @a if score @s mine_trigger matches 2 run function mine:tellraw/instruction/main
 execute as @a if score @s mine_trigger matches 10 run scoreboard players set @s mine_setting_ores 0
 execute as @a if score @s mine_trigger matches 11 run scoreboard players set @s mine_setting_ores 1
 execute as @a if score @s mine_trigger matches 20 run scoreboard players set @s mine_setting_logs 0
@@ -35,13 +35,15 @@ execute as @a if score @s mine_trigger matches 50 run scoreboard players set @s 
 execute as @a if score @s mine_trigger matches 51 run scoreboard players set @s mine_setting_crops_1 1
 execute as @a if score @s mine_trigger matches 60 run scoreboard players set @s mine_setting_crops_2 0
 execute as @a if score @s mine_trigger matches 61 run scoreboard players set @s mine_setting_crops_2 1
-execute as @a if score @s mine_trigger matches 101 run function mine:info/instruction_ores
-execute as @a if score @s mine_trigger matches 102 run function mine:info/instruction_logs
-execute as @a if score @s mine_trigger matches 103 run function mine:info/instruction_stones
-execute as @a if score @s mine_trigger matches 104 run function mine:info/instruction_glowstone
-execute as @a if score @s mine_trigger matches 105 run function mine:info/instruction_crops_1
-execute as @a if score @s mine_trigger matches 106 run function mine:info/instruction_crops_2
-execute as @a if score @s mine_trigger matches 10..99 run function mine:info/settings
+execute as @a if score @s mine_trigger matches 70 run scoreboard players set @s mine_setting_loot 0
+execute as @a if score @s mine_trigger matches 71 run scoreboard players set @s mine_setting_loot 1
+execute as @a if score @s mine_trigger matches 101 run function mine:tellraw/instruction/ores
+execute as @a if score @s mine_trigger matches 102 run function mine:tellraw/instruction/logs
+execute as @a if score @s mine_trigger matches 103 run function mine:tellraw/instruction/stones
+execute as @a if score @s mine_trigger matches 104 run function mine:tellraw/instruction/glowstone
+execute as @a if score @s mine_trigger matches 105 run function mine:tellraw/instruction/crops_1
+execute as @a if score @s mine_trigger matches 106 run function mine:tellraw/instruction/crops_2
+execute as @a if score @s mine_trigger matches 10..99 run function mine:tellraw/settings/main
 #数值归零
 scoreboard players reset @a mine_trigger
 #允许玩家利用/trigger操控
