@@ -16,4 +16,5 @@ execute if entity @s[scores={mine_emerald=1..}] run function mine:ores/emerald_o
 execute if entity @s[scores={mine_emerald2=1..}] run function mine:ores/emerald_ore/if_to_start
 execute if entity @s[scores={mine_nether_quartz=1..}] run function mine:ores/nether_quartz_ore/if_to_start
 execute if entity @s[scores={mine_nether_gold=1..}] run function mine:ores/nether_gold_ore/if_to_start
+execute if entity @s[scores={mine_gilded_blackstone=1..}] run function mine:ores/gilded_blackstone/if_to_start
 execute if entity @s[scores={mine_ancient=1..}] run function mine:ores/ancient_debris/if_to_start

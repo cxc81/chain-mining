@@ -1,6 +1,6 @@
 {
-    "replace": false,
-    "values": [
-        "mine:load"
-    ]
+  "replace": false,
+  "values": [
+    "mine:load"
+  ]
 }
