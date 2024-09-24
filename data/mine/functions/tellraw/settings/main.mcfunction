@@ -4,5 +4,6 @@ function mine:tellraw/settings/line_1
 function mine:tellraw/settings/line_2
 function mine:tellraw/settings/line_3
 function mine:tellraw/settings/line_4
+function mine:tellraw/settings/line_5
 
 tellraw @s {"text":"---------------------------------------------","color":"gray"}

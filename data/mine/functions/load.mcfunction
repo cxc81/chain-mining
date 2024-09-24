@@ -75,12 +75,13 @@ scoreboard objectives add mine_mangrove minecraft.mined:minecraft.mangrove_log {
 scoreboard objectives add mine_mangrove_roots minecraft.mined:minecraft.mangrove_roots {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6316\u7ea2\u6811\u6839","color":"gold"}
 scoreboard objectives add mine_crimson minecraft.mined:minecraft.crimson_stem {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u780d\u7eef\u7ea2\u83cc\u67c4","color":"gold"}
 scoreboard objectives add mine_warped minecraft.mined:minecraft.warped_stem {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u780d\u8be1\u5f02\u83cc\u67c4","color":"gold"}
-#3 - 类石头(安山岩、闪长岩、花岗岩、凝灰岩、方解石)
+#3 - 类石头(安山岩、闪长岩、花岗岩、凝灰岩、方解石、岩浆块)
 scoreboard objectives add mine_andesite minecraft.mined:minecraft.andesite {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6316\u5b89\u5c71\u5ca9","color":"gold"}
 scoreboard objectives add mine_diorite minecraft.mined:minecraft.diorite {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6316\u95ea\u957f\u5ca9","color":"gold"}
 scoreboard objectives add mine_granite minecraft.mined:minecraft.granite {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6316\u82b1\u5c97\u5ca9","color":"gold"}
 scoreboard objectives add mine_tuff minecraft.mined:minecraft.tuff {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6316\u51dd\u7070\u5ca9","color":"gold"}
 scoreboard objectives add mine_calcite minecraft.mined:minecraft.calcite {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6316\u65b9\u89e3\u77f3","color":"gold"}
+scoreboard objectives add mine_magma_block minecraft.mined:minecraft.magma_block {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6316\u5ca9\u6d46\u5757","color":"gold"}
 #4 - 荧石
 scoreboard objectives add mine_glowstone minecraft.mined:minecraft.glowstone {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6316\u8367\u77f3","color":"gold"}
 #5 - 农作物1(小麦、胡萝卜、马铃薯、甜菜根、下界疣、甘蔗)
