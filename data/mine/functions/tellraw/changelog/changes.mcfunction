@@ -1,3 +1,2 @@
-
-tellraw @s [{"text":"  ","color":"yellow"},"\u6f0f\u6d1e\u4fee\u590d"]
-tellraw @s [{"text":"   ","color":"aqua"},"· \u4fee\u590d\u4e86\u591a\u4eba\u6e38\u620f\u4e2d\uff0c\u5176\u4ed6\u73a9\u5bb6\u65e0\u6cd5\u8fdb\u884c\u8fde\u9501\u91c7\u96c6\u7684\u95ee\u9898\u3002"]
+tellraw @s [{"text":"  ","color":"yellow"},"\u5e38\u89c4"]
+tellraw @s [{"text":"   ","color":"aqua"},"· \u53d8\u66f4\u4e86\u7248\u672c\u53f7\u4ee5\u652f\u63011.19.3\u3002"]
