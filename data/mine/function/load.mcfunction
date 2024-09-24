@@ -1,13 +1,9 @@
-# 规则设定
-gamerule maxCommandChainLength 1048576
-# 注：更改maxCommandChainLength是因为默认值65536太小了，连锁几千个方块会出问题
-
 # 重置一些重要的记分板，以防变量出错，不能正常运行
-scoreboard objectives remove mine
-scoreboard objectives remove mine_enter
+scoreboard players reset * mine_variables
+scoreboard players reset * mine_enter_detect
 
 # 创建记分板
-scoreboard objectives add mine dummy {"text":"连锁采集：核心","color":"gold"}
+scoreboard objectives add mine_variables dummy {"text":"连锁采集：核心","color":"gold"}
 # 1 - 矿石
 scoreboard objectives add mine_coal_ore minecraft.mined:minecraft.coal_ore {"text":"连锁采集：挖煤矿石","color":"gold"}
 scoreboard objectives add mine_deepslate_coal_ore minecraft.mined:minecraft.deepslate_coal_ore {"text":"连锁采集：挖深层煤矿石","color":"gold"}
@@ -69,11 +65,15 @@ scoreboard objectives add mine_setting_glowstone dummy {"text":"连锁采集：�
 scoreboard objectives add mine_setting_crops_1 dummy {"text":"连锁采集：农作物1设置","color":"gold"}
 scoreboard objectives add mine_setting_crops_2 dummy {"text":"连锁采集：农作物2设置","color":"gold"}
 scoreboard objectives add mine_setting_loot dummy {"text":"连锁采集：物品生成点设置","color":"gold"}
-scoreboard objectives add mine_enter dummy {"text":"连锁采集：玩家进入检测","color":"gold"}
+scoreboard objectives add mine_enter_detect dummy {"text":"连锁采集：玩家进入检测","color":"gold"}
 scoreboard objectives add mine_trigger trigger {"text":"连锁采集：触发器","color":"gold"}
 # 8 - 命令存储
 # 记住所使用数据包的版本(a.b.c)，计算公式为 a*256 + b*16 + c，存入dataVersion
 # 如果发现主世界(0, -64, 0)出现箱子，说明是旧版本
 # 由于旧版本没有记录数据包版本，故将lastDataVersion设为0
-data merge storage mine:data {dataVersion: 1041}
+data merge storage mine:data {dataVersion: 1056}
 execute in minecraft:overworld if block 0 -64 0 minecraft:chest run data merge storage mine:data {lastDataVersion: 0}
+
+# 将游戏规则maxCommandChainLength设为至少1048576
+execute store result score gamerule_max_command_chain_length mine_variables run gamerule maxCommandChainLength
+execute if score gamerule_max_command_chain_length mine_variables matches ..1048575 run gamerule maxCommandChainLength 1048576

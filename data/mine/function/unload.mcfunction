@@ -1,5 +1,5 @@
-scoreboard objectives remove mine
-scoreboard objectives remove mine_enter
+scoreboard objectives remove mine_variables
+scoreboard objectives remove mine_enter_detect
 
 scoreboard objectives remove mine_coal_ore
 scoreboard objectives remove mine_deepslate_coal_ore
@@ -61,14 +61,15 @@ scoreboard objectives remove mine_setting_glowstone
 scoreboard objectives remove mine_setting_crops_1
 scoreboard objectives remove mine_setting_crops_2
 scoreboard objectives remove mine_setting_loot
-scoreboard objectives remove mine_enter
 scoreboard objectives remove mine_trigger
 
 scoreboard objectives remove mine_confirm_unload
 
 data remove storage mine:data dataVersion
-data remove storage mine:data functionCall
+data remove storage mine:data function_call
 data remove storage mine:data items
 
+tellraw @s ["",{"text":"---------------------------------------------\n","color":"gray"},{"text":"连锁采集数据包","color":"gold","bold":true},{"text":" - 卸载","color":"red"}]
 tellraw @s ["",{"text":"卸载完成！已成功删除相关的记分板和命令存储！","color":"yellow"}]
 tellraw @s ["",{"text":"在重新加载世界前，请将此数据包从世界文件夹中移除！","color":"green"}]
+tellraw @s {"text":"---------------------------------------------","color":"gray"}

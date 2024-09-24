@@ -1,13 +1,10 @@
-# 1. 执行/gamerule doTileDrops，判断此世界是否有方块掉落物
-execute store result score gamerule_do_tile_drops mine run gamerule doTileDrops
-execute if score gamerule_do_tile_drops mine matches 1 as @a run function mine:control/mine_main
-# 将所有掉落物标记为已检测
-tag @e[type=minecraft:item,tag=!mine_detected] add mine_detected
+# 1. 执行主逻辑
+function mine:control/main
 
 # 2. 数据包加载成功的信息反馈
-execute as @a unless score @s mine_enter = $server_tick mine_enter run function mine:tellraw/datapack_loaded_success
-scoreboard players add $server_tick mine_enter 1
-execute as @a run scoreboard players operation @s mine_enter = $server_tick mine_enter
+execute as @a unless score @s mine_enter_detect = $server_tick mine_enter_detect run function mine:tellraw/datapack_loaded_success
+scoreboard players add $server_tick mine_enter_detect 1
+execute as @a run scoreboard players operation @s mine_enter_detect = $server_tick mine_enter_detect
 
 # 3. 玩家如果是第一次进入此世界，要给设置赋初值
 execute as @a unless score @s mine_setting_ores = @s mine_setting_ores run function mine:control/player_first_enter

@@ -1,5 +1,4 @@
 # 1. 对玩家/trigger的数值进行回应
-execute as @a if score @s mine_trigger matches -1024 run function mine:control/revert_old_settings
 execute as @a if score @s mine_trigger matches 1 run function mine:tellraw/settings/main
 execute as @a if score @s mine_trigger matches 2 run function mine:tellraw/instruction/main
 execute as @a if score @s mine_trigger matches 3 run function mine:tellraw/changelog/main
@@ -27,6 +26,8 @@ execute as @a if score @s mine_trigger matches 10..99 run function mine:tellraw/
 execute as @a if score @s mine_trigger matches 10..99 at @s run playsound block.note_block.pling player @s ~ ~ ~ 1 2
 execute as @a if score @s mine_trigger matches 1..9 at @s run playsound block.lever.click player @s
 execute as @a if score @s mine_trigger matches 100..999 at @s run playsound block.lever.click player @s
+execute as @a if score @s mine_trigger matches 1041 run function mine:control/perform_optimization
+
 # 2. 数值归零
 scoreboard players reset @a mine_trigger
 # 3. 允许玩家利用/trigger操控
