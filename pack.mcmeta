@@ -1,14 +1,15 @@
 {
   "pack": {
-    "pack_format": 10,
+    "pack_format": 48,
+    "supported_formats": [
+      45,
+      48
+    ],
     "description": [
+      "Chain Mining v4.0.0 for 1.21\n",
       {
-        "text": "Chain Mining 1.19.3 v3.3.2",
-        "color": "gold"
-      },
-      {
-        "text": "By cxc81",
-        "color": "aqua"
+        "text": "by cxc81",
+        "color": "gray"
       }
     ]
   }
