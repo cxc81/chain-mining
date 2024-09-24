@@ -20,7 +20,7 @@
 
 ### Ores
 * Supports the following 12 block types, including the Deepslate variants of the first 8 types.
->* They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, Nether Quartz Ore, Nether Gold Ore, Gilded Blackstone, and Ancient Debris.
+    - They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, Nether Quartz Ore, Nether Gold Ore, Gilded Blackstone, and Ancient Debris.
 * A proper Pickaxe is required to trigger the chain mining.
 
 ### Logs and Stems
@@ -54,6 +54,6 @@
 ### Other Features
 * Upon entering the world, players will receive a chat prompt that they can be clicked to view Settings, Instructions, or Changelogs.
 * Settings include:
->* Independent switches for Ores, Logs/Stems, Stone-like blocks, Glowstone, Crops 1, and Crops 2.
->* A switch for automatically teleporting drops to the player.
->* A function to uninstall this data pack (requires op permissions to execute).
+    - Independent switches for Ores, Logs/Stems, Stone-like blocks, Glowstone, Crops 1, and Crops 2.
+    - A switch for automatically teleporting drops to the player.
+    - A function to uninstall this data pack (requires op permissions to execute).

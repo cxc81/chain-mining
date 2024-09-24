@@ -3,10 +3,10 @@
     "pack_format": 48,
     "supported_formats": [
       45,
-      53
+      54
     ],
     "description": [
-      "Chain Mining v4.1.1 for 1.21.x\n",
+      "Chain Mining v4.2.0 for 1.21.x\n",
       {
         "text": "by cxc81",
         "color": "gray"
