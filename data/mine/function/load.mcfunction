@@ -75,5 +75,5 @@ scoreboard objectives add mine_trigger trigger {"text":"连锁采集：触发器
 # 记住所使用数据包的版本(a.b.c)，计算公式为 a*256 + b*16 + c，存入dataVersion
 # 如果发现主世界(0, -64, 0)出现箱子，说明是旧版本
 # 由于旧版本没有记录数据包版本，故将lastDataVersion设为0
-data merge storage mine:data {dataVersion: 1024}
+data merge storage mine:data {dataVersion: 1040}
 execute in minecraft:overworld if block 0 -64 0 minecraft:chest run data merge storage mine:data {lastDataVersion: 0}

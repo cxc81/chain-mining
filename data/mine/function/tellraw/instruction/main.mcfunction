@@ -1,5 +1,5 @@
 tellraw @s ["",{"text":"---------------------------------------------\n","color":"gray"},{"text":"连锁采集数据包","color":"gold","bold":true},{"text":" - 使用说明","color":"gold"}]
-tellraw @s {"text":" 1. 适用版本：1.21","color":"aqua"}
+tellraw @s {"text":" 1. 适用版本：1.21 - 1.21.2","color":"aqua"}
 tellraw @s ["",{"text":" 2. 支持采集所有矿石、原木、菌柄、","color":"aqua"},{"text":"类石头方块","color":"aqua","hoverEvent":{"action":"show_text","contents":{"text":"安山岩、闪长岩、花岗岩、凝灰岩、方解石和岩浆块"}}},{"text":"、荧石和农作物；","color":"aqua"}]
 tellraw @s [" ",{"text":"3. 会自动扣除耐久，且工具上的魔咒(如耐久、时运等)能够正常生效；","color":"aqua"}]
 tellraw @s [" ",{"text":"4. 物品耐久度耗尽时，会自动停止连锁；","color":"aqua"}]
