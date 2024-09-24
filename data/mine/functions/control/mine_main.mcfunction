@@ -10,5 +10,3 @@ execute if score @s mine_setting_glowstone matches 1 if entity @s[scores={mine_g
 execute if score @s mine_setting_crops_1 matches 1 at @s run function mine:crops_1/main
 #6 - 农作物2(南瓜、西瓜和可可果)
 execute if score @s mine_setting_crops_2 matches 1 at @s run function mine:crops_2/main
-#将所有掉落物标记为已检测
-tag @e[type=minecraft:item,tag=!detected] add detected

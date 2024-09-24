@@ -1,6 +1,8 @@
 # 1. 执行/gamerule doTileDrops，判断此世界是否有方块掉落物
 execute store result score gamerule_do_tile_drops mine run gamerule doTileDrops
 execute if score gamerule_do_tile_drops mine matches 1 as @a run function mine:control/mine_main
+# 将所有掉落物标记为已检测
+tag @e[type=minecraft:item,tag=!detected] add detected
 
 # 2. 数据包加载成功的信息反馈
 execute as @a unless score @s mine_enter = @s mine_enter run function mine:control/datapack_loaded_success

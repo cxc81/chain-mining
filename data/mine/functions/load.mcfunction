@@ -6,29 +6,6 @@ gamerule maxCommandChainLength 1048576
 scoreboard objectives remove mine
 scoreboard objectives remove mine_enter
 
-# 1.18-1.18.2版本的数据包中的名字，现不使用，故移除
-scoreboard objectives remove mine_coal
-scoreboard objectives remove mine_coal2
-scoreboard objectives remove mine_iron
-scoreboard objectives remove mine_iron2
-scoreboard objectives remove mine_copper
-scoreboard objectives remove mine_copper2
-scoreboard objectives remove mine_lapis
-scoreboard objectives remove mine_lapis2
-scoreboard objectives remove mine_gold
-scoreboard objectives remove mine_gold2
-scoreboard objectives remove mine_redstone
-scoreboard objectives remove mine_redstone2
-scoreboard objectives remove mine_diamond
-scoreboard objectives remove mine_diamond2
-scoreboard objectives remove mine_emerald
-scoreboard objectives remove mine_emerald2
-scoreboard objectives remove mine_nether_quartz
-scoreboard objectives remove mine_nether_gold
-scoreboard objectives remove mine_ancient
-scoreboard objectives remove mine_settings
-scoreboard objectives remove mine_setting_crops
-
 # 创建记分板
 scoreboard objectives add mine dummy {"text":"\u8fde\u9501\u91c7\u96c6\uff1a\u6838\u5fc3","color":"gold"}
 # 1 - 矿石
@@ -97,5 +74,5 @@ scoreboard objectives add mine_trigger trigger {"text":"\u8fde\u9501\u91c7\u96c6
 # 记住所使用数据包的版本(a.b.c)，计算公式为a*16*16+b*16+c，存入dataVersion
 # 如果发现主世界(0, -64, 0)出现箱子，说明是旧版本
 # 由于旧版本没有记录数据包版本，故将lastDataVersion设为0
-data merge storage mine:data {dataVersion:816}
+data merge storage mine:data {dataVersion:817}
 execute in minecraft:overworld if block 0 -64 0 minecraft:chest run data merge storage mine:data {lastDataVersion:0}
