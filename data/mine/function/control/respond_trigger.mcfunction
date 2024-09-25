@@ -23,9 +23,9 @@ execute as @a if score @s mine_trigger matches 104 run function mine:tellraw/ins
 execute as @a if score @s mine_trigger matches 105 run function mine:tellraw/instruction/crops_1
 execute as @a if score @s mine_trigger matches 106 run function mine:tellraw/instruction/crops_2
 execute as @a if score @s mine_trigger matches 10..99 run function mine:tellraw/settings/main
-execute as @a if score @s mine_trigger matches 10..99 at @s run playsound block.note_block.pling player @s ~ ~ ~ 1 2
-execute as @a if score @s mine_trigger matches 1..9 at @s run playsound block.lever.click player @s
-execute as @a if score @s mine_trigger matches 100..999 at @s run playsound block.lever.click player @s
+execute as @a if score @s mine_trigger matches 10..99 at @s run playsound minecraft:block.note_block.pling player @s ~ ~ ~ 1 2
+execute as @a if score @s mine_trigger matches 1..9 at @s run playsound minecraft:block.lever.click player @s
+execute as @a if score @s mine_trigger matches 100..999 at @s run playsound minecraft:block.lever.click player @s
 execute as @a if score @s mine_trigger matches 1041 run function mine:control/perform_optimization
 
 # 2. 数值归零

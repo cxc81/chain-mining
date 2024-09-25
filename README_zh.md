@@ -7,6 +7,11 @@
 * 功能：玩家挖掘方块后，一键采集周围的同类方块。
 * 适用版本：Minecraft Java版1.20.5及以上。
 
+## 下载
+* 前往[最新发布](https://github.com/cxc81/chain-mining/releases/latest)。
+* 根据所需的Minecraft版本，选择相应的数据包下载。
+* 安装数据包的方法请见[此处](https://zh.minecraft.wiki/w/Tutorial:%E5%AE%89%E8%A3%85%E6%95%B0%E6%8D%AE%E5%8C%85)。
+
 ## 兼容性
 * 命名空间为mine，所用的记分板名称均以mine开头。
 * 除去功能本身，没有用到额外的方块和实体来存储数据。

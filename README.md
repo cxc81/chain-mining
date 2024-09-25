@@ -7,6 +7,11 @@
 * Features: This data pack allows players to mine surrounding blocks of the same type automatically after breaking one block.
 * Applicable versions: Minecraft Java Edition 1.20.5 and above.
 
+## Downloads
+* Go to [the latest release](https://github.com/cxc81/chain-mining/releases/latest)。
+* Choose a corresponding data pack based on your Minecraft version, and download it。
+* For installing the data pack, see [here](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack)。
+
 ## Compatibility
 * Namespace 'mine' is used, and all scoreboard objectives start with 'mine'.
 * No additional blocks or entities are used to store data, aside from the functionality itself.

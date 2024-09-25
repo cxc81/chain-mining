@@ -1,7 +1,14 @@
-# 这里展示了数据包版本号(4.2.0)；下文就有一个；在pack.mcmeta中也有一个；mine:load函数的末尾也有
-# 这里展示了Minecraft版本号(1.21 - 1.21.2)；下文就有一个；在pack.mcmeta中也有一个；mine:tellraw/instruction/main中也有版本描述
+# 数据包版本号所出现的位置：
+#   下文就有一处；
+#   pack.mcmeta中有一处；
+#   函数mine:tellraw/instruction/main中有一处；
+#   函数mine:load的末尾有一处。
+# Minecraft适用版本所出现的位置：
+#   下文就有一处；
+#   pack.mcmeta中有一处；
+#   函数mine:tellraw/instruction/main中有一处。
 tellraw @s ["",{"text":"---------------------------------------------\n","color":"gray"},{"text":"连锁采集数据包","color":"gold","bold":true},{"text":" - 更新日志","color":"gold"}]
-tellraw @s [" ",{"text":"数据包版本：4.2.0  (Minecraft版本：1.21 - 1.21.2)","color":"green"}]
+tellraw @s [" ",{"text":"数据包版本：v4.2.1  (Minecraft版本：1.21 - 1.21.2)","color":"green"}]
 tellraw @s [" ",{"text":"更新内容：","color":"aqua"}]
 function mine:tellraw/changelog/changes
 function mine:tellraw/changelog/see_also
