@@ -6,7 +6,7 @@ execute if score @s mine_mangrove_roots matches 1.. run tag @e[type=minecraft:it
 # 只选1个掉落物
 tag @e[type=minecraft:item,tag=!mine_detected,tag=mine_mangrove_drop,limit=1,sort=nearest] add mine_mangrove_selected
 
-execute if predicate mine:mainhand/holding_axe at @e[type=minecraft:item,tag=!mine_detected,tag=mine_mangrove_selected,limit=1,sort=nearest] run function mine:logs/mangrove_log/main
+execute if predicate mine:player/mainhand/holding_axe at @e[type=minecraft:item,tag=!mine_detected,tag=mine_mangrove_selected,limit=1,sort=nearest] run function mine:logs/mangrove_log/main
 
 scoreboard players reset @s mine_mangrove_log
 scoreboard players reset @s mine_mangrove_roots
