@@ -24,8 +24,8 @@
 * In-game settings are available to control individual switches for chain mining, and each player has independent settings.
 
 ### Ores
-* Supports the following 12 block types, including the Deepslate variants of the first 8 types.
-    - They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, Nether Quartz Ore, Nether Gold Ore, Gilded Blackstone, and Ancient Debris.
+* Supports the following 13 block types, including the Deepslate variants of the first 8 types.
+    - They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, Amethyst Cluster, Nether Quartz Ore, Nether Gold Ore, Gilded Blackstone, and Ancient Debris.
 * A proper Pickaxe is required to trigger the chain mining.
 
 ### Logs and Stems
@@ -36,7 +36,7 @@
 * Mangrove Roots can also be chained along with Mangrove Logs.
 
 ### Stone-like Blocks
-* Supports these 6 block types: Andesite, Diorite, Granite, Tuff, Calcite, and Magma Block.
+* Supports these 7 block types: Andesite, Diorite, Granite, Tuff, Calcite, Amethyst Block, and Magma Block.
 * A Pickaxe is required to trigger the chain mining.
 * The default setting for this category is OFF! Unless specifically needed, DO NOT turn it on in the settings (it may cause Pickaxes to break instantly).
 
@@ -45,15 +45,15 @@
 * Using a tool to mine Glowstone will consume its durability, but the enchantments will take effect.
 
 ### Crops (Category 1)
-* Supports these 6 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, and Sugar Canes.
+* Supports these 7 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Sugar Canes, and Sweet Berry Bushes.
 * Only mature crops can be chained, and they will be automatically replanted after being mined.
 * Using a tool does not consume its durability, and the Fortune enchantment will take effect.
 * For Sugar Canes, the ones at the very bottom will not be automatically mined.
 
 ### Crops (Category 2)
-* Supports these 3 block types: Pumpkins, Melons, and Cocoa.
+* Supports these 4 block types: Pumpkins, Melons, Cocoa, and Cactus.
 * An Axe is required to trigger the chain mining, and Cocoa will be automatically replanted.
-* The Axe will consume durability normally, and the Silk Touch enchantment (applicable to Melons) will take effect.
+* The Axe will consume durability normally, and the enchantments (applicable to Melons) will take effect.
 * Pumpkin and Melon Stems will not be chain-mined.
 
 ### Other Features

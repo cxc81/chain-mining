@@ -21,6 +21,7 @@ scoreboard objectives add mine_diamond_ore minecraft.mined:minecraft.diamond_ore
 scoreboard objectives add mine_deepslate_diamond_ore minecraft.mined:minecraft.deepslate_diamond_ore {"text":"连锁采集：挖深层钻石矿石","color":"gold"}
 scoreboard objectives add mine_emerald_ore minecraft.mined:minecraft.emerald_ore {"text":"连锁采集：挖绿宝石矿石","color":"gold"}
 scoreboard objectives add mine_deepslate_emerald_ore minecraft.mined:minecraft.deepslate_emerald_ore {"text":"连锁采集：挖深层绿宝石矿石","color":"gold"}
+scoreboard objectives add mine_amethyst_cluster minecraft.mined:minecraft.amethyst_cluster {"text":"连锁采集：挖紫水晶簇","color":"gold"}
 scoreboard objectives add mine_nether_quartz_ore minecraft.mined:minecraft.nether_quartz_ore {"text":"连锁采集：挖下界石英矿石","color":"gold"}
 scoreboard objectives add mine_nether_gold_ore minecraft.mined:minecraft.nether_gold_ore {"text":"连锁采集：挖下界金矿石","color":"gold"}
 scoreboard objectives add mine_gilded_blackstone minecraft.mined:minecraft.gilded_blackstone {"text":"连锁采集：挖镶金黑石","color":"gold"}
@@ -37,26 +38,29 @@ scoreboard objectives add mine_mangrove_roots minecraft.mined:minecraft.mangrove
 scoreboard objectives add mine_cherry_log minecraft.mined:minecraft.cherry_log {"text":"连锁采集：挖红树根","color":"gold"}
 scoreboard objectives add mine_crimson_stem minecraft.mined:minecraft.crimson_stem {"text":"连锁采集：砍绯红菌柄","color":"gold"}
 scoreboard objectives add mine_warped_stem minecraft.mined:minecraft.warped_stem {"text":"连锁采集：砍诡异菌柄","color":"gold"}
-# 3 - 类石头(安山岩、闪长岩、花岗岩、凝灰岩、方解石和岩浆块)
+# 3 - 类石头(安山岩、闪长岩、花岗岩、凝灰岩、方解石、紫水晶块和岩浆块)
 scoreboard objectives add mine_andesite minecraft.mined:minecraft.andesite {"text":"连锁采集：挖安山岩","color":"gold"}
 scoreboard objectives add mine_diorite minecraft.mined:minecraft.diorite {"text":"连锁采集：挖闪长岩","color":"gold"}
 scoreboard objectives add mine_granite minecraft.mined:minecraft.granite {"text":"连锁采集：挖花岗岩","color":"gold"}
 scoreboard objectives add mine_tuff minecraft.mined:minecraft.tuff {"text":"连锁采集：挖凝灰岩","color":"gold"}
 scoreboard objectives add mine_calcite minecraft.mined:minecraft.calcite {"text":"连锁采集：挖方解石","color":"gold"}
+scoreboard objectives add mine_amethyst_block minecraft.mined:minecraft.amethyst_block {"text":"连锁采集：挖紫水晶块","color":"gold"}
 scoreboard objectives add mine_magma_block minecraft.mined:minecraft.magma_block {"text":"连锁采集：挖岩浆块","color":"gold"}
 # 4 - 荧石
 scoreboard objectives add mine_glowstone minecraft.mined:minecraft.glowstone {"text":"连锁采集：挖荧石","color":"gold"}
-# 5 - 农作物1(小麦、胡萝卜、马铃薯、甜菜根、下界疣和甘蔗)
+# 5 - 农作物1(小麦、胡萝卜、马铃薯、甜菜根、下界疣、甘蔗和甜浆果丛)
 scoreboard objectives add mine_wheat minecraft.mined:minecraft.wheat {"text":"连锁采集：挖小麦","color":"gold"}
 scoreboard objectives add mine_carrot minecraft.mined:minecraft.carrots {"text":"连锁采集：挖胡萝卜","color":"gold"}
 scoreboard objectives add mine_potato minecraft.mined:minecraft.potatoes {"text":"连锁采集：挖马铃薯","color":"gold"}
 scoreboard objectives add mine_beetroot minecraft.mined:minecraft.beetroots {"text":"连锁采集：挖甜菜根","color":"gold"}
 scoreboard objectives add mine_nether_wart minecraft.mined:minecraft.nether_wart {"text":"连锁采集：挖下界疣","color":"gold"}
 scoreboard objectives add mine_sugar_cane minecraft.mined:minecraft.sugar_cane {"text":"连锁采集：挖甘蔗","color":"gold"}
-# 6 - 农作物2(南瓜、西瓜和可可果)
+scoreboard objectives add mine_sweet_berry_bush minecraft.mined:minecraft.sweet_berry_bush {"text":"连锁采集：挖甜浆果丛","color":"gold"}
+# 6 - 农作物2(南瓜、西瓜、可可果和仙人掌)
 scoreboard objectives add mine_pumpkin minecraft.mined:minecraft.pumpkin {"text":"连锁采集：挖南瓜","color":"gold"}
 scoreboard objectives add mine_melon minecraft.mined:minecraft.melon {"text":"连锁采集：挖西瓜","color":"gold"}
 scoreboard objectives add mine_cocoa minecraft.mined:minecraft.cocoa {"text":"连锁采集：挖可可果","color":"gold"}
+scoreboard objectives add mine_cactus minecraft.mined:minecraft.cactus {"text":"连锁采集：挖仙人掌","color":"gold"}
 # 7 - 其他
 scoreboard objectives add mine_setting_ores dummy {"text":"连锁采集：农作物设置","color":"gold"}
 scoreboard objectives add mine_setting_logs dummy {"text":"连锁采集：原木/菌柄设置","color":"gold"}

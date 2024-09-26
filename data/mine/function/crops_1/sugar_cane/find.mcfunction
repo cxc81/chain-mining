@@ -1,4 +1,4 @@
-#上方优先连锁，再水平，再下方
+# 优先连锁上方，再水平，再下方
 execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:sugar_cane run function mine:crops_1/sugar_cane/mine
 execute positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:sugar_cane run function mine:crops_1/sugar_cane/mine
 execute positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:sugar_cane run function mine:crops_1/sugar_cane/mine

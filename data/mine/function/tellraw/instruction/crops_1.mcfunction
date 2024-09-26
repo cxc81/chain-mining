@@ -1,5 +1,5 @@
 tellraw @s ["",{"text":"---------------------------------------------\n","color":"gray"},{"text":"连锁采集数据包","color":"gold","bold":true},{"text":" - 农作物1使用说明","color":"gold"}]
-tellraw @s [" ",{"text":"1. 支持","color":"aqua"},{"text":"[这6种方块]","color":"green","hoverEvent":{"action":"show_text","value":"小麦、胡萝卜、马铃薯、甜菜根、下界疣和甘蔗"}},{"text":"；","color":"aqua"}]
+tellraw @s [" ",{"text":"1. 支持","color":"aqua"},{"text":"[这7种方块]","color":"green","hoverEvent":{"action":"show_text","value":"小麦、胡萝卜、马铃薯、甜菜根、下界疣、甘蔗和甜浆果丛"}},{"text":"；","color":"aqua"}]
 tellraw @s [" ",{"text":"2. 只有成熟的作物才能连锁，且采集后自动补种；","color":"aqua"}]
 tellraw @s [" ",{"text":"3. 使用工具","color":"aqua"},{"text":"不会","color":"yellow","bold":true},{"text":"消耗耐久，且工具上的时运能生效；","color":"aqua"}]
 tellraw @s [" ",{"text":"4. 对于甘蔗，最底部的不会自动采集。","color":"aqua"}]

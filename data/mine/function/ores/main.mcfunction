@@ -14,6 +14,7 @@ execute if score @s mine_diamond_ore matches 1.. run function mine:ores/diamond_
 execute if score @s mine_deepslate_diamond_ore matches 1.. run function mine:ores/diamond_ore/prepare
 execute if score @s mine_emerald_ore matches 1.. run function mine:ores/emerald_ore/prepare
 execute if score @s mine_deepslate_emerald_ore matches 1.. run function mine:ores/emerald_ore/prepare
+execute if score @s mine_amethyst_cluster matches 1.. run function mine:ores/amethyst_cluster/prepare
 execute if score @s mine_nether_quartz_ore matches 1.. run function mine:ores/nether_quartz_ore/prepare
 execute if score @s mine_nether_gold_ore matches 1.. run function mine:ores/nether_gold_ore/prepare
 execute if score @s mine_gilded_blackstone matches 1.. run function mine:ores/gilded_blackstone/prepare
