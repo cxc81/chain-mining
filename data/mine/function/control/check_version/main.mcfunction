@@ -10,12 +10,8 @@ execute store result score dataVersion mine_variables run data get storage mine:
 execute if score lastDataVersion mine_variables matches ..815 run \
     function mine:tellraw/check_version/too_old
 
-# 如果lastDataVersion介于[816, 1041]，则需要进行手动升级
-execute if score lastDataVersion mine_variables matches 816..1041 run \
-    function mine:tellraw/check_version/requires_manual_upgrade
-
-# 如果lastDataVersion介于[1056, dataVersion)，进行自动升级
-execute if score lastDataVersion mine_variables matches 1056.. \
+# 如果lastDataVersion介于[816, dataVersion)，进行自动升级
+execute if score lastDataVersion mine_variables matches 816.. \
     if score lastDataVersion mine_variables < dataVersion mine_variables run \
     function mine:tellraw/check_version/automatically_upgrade
 
