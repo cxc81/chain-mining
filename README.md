@@ -17,7 +17,7 @@
 * No additional blocks or entities are used to store data, aside from the functionality itself.
 
 ## Main Content
-* Supports mining these blocks: Ores, Logs/Stems, Stone-like blocks, Glowstone, and Crops.
+* Supports mining these blocks: Ores, Logs/Stems, Stone-like Blocks, Glowstone, and Crops.
 * Players can trigger a chain mining when mining a block, allowing unlimited mining of adjacent same-type blocks.
 * If a tool is used, its durability will be consumed automatically (which may lead to tool breaking), but enchantments will take effect.
 * To avoid triggering a chain mining, you can hold sneaking.
@@ -52,9 +52,9 @@
 
 ### Crops (Category 2)
 * Supports these 4 block types: Pumpkins, Melons, Cocoa, and Cactus.
-* An Axe is required to trigger the chain mining, and Cocoa will be automatically replanted.
-* The Axe will consume durability normally, and the enchantments (applicable to Melons) will take effect.
-* Pumpkin and Melon Stems will not be chain-mined.
+* An Axe is required to trigger the chain mining, except for Cactus.
+* Pumpkin Stems, Melon Stems, and Cactus at the very bottom will not be chain-mined.
+* Cocoa will be automatically replanted after being chain-mined.
 
 ### Other Features
 * Upon entering the world, players will receive a chat prompt that they can be clicked to view Settings, Instructions, or Changelogs.

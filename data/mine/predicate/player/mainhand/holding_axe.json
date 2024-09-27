@@ -4,14 +4,7 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "items": [
-          "minecraft:wooden_axe",
-          "minecraft:stone_axe",
-          "minecraft:iron_axe",
-          "minecraft:diamond_axe",
-          "minecraft:netherite_axe",
-          "minecraft:golden_axe"
-        ]
+        "items": "#minecraft:axes"
       }
     }
   }

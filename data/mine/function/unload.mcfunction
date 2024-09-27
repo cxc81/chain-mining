@@ -17,6 +17,7 @@ scoreboard objectives remove mine_diamond_ore
 scoreboard objectives remove mine_deepslate_diamond_ore
 scoreboard objectives remove mine_emerald_ore
 scoreboard objectives remove mine_deepslate_emerald_ore
+scoreboard objectives remove mine_amethyst_cluster
 scoreboard objectives remove mine_nether_quartz_ore
 scoreboard objectives remove mine_nether_gold_ore
 scoreboard objectives remove mine_gilded_blackstone
@@ -39,6 +40,7 @@ scoreboard objectives remove mine_diorite
 scoreboard objectives remove mine_granite
 scoreboard objectives remove mine_tuff
 scoreboard objectives remove mine_calcite
+scoreboard objectives remove mine_amethyst_block
 scoreboard objectives remove mine_magma_block
 
 scoreboard objectives remove mine_glowstone
@@ -49,10 +51,12 @@ scoreboard objectives remove mine_potato
 scoreboard objectives remove mine_beetroot
 scoreboard objectives remove mine_nether_wart
 scoreboard objectives remove mine_sugar_cane
+scoreboard objectives remove mine_sweet_berry_bush
 
 scoreboard objectives remove mine_pumpkin
 scoreboard objectives remove mine_melon
 scoreboard objectives remove mine_cocoa
+scoreboard objectives remove mine_cactus
 
 scoreboard objectives remove mine_setting_ores
 scoreboard objectives remove mine_setting_logs
@@ -66,6 +70,8 @@ scoreboard objectives remove mine_trigger
 scoreboard objectives remove mine_confirm_unload
 
 data remove storage mine:data dataVersion
+data remove storage mine:data lastDataVersion
+data remove storage mine:data data
 data remove storage mine:data function_call
 data remove storage mine:data items
 
