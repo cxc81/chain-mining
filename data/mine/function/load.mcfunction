@@ -79,11 +79,14 @@ scoreboard objectives add mine_setting_loot dummy {"text":"连锁采集：物品
 scoreboard objectives add mine_enter_detect dummy {"text":"连锁采集：玩家进入检测","color":"gold"}
 scoreboard objectives add mine_trigger trigger {"text":"连锁采集：触发器","color":"gold"}
 
+scoreboard objectives add Const dummy
+scoreboard players set 16 Const 16
+
 # 8. 其他操作
 #   如果发现了mine记分项，且没有dataVersion字段，可以确定是旧版本，此时将lastDataVersion置为0
 function mine:control/check_version/legacy_version_process
 #   设置当前使用的数据包版本(a.b.c)，计算公式为 a*256 + b*16 + c，存入dataVersion
-data merge storage mine:data {dataVersion: 1073}
+data merge storage mine:data {dataVersion: 1088}
 #   设置当前支持的Minecraft版本
 data merge storage mine:data {data: {supported_minecraft_versions_str: "1.21 - 1.21.2"}}
 #   将dataVersion和lastDataVersion处理成字符串

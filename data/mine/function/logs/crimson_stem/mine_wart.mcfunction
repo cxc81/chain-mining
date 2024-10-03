@@ -8,4 +8,3 @@ setblock ~ ~ ~ minecraft:air destroy
 function mine:generic/offhand/damage
 
 function mine:generic/tp_items
-function mine:logs/crimson_stem/find_wart
