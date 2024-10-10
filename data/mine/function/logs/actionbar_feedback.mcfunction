@@ -1,1 +1,1 @@
-title @s actionbar [{"text":"共采集了","color":"aqua"},{"score":{"name":"log_count","objective":"mine_variables"},"color":"yellow"},{"text":"个原木，","color":"aqua"},{"score":{"name":"leaves_count","objective":"mine_variables"},"color":"yellow"},{"text":"个树叶","color":"aqua"}]
+title @s actionbar [{"text":"共采集了","color":"aqua"},{"score":{"name":"num_logs_mined","objective":"mine_variables"},"color":"yellow"},{"text":"个原木，","color":"aqua"},{"score":{"name":"num_leaves_mined","objective":"mine_variables"},"color":"yellow"},{"text":"个树叶","color":"aqua"}]

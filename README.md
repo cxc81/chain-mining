@@ -31,8 +31,7 @@
 ### Logs and Stems
 * Supports these 12 block types: Oak Log, Spruce Log, Birch Log, Jungle Log, Acacia Log, Dark Oak Log, Mangrove Log, Mangrove Roots, Pale Oak Log<sup>[*Upcoming*]</sup>, Cherry Log, Crimson Stem, and Warped Stem.
 * An Axe is required to trigger the chain mining.
-* For Logs, if the off-hand holds a tool with Silk Touch or Fortune, a 5×4×5 range of Leaves will also be mined.
-* For Stems, if the off-hand holds a hoe, a 5×4×5 range of corresponding Wart Blocks and Shroomlights will also be mined.
+* If the off-hand holds a Hoe, a 5×4×5 range of corresponding Leaves, Wart Blocks and Shroomlights will also be mined.
 * Mangrove Roots can be chained together with Mangrove Logs.
 
 ### Stone-like Blocks
