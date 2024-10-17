@@ -1,2 +1,7 @@
+tellraw @s [{"text":"  ","color":"yellow"},"本地化"]
+tellraw @s [{"text":"   ","color":"aqua"},"· 从此版本开始，会陆续对此数据包中的文本添加翻译支持。"]
 tellraw @s [{"text":"  ","color":"yellow"},"修复"]
-tellraw @s [{"text":"   ","color":"aqua"},"· 修复了在特定情况下连锁采集时，错误地播放“物品：损坏”音效的漏洞。"]
+tellraw @s [{"text":"   ","color":"aqua"},"· 修复了不能正常连锁丛林树叶的漏洞。"]
+tellraw @s [{"text":"  ","color":"yellow"},"后续更新"]
+tellraw @s [{"text":"   ","color":"aqua"},"· 未来会把此数据包的命名空间从",{"text":"mine","color":"green"},"更改为",{"text":"chain_mining","color":"green"},"。"]
+tellraw @s [{"text":"   ","color":"aqua"},"  · 将在",{"text":"v4.5.0","color":"green"},"版本中完成此更改。"]

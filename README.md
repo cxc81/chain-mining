@@ -13,7 +13,7 @@
 * For installing the data pack, see [here](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack)。
 
 ## Compatibility
-* Namespace 'mine' is used, and all scoreboard objectives start with 'mine'.
+* Namespace ```mine```<sup>[*Until: v4.5.0*]</sup>/```chain_mining```<sup>[*Upcoming: v4.5.0*]</sup> is used, and all scoreboard objectives start with ```mine```/```chain_mining```.
 * No additional blocks or entities are used to store data, aside from the functionality itself.
 
 ## Main Content
