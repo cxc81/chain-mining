@@ -1,7 +1,6 @@
 execute store result score seed_count mine_variables run data get entity @s Item.count
 
 scoreboard players set cocoa_direction mine_variables -1
-#cocoa_direction：0北 1南 2西 3东
 execute if block ~ ~ ~-1 minecraft:jungle_log run scoreboard players set cocoa_direction mine_variables 0
 execute if block ~ ~ ~1 minecraft:jungle_log run scoreboard players set cocoa_direction mine_variables 1
 execute if block ~-1 ~ ~ minecraft:jungle_log run scoreboard players set cocoa_direction mine_variables 2

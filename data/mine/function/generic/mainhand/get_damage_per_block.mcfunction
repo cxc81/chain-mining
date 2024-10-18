@@ -4,6 +4,7 @@
 # 否则硬编码返回值，这些物品有默认的tool组件：
 #   镐、斧、锄、锹、剪刀：消耗1耐久
 #   剑、三叉戟、重锤：消耗2耐久
+execute unless score holding_tool_mainhand mine_variables matches 1 run return 0
 execute if data storage mine:data items.mainhand.components."minecraft:tool" run return run \
     data get storage mine:data items.mainhand.components."minecraft:tool".damage_per_block
 

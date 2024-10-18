@@ -5,6 +5,6 @@ execute if block ~ ~ ~ minecraft:shroomlight run scoreboard players add num_shro
 loot spawn ~ ~ ~ mine ~ ~ ~ offhand
 setblock ~ ~ ~ minecraft:air destroy
 
-function mine:generic/offhand/damage
+function mine:generic/offhand/apply_damage
 
 function mine:generic/tp_items

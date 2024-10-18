@@ -86,7 +86,7 @@ scoreboard players set 16 Const 16
 #   如果发现了mine记分项，且没有dataVersion字段，可以确定是旧版本，此时将lastDataVersion置为0
 function mine:control/check_version/legacy_version_process
 #   设置当前使用的数据包版本(a.b.c)，计算公式为 a*256 + b*16 + c，存入dataVersion
-data merge storage mine:data {dataVersion: 1091}
+data merge storage mine:data {dataVersion: 1092}
 #   设置当前支持的Minecraft版本
 data merge storage mine:data {data: {supported_minecraft_versions_str: "1.21 - 1.21.2"}}
 #   将dataVersion和lastDataVersion处理成字符串

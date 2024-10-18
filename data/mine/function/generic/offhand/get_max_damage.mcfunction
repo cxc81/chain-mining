@@ -2,6 +2,7 @@
 # 如果获取到了序列化的max_damage组件，则直接返回组件中指定的值
 # 否则硬编码返回值，仅针对挖掘工具返回默认的max_damage组件：
 #    剑、斧、锄、锹、镐，剪刀、三叉戟、重锤
+execute unless score holding_tool_offhand mine_variables matches 1 run return 0
 execute if data storage mine:data items.offhand.components."minecraft:max_damage" run return run \
     data get storage mine:data items.offhand.components."minecraft:max_damage"
 

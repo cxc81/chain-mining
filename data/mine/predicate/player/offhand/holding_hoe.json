@@ -1,11 +1,25 @@
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "equipment": {
-      "offhand": {
-        "items": "#minecraft:hoes"
+[
+  {
+    "condition": "minecraft:value_check",
+    "value": {
+      "type": "minecraft:score",
+      "target": {
+        "type": "minecraft:fixed",
+        "name": "holding_tool_offhand"
+      },
+      "score": "mine_variables"
+    },
+    "range": 1
+  },
+  {
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "equipment": {
+        "offhand": {
+          "items": "#minecraft:hoes"
+        }
       }
     }
   }
-}
+]
