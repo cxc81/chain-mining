@@ -1,0 +1,10 @@
+function chain_mining:tellraw/separate_line
+tellraw @s [{"text":"","color":"gold"},{"text":"连锁采集数据包","bold":true}," - 使用说明"]
+tellraw @s [{"text":" ","color":"aqua"},"1. 数据包版本：",{"nbt":"data.data_version_str","storage":"chain_mining:data","color":"green"},"  (Minecraft版本：",{"nbt":"data.supported_minecraft_versions_str","storage":"chain_mining:data","color":"green"},")"]
+tellraw @s [{"text":" ","color":"aqua"},"2. 支持采集所有矿石、原木、菌柄、",{"text":"类石头方块","hoverEvent":{"action":"show_text","contents":{"text":"安山岩、闪长岩、花岗岩、凝灰岩、方解石、紫水晶块和岩浆块"}}},"、荧石和农作物；"]
+tellraw @s [{"text":" ","color":"aqua"},"3. 会自动扣除耐久，且工具上的魔咒(如耐久、时运等)能够正常生效；"]
+tellraw @s [{"text":" ","color":"aqua"},"4. 当物品因耐久度耗尽而损毁时，会停止连锁；"]
+tellraw @s [{"text":" ","color":"aqua"},"5. 点击下方设置来控制各类连锁的开关。"]
+tellraw @s [{"text":" ","color":"aqua"},"更多使用说明：",{"text":"[矿石]","color":"green","clickEvent":{"action":"run_command","value":"/trigger chain_mining_trigger set 101"},"hoverEvent":{"action":"show_text","contents":{"text":"点击查看！","color":"yellow"}}}," ",{"text":"[原木/菌柄]","color":"green","clickEvent":{"action":"run_command","value":"/trigger chain_mining_trigger set 102"},"hoverEvent":{"action":"show_text","contents":{"text":"点击查看！","color":"yellow"}}}," ",{"text":"[类石头]","color":"green","clickEvent":{"action":"run_command","value":"/trigger chain_mining_trigger set 103"},"hoverEvent":{"action":"show_text","contents":{"text":"点击查看！","color":"yellow"}}}," ",{"text":"[荧石]","color":"green","clickEvent":{"action":"run_command","value":"/trigger chain_mining_trigger set 104"},"hoverEvent":{"action":"show_text","contents":{"text":"点击查看！","color":"yellow"}}}," ",{"text":"[农作物1]","color":"green","clickEvent":{"action":"run_command","value":"/trigger chain_mining_trigger set 105"},"hoverEvent":{"action":"show_text","contents":{"text":"点击查看！","color":"yellow"}}}," ",{"text":"[农作物2]","color":"green","clickEvent":{"action":"run_command","value":"/trigger chain_mining_trigger set 106"},"hoverEvent":{"action":"show_text","contents":{"text":"点击查看！","color":"yellow"}}}]
+function chain_mining:tellraw/instruction/see_also
+function chain_mining:tellraw/separate_line

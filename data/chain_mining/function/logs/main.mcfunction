@@ -1,0 +1,11 @@
+execute if score @s chain_mining_oak_log matches 1.. run function chain_mining:logs/oak_log/prepare
+execute if score @s chain_mining_spruce_log matches 1.. run function chain_mining:logs/spruce_log/prepare
+execute if score @s chain_mining_birch_log matches 1.. run function chain_mining:logs/birch_log/prepare
+execute if score @s chain_mining_jungle_log matches 1.. run function chain_mining:logs/jungle_log/prepare
+execute if score @s chain_mining_acacia_log matches 1.. run function chain_mining:logs/acacia_log/prepare
+execute if score @s chain_mining_dark_oak_log matches 1.. run function chain_mining:logs/dark_oak_log/prepare
+execute if score @s chain_mining_mangrove_log matches 1.. run function chain_mining:logs/mangrove_log/prepare
+execute if score @s chain_mining_mangrove_roots matches 1.. run function chain_mining:logs/mangrove_log/prepare
+execute if score @s chain_mining_cherry_log matches 1.. run function chain_mining:logs/cherry_log/prepare
+execute if score @s chain_mining_crimson_stem matches 1.. run function chain_mining:logs/crimson_stem/prepare
+execute if score @s chain_mining_warped_stem matches 1.. run function chain_mining:logs/warped_stem/prepare

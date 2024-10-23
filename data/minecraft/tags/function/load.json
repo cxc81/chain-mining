@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "mine:load"
+    "chain_mining:load"
   ]
 }

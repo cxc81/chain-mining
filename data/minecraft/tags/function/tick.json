@@ -1,6 +1,6 @@
 {
   "replace": false,
   "values": [
-    "mine:tick"
+    "chain_mining:tick"
   ]
 }

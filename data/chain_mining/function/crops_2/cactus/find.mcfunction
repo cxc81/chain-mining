@@ -1,0 +1,27 @@
+# 优先连锁上方，再水平，再下方
+execute positioned ~ ~1 ~ if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~1 ~ if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~1 ~ if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~ ~1 ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~ ~1 ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~1 ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~1 ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~1 ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~1 ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~ ~ if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~ ~ if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~ ~ ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~ ~ ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~ ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~ ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~ ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~ ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~ ~-1 ~ if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~-1 ~ if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~-1 ~ if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~ ~-1 ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~ ~-1 ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~-1 ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~-1 ~-1 ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~-1 ~-1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine
+execute positioned ~1 ~-1 ~1 if block ~ ~ ~ minecraft:cactus run function chain_mining:crops_2/cactus/mine

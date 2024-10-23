@@ -1,5 +1,0 @@
-# 效果：连锁采集数据包已加载！ [设置] [使用说明] [更新日志]
-tellraw @s [{"translate": "mine.message.load_success", "color": "gold", "fallback": "连锁采集数据包已加载！"}, " ", \
-    {"translate": "mine.button.settings", "color": "green", "fallback": "[设置]", "clickEvent": {"action": "run_command", "value": "/trigger mine_trigger set 1"}, "hoverEvent": {"action": "show_text", "contents": {"translate": "mine.button.settings.description", "color": "yellow", "fallback": "点击查看！"}}}, " ", \
-    {"translate": "mine.button.instruction", "color": "green", "fallback": "[使用说明]", "clickEvent": {"action": "run_command", "value": "/trigger mine_trigger set 2"}, "hoverEvent": {"action": "show_text", "contents": {"translate": "mine.button.instruction.description", "color": "yellow", "fallback": "点击查看！"}}}, " ", \
-    {"translate": "mine.button.changelog", "color": "green", "fallback": "[更新日志]", "clickEvent":{"action": "run_command", "value": "/trigger mine_trigger set 3"}, "hoverEvent": {"action": "show_text", "contents": {"translate": "mine.button.changelog.description", "color": "yellow", "fallback": "点击查看！"}}}]

@@ -1,0 +1,1 @@
+execute if score @s chain_mining_setting_loot matches 1 as @e[type=minecraft:item,tag=!chain_mining_detected,distance=..1] run data modify entity @s Pos set from entity @p[tag=chain_mining_current_player] Pos
