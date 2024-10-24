@@ -13,7 +13,7 @@
 * 安装数据包的方法请见[此处](https://zh.minecraft.wiki/w/Tutorial:%E5%AE%89%E8%A3%85%E6%95%B0%E6%8D%AE%E5%8C%85)。
 
 ## 兼容性
-* 命名空间为```mine```<sup>[失效：v4.5.0]</sup>/```chain_mining```<sup>[新增：v4.5.0]</sup>，所用的记分板名称均以```mine```/```chain_mining```开头。
+* 命名空间为```chain_mining```，所用的记分板名称均以```chain_mining```开头。
 * 除去功能本身，没有用到额外的方块和实体来存储数据。
 
 ## 主要内容

@@ -1,10 +1,13 @@
+# 针对可能的旧版本进行预处理
+function chain_mining:control/check_version/pre_process/main
+
 # 如果没有last_data_version，则表明此数据包是新安装的，不需要做兼容性问题
-execute unless data storage chain_mining:data last_data_version run return run \
+execute unless data storage chain_mining:data data.last_data_version run return run \
     function chain_mining:control/check_version/update_last_number
 
 # 如果有last_data_version，则做以下检查
-execute store result score last_data_version chain_mining_variables run data get storage chain_mining:data last_data_version
-execute store result score data_version chain_mining_variables run data get storage chain_mining:data data_version
+execute store result score last_data_version chain_mining_variables run data get storage chain_mining:data data.last_data_version
+execute store result score data_version chain_mining_variables run data get storage chain_mining:data data.data_version
 
 # 如果last_data_version < 816，则当前版本不支持，请在4.1.1及以前版本进行一次更新
 execute if score last_data_version chain_mining_variables matches ..815 run \

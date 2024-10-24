@@ -83,14 +83,11 @@ scoreboard objectives add Const dummy
 scoreboard players set 16 Const 16
 
 # 8. 其他操作
-#   如果发现了mine记分项，且没有data_version字段，可以确定是旧版本，此时将last_data_version置为0
-function chain_mining:control/check_version/legacy_version_process
 #   设置当前使用的数据包版本(a.b.c)，计算公式为 a*256 + b*16 + c，存入data_version
 data modify storage chain_mining:data data.data_version set value 1104
+function chain_mining:control/check_version/convert_to_string/data_version
 #   设置当前支持的Minecraft版本
-data modify storage chain_mining:data data.supported_minecraft_versions_str set value "1.21 - 1.21.2"
-#   将data_version和last_data_version处理成字符串
-function chain_mining:control/check_version/convert_to_string/main
+data modify storage chain_mining:data data.supported_minecraft_versions_str set value "1.21 - 1.21.3"
 #   将游戏规则maxCommandChainLength设为至少1048576
 execute store result score gamerule_max_command_chain_length chain_mining_variables run gamerule maxCommandChainLength
 execute if score gamerule_max_command_chain_length chain_mining_variables matches ..1048575 run gamerule maxCommandChainLength 1048576

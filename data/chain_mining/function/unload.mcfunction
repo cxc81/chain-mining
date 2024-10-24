@@ -69,9 +69,10 @@ scoreboard objectives remove chain_mining_trigger
 
 scoreboard objectives remove chain_mining_confirm_unload
 
-# Remove all stored data except last_data_version
-data remove storage chain_mining:data data_version
-data remove storage chain_mining:data data
+# Remove all stored data except data.last_data_version
+data remove storage chain_mining:data data.data_version
+data remove storage chain_mining:data data.data_version_str
+data remove storage chain_mining:data data.last_data_version_str
 data remove storage chain_mining:data function_call
 data remove storage chain_mining:data items
 

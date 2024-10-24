@@ -71,6 +71,7 @@ scoreboard objectives remove mine_trigger
 scoreboard objectives remove mine_confirm_unload
 
 data remove storage mine:data dataVersion
+data remove storage mine:data lastDataVersion
 data remove storage mine:data data
 data remove storage mine:data function_call
 data remove storage mine:data items
