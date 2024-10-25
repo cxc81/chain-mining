@@ -1,6 +1,6 @@
 function chain_mining:tellraw/separate_line
 tellraw @s [{"text":"","color":"gold"},{"text":"连锁采集数据包","bold":true}," - 使用说明 (农作物2)"]
-tellraw @s [{"text":" ","color":"aqua"},"1. 支持",{"text":"[这4种方块]","color":"green","hoverEvent":{"action":"show_text","value":"南瓜、西瓜、可可果和仙人掌"}},"；"]
+tellraw @s [{"text":" ","color":"aqua"},"1. 支持",{"translate": "chain_mining.message.instruction.these_blocks", "fallback": "[这%s种方块]", "with": ["4"], "color":"green","hoverEvent":{"action":"show_text","value":"南瓜、西瓜、可可果和仙人掌"}},"；"]
 tellraw @s [{"text":" ","color":"aqua"},"2. 除了仙人掌外，必须使用斧才能触发连锁采集；"]
 tellraw @s [{"text":" ","color":"aqua"},"3. 南瓜茎、西瓜茎和最底部的仙人掌均不会被连锁采集；"]
 tellraw @s [{"text":" ","color":"aqua"},"4. 可可果在连锁采集后会自动补种。"]

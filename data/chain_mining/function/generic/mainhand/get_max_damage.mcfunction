@@ -1,10 +1,16 @@
 # 获取主手工具的最大耐久度
-# 如果获取到了序列化的max_damage组件，则直接返回组件中指定的值
-# 否则硬编码返回值，仅针对挖掘工具返回默认的max_damage组件：
-#    剑、斧、锄、锹、镐，剪刀、三叉戟、重锤
+# 由于物品的最大耐久度必须是正整数，因此用0代表该物品不存在最大耐久度（即不会损耗耐久）
+# 如果手持的不是挖掘工具，则直接返回0
+# 否则按照以下逻辑：
+#   若获取到已经序列化的max_damage组件，返回对应的值
+#   若获取到已经序列化的!max_damage组件，返回0
+#   否则硬编码返回值，针对所有可损伤的物品：
+#     原本就是挖掘工具：剑、斧、锄、锹、镐，剪刀、三叉戟、重锤
+#     其余具有最大耐久的物品：
 execute unless score holding_tool_mainhand chain_mining_variables matches 1 run return 0
 execute if data storage chain_mining:data items.mainhand.components."minecraft:max_damage" run return run \
     data get storage chain_mining:data items.mainhand.components."minecraft:max_damage"
+execute if data storage chain_mining:data items.mainhand.components."!minecraft:max_damage" run return 0
 
 execute if data storage chain_mining:data items.mainhand{id:"minecraft:golden_pickaxe"} run return 32
 execute if data storage chain_mining:data items.mainhand{id:"minecraft:wooden_pickaxe"} run return 59
