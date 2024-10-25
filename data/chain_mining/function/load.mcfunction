@@ -79,12 +79,12 @@ scoreboard objectives add chain_mining_setting_loot dummy {"translate": "chain_m
 scoreboard objectives add chain_mining_enter_detect dummy {"translate": "chain_mining.scoreboard.enter_detect", "color": "gold", "fallback": "连锁采集：玩家进入检测"}
 scoreboard objectives add chain_mining_trigger trigger {"translate": "chain_mining.scoreboard.trigger", "color": "gold", "fallback": "连锁采集：触发器"}
 
-scoreboard objectives add Const dummy
-scoreboard players set 16 Const 16
+scoreboard objectives add chain_mining_constants dummy
+scoreboard players set 16 chain_mining_constants 16
 
 # 8. 其他操作
 # 设置当前使用的数据包版本(a.b.c)，计算公式为 a*256 + b*16 + c，存入data.data_version
-data modify storage chain_mining:data data.data_version set value 1104
+data modify storage chain_mining:data data.data_version set value 1280
 function chain_mining:control/check_version/convert_to_string/data_version
 # 设置当前支持的Minecraft版本
 data modify storage chain_mining:data data.supported_minecraft_versions_str set value "1.21 - 1.21.3"

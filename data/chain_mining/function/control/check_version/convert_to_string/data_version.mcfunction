@@ -6,11 +6,11 @@ execute store result score data_version chain_mining_variables run data get stor
 
 scoreboard players operation temp chain_mining_variables = data_version chain_mining_variables
 scoreboard players operation version_number_minor chain_mining_variables = temp chain_mining_variables
-scoreboard players operation version_number_minor chain_mining_variables %= 16 Const
-scoreboard players operation temp chain_mining_variables /= 16 Const
+scoreboard players operation version_number_minor chain_mining_variables %= 16 chain_mining_constants
+scoreboard players operation temp chain_mining_variables /= 16 chain_mining_constants
 scoreboard players operation version_number_sub chain_mining_variables = temp chain_mining_variables
-scoreboard players operation version_number_sub chain_mining_variables %= 16 Const
-scoreboard players operation temp chain_mining_variables /= 16 Const
+scoreboard players operation version_number_sub chain_mining_variables %= 16 chain_mining_constants
+scoreboard players operation temp chain_mining_variables /= 16 chain_mining_constants
 scoreboard players operation version_number_main chain_mining_variables = temp chain_mining_variables
 
 execute store result storage chain_mining:data function_call.version_number_main int 1 run scoreboard players get version_number_main chain_mining_variables

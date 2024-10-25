@@ -12,43 +12,14 @@ execute if data storage chain_mining:data items.mainhand.components."minecraft:m
     data get storage chain_mining:data items.mainhand.components."minecraft:max_damage"
 execute if data storage chain_mining:data items.mainhand.components."!minecraft:max_damage" run return 0
 
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:golden_pickaxe"} run return 32
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:wooden_pickaxe"} run return 59
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:stone_pickaxe"} run return 131
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:iron_pickaxe"} run return 250
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:diamond_pickaxe"} run return 1561
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:netherite_pickaxe"} run return 2031
-
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:golden_axe"} run return 32
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:wooden_axe"} run return 59
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:stone_axe"} run return 131
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:iron_axe"} run return 250
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:diamond_axe"} run return 1561
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:netherite_axe"} run return 2031
-
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:golden_hoe"} run return 32
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:wooden_hoe"} run return 59
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:stone_hoe"} run return 131
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:iron_hoe"} run return 250
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:diamond_hoe"} run return 1561
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:netherite_hoe"} run return 2031
-
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:golden_shovel"} run return 32
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:wooden_shovel"} run return 59
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:stone_shovel"} run return 131
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:iron_shovel"} run return 250
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:diamond_shovel"} run return 1561
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:netherite_shovel"} run return 2031
-
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:golden_sword"} run return 32
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:wooden_sword"} run return 59
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:stone_sword"} run return 131
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:iron_sword"} run return 250
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:diamond_sword"} run return 1561
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:netherite_sword"} run return 2031
-
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:shears"} run return 238
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:trident"} run return 250
-execute if data storage chain_mining:data items.mainhand{id:"minecraft:mace"} run return 500
+execute if items entity @s weapon.mainhand #chain_mining:golden_tool run return 32
+execute if items entity @s weapon.mainhand #chain_mining:wooden_tool run return 59
+execute if items entity @s weapon.mainhand #chain_mining:stone_tool run return 131
+execute if items entity @s weapon.mainhand #chain_mining:iron_tool run return 250
+execute if items entity @s weapon.mainhand #chain_mining:diamond_tool run return 1561
+execute if items entity @s weapon.mainhand #chain_mining:netherite_tool run return 2031
+execute if items entity @s weapon.mainhand minecraft:shears run return 238
+execute if items entity @s weapon.mainhand minecraft:trident run return 250
+execute if items entity @s weapon.mainhand minecraft:mace run return 500
 
 return 0

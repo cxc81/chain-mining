@@ -66,6 +66,7 @@ scoreboard objectives remove chain_mining_setting_crops_1
 scoreboard objectives remove chain_mining_setting_crops_2
 scoreboard objectives remove chain_mining_setting_loot
 scoreboard objectives remove chain_mining_trigger
+scoreboard objectives remove chain_mining_constants
 
 scoreboard objectives remove chain_mining_confirm_unload
 
