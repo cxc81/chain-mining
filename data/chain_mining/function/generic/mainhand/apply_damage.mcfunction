@@ -1,4 +1,4 @@
-execute if score unbreakable_mainhand chain_mining_variables matches 1 run return fail
-# 每连锁一个方块，有1 / (unbreaking_level_mainhand + 1)的几率扣除耐久
-execute store result score random_number chain_mining_variables run function chain_mining:generic/roll_random_number with storage chain_mining:data function_call.mainhand
-execute if score random_number chain_mining_variables matches 0 run scoreboard players add damage_mainhand chain_mining_variables 1
+execute if score damagable_mainhand chain_mining_variables matches 0 run return fail
+# 单次调用此函数，需要根据damage_per_block，多次调用apply_damage_once函数
+scoreboard players set damage_attempts chain_mining_variables 0
+function chain_mining:generic/mainhand/apply_damage_recursive_call

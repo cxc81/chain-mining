@@ -7,7 +7,7 @@
       "predicate": {
         "equipment": {
           "offhand": {
-            "items": "#chain_mining:mining_tool"
+            "items": "#chain_mining:tool"
           }
         }
       }

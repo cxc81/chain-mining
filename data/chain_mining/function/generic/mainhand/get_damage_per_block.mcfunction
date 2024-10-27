@@ -1,4 +1,3 @@
-# TODO：将damage_per_block应用到所有消耗耐久度的函数
 # 获取主手工具的单方块耐久消耗量
 # 若手持不是挖掘工具，则直接返回0
 # 如果获取到了序列化的tool.damage_per_block，则直接返回值
@@ -11,6 +10,6 @@ execute if data storage chain_mining:data items.mainhand.components."minecraft:t
     data get storage chain_mining:data items.mainhand.components."minecraft:tool".damage_per_block
 execute if data storage chain_mining:data items.mainhand.components."minecraft:tool" run return 1
 
-execute if items entity @s weapon.mainhand #chain_mining:damage_per_block/1 run return 1
-execute if items entity @s weapon.mainhand #chain_mining:damage_per_block/2 run return 2
+execute if items entity @s weapon.mainhand #chain_mining:tool/damage_per_block/1 run return 1
+execute if items entity @s weapon.mainhand #chain_mining:tool/damage_per_block/2 run return 2
 return 0

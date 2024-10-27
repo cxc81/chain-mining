@@ -11,6 +11,6 @@ execute if data storage chain_mining:data items.offhand.components."minecraft:to
     data get storage chain_mining:data items.offhand.components."minecraft:tool".damage_per_block
 execute if data storage chain_mining:data items.offhand.components."minecraft:tool" run return 1
 
-execute if items entity @s weapon.offhand #chain_mining:damage_per_block/1 run return 1
-execute if items entity @s weapon.offhand #chain_mining:damage_per_block/2 run return 2
+execute if items entity @s weapon.offhand #chain_mining:tool/damage_per_block/1 run return 1
+execute if items entity @s weapon.offhand #chain_mining:tool/damage_per_block/2 run return 2
 return 0
