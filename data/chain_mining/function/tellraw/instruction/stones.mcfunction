@@ -1,5 +1,5 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text":"","color":"gold"},{"text":"连锁采集数据包","bold":true}," - 使用说明 (类石头)"]
+tellraw @s [{"text":"","color":"gold"},{"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}," - 使用说明 (类石头)"]
 tellraw @s [{"text":" ","color":"aqua"},"1. 支持",{"translate": "chain_mining.message.instruction.these_blocks", "fallback": "[这%s种方块]", "with": ["13"], "color":"green","hoverEvent":{"action":"show_text","contents":"安山岩、闪长岩、花岗岩、凝灰岩、方解石、紫水晶块和岩浆块"}},"；"]
 tellraw @s [{"text":" ","color":"aqua"},"2. 必须使用镐挖掘，才能触发连锁；"]
 tellraw @s [{"text":" ","color":"aqua"},"3. 除非特有需求，否则",{"text":"不要","color":"red","bold":true},"在设置中开启类石头！(可能使镐子瞬间报废)"]

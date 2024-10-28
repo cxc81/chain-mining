@@ -1,5 +1,5 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text":"","color":"gold"},{"text":"连锁采集数据包","bold":true}," - 使用说明"]
+tellraw @s [{"text":"","color":"gold"},{"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}," - 使用说明"]
 tellraw @s [{"text":" ","color":"aqua"},"1. 数据包版本：",{"nbt":"data.data_version_str","storage":"chain_mining:data","color":"green"},"  (Minecraft版本：",{"nbt":"data.supported_minecraft_versions_str","storage":"chain_mining:data","color":"green"},")"]
 tellraw @s [{"text":" ","color":"aqua"},"2. 支持采集所有矿石、原木、菌柄、",{"text":"类石头方块","hoverEvent":{"action":"show_text","contents":{"text":"安山岩、闪长岩、花岗岩、凝灰岩、方解石、紫水晶块和岩浆块"}}},"、荧石和农作物；"]
 tellraw @s [{"text":" ","color":"aqua"},"3. 会自动扣除耐久，且工具上的魔咒(如耐久、时运等)能够正常生效；"]

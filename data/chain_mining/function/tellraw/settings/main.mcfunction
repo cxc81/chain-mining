@@ -1,5 +1,5 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text":"","color":"gold"},{"text":"连锁采集数据包","bold":true}," - 设置"]
+tellraw @s [{"text":"","color":"gold"},{"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}," - 设置"]
 
 function chain_mining:tellraw/settings/line_1
 function chain_mining:tellraw/settings/line_2
