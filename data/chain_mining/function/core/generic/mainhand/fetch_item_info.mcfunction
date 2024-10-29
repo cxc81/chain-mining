@@ -1,6 +1,7 @@
 # 这个函数只会在每次连锁开始时运行一次，目的是获取玩家主手物品的信息
 # 获取主手物品的一些与挖掘相关的基本信息
 execute store result score holding_tool_mainhand chain_mining_variables run function chain_mining:core/generic/mainhand/is_holding_tool
+execute store result score damage_per_block_mainhand chain_mining_variables run function chain_mining:core/generic/mainhand/get_damage_per_block
 execute store result score max_damage_mainhand chain_mining_variables run function chain_mining:core/generic/mainhand/get_max_damage
 execute store result score unbreakable_mainhand chain_mining_variables if data storage chain_mining:data items.mainhand.components."minecraft:unbreakable"
 execute store result score damage_mainhand chain_mining_variables run function chain_mining:core/generic/mainhand/get_damage

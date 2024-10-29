@@ -1,4 +1,4 @@
 scoreboard players set num_blocks_mined chain_mining_variables 1
 function chain_mining:core/generic/tp_items
-function chain_mining:core/ores/ancient_debris/find
+function chain_mining:core/generic/find/normal {blocks: "minecraft:ancient_debris", mine_function: "ores/ancient_debris/mine"}
 function chain_mining:core/generic/actionbar_feedback

@@ -10,4 +10,4 @@ scoreboard players add num_blocks_mined chain_mining_variables 1
 function chain_mining:core/generic/mainhand/apply_damage
 
 function chain_mining:core/generic/tp_items_with_orbs
-function chain_mining:core/ores/emerald_ore/find
+function chain_mining:core/generic/find/normal {blocks: "#minecraft:emerald_ores", mine_function: "ores/emerald_ore/mine"}

@@ -82,7 +82,7 @@ scoreboard objectives add chain_mining_trigger trigger {"translate": "chain_mini
 scoreboard objectives add chain_mining_constants dummy
 scoreboard players set 16 chain_mining_constants 16
 
-# 8. 其他操作
+# 8. 其他初始化操作
 # 设置当前使用的数据包版本(a.b.c)，计算公式为 a*256 + b*16 + c，存入data.data_version
 data modify storage chain_mining:data data.data_version set value 1280
 function chain_mining:control/check_version/convert_to_string/data_version
@@ -91,3 +91,7 @@ data modify storage chain_mining:data data.supported_minecraft_versions_str set 
 # 将游戏规则maxCommandChainLength设为至少1048576
 execute store result score gamerule_max_command_chain_length chain_mining_variables run gamerule maxCommandChainLength
 execute if score gamerule_max_command_chain_length chain_mining_variables matches ..1048575 run gamerule maxCommandChainLength 1048576
+
+# 9. 启动tick计划函数
+schedule clear chain_mining:tick
+function chain_mining:tick

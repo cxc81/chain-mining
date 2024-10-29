@@ -7,5 +7,6 @@ scoreboard players add num_logs_mined chain_mining_variables 1
 function chain_mining:core/generic/mainhand/apply_damage
 
 function chain_mining:core/generic/tp_items
-execute if score holding_hoe_offhand chain_mining_variables matches 1 run function chain_mining:core/logs/warped_stem/find_leaves
-function chain_mining:core/logs/warped_stem/find
+execute if score holding_hoe_offhand chain_mining_variables matches 1 run \
+    function chain_mining:core/generic/find/huge {blocks: "#chain_mining:leaves_from_warped_stem", mine_function: "logs/warped_stem/mine_leaves"}
+function chain_mining:core/generic/find/wide {blocks: "minecraft:warped_stem", mine_function: "logs/warped_stem/mine"}

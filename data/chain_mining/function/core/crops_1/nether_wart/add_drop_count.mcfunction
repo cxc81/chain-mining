@@ -1,2 +1,2 @@
-execute store result score drop_count_one_item chain_mining_variables run data get entity @s Item.count
-scoreboard players operation drop_count chain_mining_variables += drop_count_one_item chain_mining_variables
+execute store result score current_drop_count chain_mining_variables run data get entity @s Item.count
+scoreboard players operation total_drop_count chain_mining_variables += current_drop_count chain_mining_variables

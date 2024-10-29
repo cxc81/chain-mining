@@ -9,3 +9,6 @@ execute as @a run scoreboard players operation @s chain_mining_enter_detect = $s
 # 3. 如果有卸载请求，则30秒后过期
 scoreboard players remove $remaining_time chain_mining_confirm_unload 1
 execute if score $remaining_time chain_mining_confirm_unload matches ..0 run scoreboard objectives remove chain_mining_confirm_unload
+
+# 4. 计划函数逻辑
+schedule function chain_mining:tick 1t

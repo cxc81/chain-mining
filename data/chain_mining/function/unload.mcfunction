@@ -81,3 +81,4 @@ tellraw @s ["",{"text":"---------------------------------------------\n","color"
 tellraw @s ["",{"text":"卸载完成！已成功删除相关的记分板和命令存储！","color":"yellow"}]
 tellraw @s ["",{"text":"在重新加载世界前，请将此数据包从世界文件夹中移除！","color":"green"}]
 tellraw @s {"text":"---------------------------------------------","color":"gray"}
+schedule clear chain_mining:tick

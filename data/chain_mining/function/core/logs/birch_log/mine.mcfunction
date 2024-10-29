@@ -8,5 +8,5 @@ function chain_mining:core/generic/mainhand/apply_damage
 
 function chain_mining:core/generic/tp_items
 execute if score holding_hoe_offhand chain_mining_variables matches 1 run \
-    function chain_mining:core/logs/generic/find_leaves {blocks: "minecraft:birch_leaves"}
-function chain_mining:core/logs/birch_log/find
+    function chain_mining:core/generic/find/huge {blocks: "minecraft:birch_leaves[persistent=false,waterlogged=false]", mine_function: "logs/generic/mine_leaves"}
+function chain_mining:core/generic/find/wide {blocks: "minecraft:birch_log", mine_function: "logs/birch_log/mine"}
