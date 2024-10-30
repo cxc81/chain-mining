@@ -5,5 +5,5 @@ execute if data storage chain_mining:data items.offhand.components."minecraft:da
     data get storage chain_mining:data items.offhand.components."minecraft:damage"
 execute if data storage chain_mining:data items.offhand.components."!minecraft:damage" run return -1
 
-execute if items entity @s weapon.offhand #chain_mining:tool/damagable run return 0
+execute if items entity @s weapon.offhand #chain_mining:damagable run return 0
 return -1

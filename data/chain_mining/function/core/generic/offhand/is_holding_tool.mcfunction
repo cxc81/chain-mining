@@ -4,4 +4,4 @@
 #   该物品不含有"!tool"组件，且物品原本有默认的tool组件
 execute if data storage chain_mining:data items.offhand.components."minecraft:tool" run return 1
 execute if data storage chain_mining:data items.offhand.components."!minecraft:tool" run return 0
-return run execute if items entity @s weapon.offhand #chain_mining:tool
+return run execute if items entity @s weapon.offhand #chain_mining:tool/all

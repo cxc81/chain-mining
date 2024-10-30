@@ -4,13 +4,13 @@
 #   若获取到已经序列化的max_damage组件，返回对应的值
 #   若获取到已经序列化的!max_damage组件，返回0
 #   否则硬编码返回值，针对所有可损伤的物品：
-#     原本就是挖掘工具：剑、斧、锄、锹、镐，剪刀、三叉戟、重锤
+#     原本就是挖掘工具：剑、斧、锄、锹、镐，剪刀、三叉戟、重锤(1.21起)
 #     其余具有最大耐久的物品：盔甲、打火石、钓鱼竿、胡萝卜钓竿、诡异菌钓竿、弓、盾牌、弩、鞘翅、刷子
 execute if data storage chain_mining:data items.offhand.components."minecraft:max_damage" run return run \
     data get storage chain_mining:data items.offhand.components."minecraft:max_damage"
 execute if data storage chain_mining:data items.offhand.components."!minecraft:max_damage" run return 0
 
-execute unless items entity @s weapon.offhand #chain_mining:tool/damagable run return 0
+execute unless items entity @s weapon.offhand #chain_mining:damagable run return 0
 # Tools
 execute if items entity @s weapon.offhand #chain_mining:tool/material/golden run return 32
 execute if items entity @s weapon.offhand #chain_mining:tool/material/wooden run return 59
@@ -20,7 +20,7 @@ execute if items entity @s weapon.offhand #chain_mining:tool/material/diamond ru
 execute if items entity @s weapon.offhand #chain_mining:tool/material/netherite run return 2031
 execute if items entity @s weapon.offhand minecraft:shears run return 238
 execute if items entity @s weapon.offhand minecraft:trident run return 250
-execute if items entity @s weapon.offhand minecraft:mace run return 500
+execute if items entity @s weapon.offhand #chain_mining:tool/mace run return 500
 # Armor
 execute if items entity @s weapon.offhand minecraft:turtle_helmet run return 275
 execute if items entity @s weapon.offhand minecraft:wolf_armor run return 64
