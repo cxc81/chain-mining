@@ -1,3 +1,5 @@
+tellraw @s [{"text":"  ","color":"yellow"},{"text":"·","color":"light_purple","bold":true}," 游戏内容"]
+tellraw @s [{"text":"     ","color":"aqua"},{"text":"·","color":"light_purple","bold":true}," 加入了对苍白橡树的连锁支持，需要",{"text":"1.21.4","color":"green"},"版本才能使用。"]
 tellraw @s [{"text":"  ","color":"yellow"},{"text":"·","color":"light_purple","bold":true}," 技术性"]
 tellraw @s [{"text":"     ","color":"aqua"},{"text":"·","color":"light_purple","bold":true}," 整个数据包的命名空间已从",{"text":"mine","color":"green"},"更改为",{"text":"chain_mining","color":"green"},"。"]
 tellraw @s [{"text":"     ","color":"aqua"},{"text":"·","color":"light_purple","bold":true}," 代码进行了大量重构，并对性能做了一定优化。"]

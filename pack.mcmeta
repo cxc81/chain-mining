@@ -1,15 +1,23 @@
 {
   "pack": {
-    "pack_format": 57,
+    "pack_format": 58,
     "supported_formats": [
       45,
-      57
+      58
     ],
     "description": [
       "Chain Mining v5.0.0 for 1.21.x\n",
       {
         "text": "by cxc81",
         "color": "gray"
+      }
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "formats": 58,
+        "directory": "overlay_since_1_21_4"
       }
     ]
   }

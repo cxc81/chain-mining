@@ -1,0 +1,12 @@
+{
+  "pack": {
+    "pack_format": 58,
+    "description": [
+      "Chain Mining Overlay since 1.21.4\n",
+      {
+        "text": "by cxc81",
+        "color": "gray"
+      }
+    ]
+  }
+}
