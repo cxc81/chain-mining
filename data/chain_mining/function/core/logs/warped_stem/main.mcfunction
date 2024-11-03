@@ -6,4 +6,6 @@ execute store success score holding_hoe_offhand chain_mining_variables if predic
 execute if score holding_hoe_offhand chain_mining_variables matches 1 run \
     function chain_mining:core/generic/find/huge {blocks: "#chain_mining:leaves_from_warped_stem", mine_function: "logs/warped_stem/mine_leaves"}
 function chain_mining:core/generic/find/wide {blocks: "minecraft:warped_stem", mine_function: "logs/warped_stem/mine"}
-title @s actionbar [{"text":"共采集了","color":"aqua"},{"score":{"name":"num_logs_mined","objective":"chain_mining_variables"},"color":"yellow"},{"text":"个菌柄，","color":"aqua"},{"score":{"name":"num_wart_blocks_mined","objective":"chain_mining_variables"},"color":"yellow"},{"text":"个疣块，","color":"aqua"},{"score":{"name":"num_shroomlights_mined","objective":"chain_mining_variables"},"color":"yellow"},{"text":"个菌光体","color":"aqua"}]
+function chain_mining:core/generic/add_feedback {score_holder: "num_logs_mined", name_key: "block.minecraft.crimson_stem"}
+function chain_mining:core/generic/add_feedback {score_holder: "num_wart_blocks_mined", name_key: "block.minecraft.warped_wart_block"}
+function chain_mining:core/generic/add_feedback {score_holder: "num_shroomlights_mined", name_key: "block.minecraft.shroomlight"}

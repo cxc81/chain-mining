@@ -1,6 +1,7 @@
 # 所有连锁采集公共的结尾
 tag @s remove chain_mining_current_player
 gamerule doTileDrops true
+execute if data storage chain_mining:data function_call.actionbar[0] run function chain_mining:core/generic/actionbar_feedback
 
 # 注意：仅当物品可损伤(damagable)时才更新玩家主副手物品
 execute if score damagable_mainhand chain_mining_variables matches 1 store result storage chain_mining:data items.mainhand.components."minecraft:damage" int 1 run scoreboard players get damage_mainhand chain_mining_variables

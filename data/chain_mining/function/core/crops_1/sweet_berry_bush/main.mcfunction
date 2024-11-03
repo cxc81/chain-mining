@@ -3,4 +3,4 @@ execute as @e[type=minecraft:item,tag=!chain_mining_detected,nbt={Item:{id:"mine
 function chain_mining:core/generic/tp_items
 function chain_mining:core/generic/find/small {blocks: "minecraft:sweet_berry_bush[age=2]", mine_function: "crops_1/sweet_berry_bush/mine"}
 function chain_mining:core/generic/find/small {blocks: "minecraft:sweet_berry_bush[age=3]", mine_function: "crops_1/sweet_berry_bush/mine"}
-function chain_mining:core/generic/actionbar_feedback
+function chain_mining:core/generic/add_feedback {score_holder: "num_blocks_mined", name_key: "block.minecraft.sweet_berry_bush"}
