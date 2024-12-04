@@ -54,7 +54,7 @@ scoreboard objectives add chain_mining_magma_block minecraft.mined:minecraft.mag
 # 4. 荧石
 scoreboard objectives add chain_mining_glowstone minecraft.mined:minecraft.glowstone {"translate": "chain_mining.scoreboard.glowstone", "color": "gold", "fallback": "连锁采集：挖荧石"}
 
-# 5. 农作物1(小麦、胡萝卜、马铃薯、甜菜根、下界疣、甘蔗和甜浆果丛)
+# 5. 农作物1(小麦、胡萝卜、马铃薯、甜菜根、下界疣、甘蔗、甜浆果丛和树脂团)
 scoreboard objectives add chain_mining_wheat minecraft.mined:minecraft.wheat {"translate": "chain_mining.scoreboard.wheat", "color": "gold", "fallback": "连锁采集：挖小麦"}
 scoreboard objectives add chain_mining_carrot minecraft.mined:minecraft.carrots {"translate": "chain_mining.scoreboard.carrots", "color": "gold", "fallback": "连锁采集：挖胡萝卜"}
 scoreboard objectives add chain_mining_potato minecraft.mined:minecraft.potatoes {"translate": "chain_mining.scoreboard.potatoes", "color": "gold", "fallback": "连锁采集：挖马铃薯"}
@@ -62,6 +62,7 @@ scoreboard objectives add chain_mining_beetroot minecraft.mined:minecraft.beetro
 scoreboard objectives add chain_mining_nether_wart minecraft.mined:minecraft.nether_wart {"translate": "chain_mining.scoreboard.nether_wart", "color": "gold", "fallback": "连锁采集：挖下界疣"}
 scoreboard objectives add chain_mining_sugar_cane minecraft.mined:minecraft.sugar_cane {"translate": "chain_mining.scoreboard.sugar_cane", "color": "gold", "fallback": "连锁采集：挖甘蔗"}
 scoreboard objectives add chain_mining_sweet_berry_bush minecraft.mined:minecraft.sweet_berry_bush {"translate": "chain_mining.scoreboard.sweet_berry_bush", "color": "gold", "fallback": "连锁采集：挖甜浆果丛"}
+scoreboard objectives add chain_mining_resin_clump minecraft.mined:minecraft.resin_clump {"translate": "chain_mining.scoreboard.resin_clump", "color": "gold", "fallback": "连锁采集：挖树脂团"}
 
 # 6. 农作物2(南瓜、西瓜、可可果和仙人掌)
 scoreboard objectives add chain_mining_pumpkin minecraft.mined:minecraft.pumpkin {"translate": "chain_mining.scoreboard.pumpkin", "color": "gold", "fallback": "连锁采集：挖南瓜"}
