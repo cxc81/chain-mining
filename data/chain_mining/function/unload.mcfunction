@@ -46,9 +46,9 @@ scoreboard objectives remove chain_mining_magma_block
 scoreboard objectives remove chain_mining_glowstone
 
 scoreboard objectives remove chain_mining_wheat
-scoreboard objectives remove chain_mining_carrot
-scoreboard objectives remove chain_mining_potato
-scoreboard objectives remove chain_mining_beetroot
+scoreboard objectives remove chain_mining_carrots
+scoreboard objectives remove chain_mining_potatoes
+scoreboard objectives remove chain_mining_beetroots
 scoreboard objectives remove chain_mining_nether_wart
 scoreboard objectives remove chain_mining_sugar_cane
 scoreboard objectives remove chain_mining_sweet_berry_bush

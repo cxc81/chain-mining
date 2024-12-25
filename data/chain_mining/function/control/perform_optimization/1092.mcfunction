@@ -1,3 +1,4 @@
+# v4.4.4 (1092) -> v5.0.0 (1280)
 # 所有记分项名称前缀已从mine改为chain_mining
 scoreboard objectives remove mine_variables
 scoreboard objectives remove mine_enter_detect
