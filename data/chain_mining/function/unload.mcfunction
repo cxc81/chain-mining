@@ -18,10 +18,12 @@ scoreboard objectives remove chain_mining_deepslate_diamond_ore
 scoreboard objectives remove chain_mining_emerald_ore
 scoreboard objectives remove chain_mining_deepslate_emerald_ore
 scoreboard objectives remove chain_mining_amethyst_cluster
+
 scoreboard objectives remove chain_mining_nether_quartz_ore
 scoreboard objectives remove chain_mining_nether_gold_ore
 scoreboard objectives remove chain_mining_gilded_blackstone
 scoreboard objectives remove chain_mining_ancient_debris
+scoreboard objectives remove chain_mining_glowstone
 
 scoreboard objectives remove chain_mining_oak_log
 scoreboard objectives remove chain_mining_spruce_log
@@ -43,8 +45,6 @@ scoreboard objectives remove chain_mining_calcite
 scoreboard objectives remove chain_mining_amethyst_block
 scoreboard objectives remove chain_mining_magma_block
 
-scoreboard objectives remove chain_mining_glowstone
-
 scoreboard objectives remove chain_mining_wheat
 scoreboard objectives remove chain_mining_carrots
 scoreboard objectives remove chain_mining_potatoes
@@ -58,12 +58,12 @@ scoreboard objectives remove chain_mining_melon
 scoreboard objectives remove chain_mining_cocoa
 scoreboard objectives remove chain_mining_cactus
 
-scoreboard objectives remove chain_mining_setting_ores
+scoreboard objectives remove chain_mining_setting_overworld_ores
+scoreboard objectives remove chain_mining_setting_nether_ores
 scoreboard objectives remove chain_mining_setting_logs
-scoreboard objectives remove chain_mining_setting_stones
-scoreboard objectives remove chain_mining_setting_glowstone
-scoreboard objectives remove chain_mining_setting_crops_1
-scoreboard objectives remove chain_mining_setting_crops_2
+scoreboard objectives remove chain_mining_setting_rocks
+scoreboard objectives remove chain_mining_setting_crops_no_hardness
+scoreboard objectives remove chain_mining_setting_crops_with_hardness
 scoreboard objectives remove chain_mining_setting_loot
 scoreboard objectives remove chain_mining_trigger
 scoreboard objectives remove chain_mining_constants
@@ -77,8 +77,9 @@ data remove storage chain_mining:data data.last_data_version_str
 data remove storage chain_mining:data function_call
 data remove storage chain_mining:data items
 
-tellraw @s ["",{"text":"---------------------------------------------\n","color":"gray"},{"text":"连锁采集数据包","color":"gold","bold":true},{"text":" - 卸载","color":"red"}]
+function chain_mining:tellraw/separate_line
+tellraw @s ["",{"text":"连锁采集数据包","color":"gold","bold":true},{"text":" - 卸载","color":"red"}]
 tellraw @s ["",{"text":"卸载完成！已成功删除相关的记分板和命令存储！","color":"yellow"}]
 tellraw @s ["",{"text":"在重新加载世界前，请将此数据包从世界文件夹中移除！","color":"green"}]
-tellraw @s {"text":"---------------------------------------------","color":"gray"}
+function chain_mining:tellraw/separate_line
 schedule clear chain_mining:tick
