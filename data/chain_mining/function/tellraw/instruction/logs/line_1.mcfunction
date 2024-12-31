@@ -1,0 +1,1 @@
+tellraw @s [{"text":" ","color":"aqua"},"1. 支持采集",{"translate": "chain_mining.message.instruction.these_blocks", "fallback": "[这%s种方块]", "with": ["11"], "color":"green","hoverEvent":{"action":"show_text","value":"橡木原木、云杉原木、白桦原木、丛林原木、金合欢原木、深色橡木原木、红树原木、红树根、樱花原木、绯红菌柄和诡异菌柄"}},"；"]

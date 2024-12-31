@@ -23,10 +23,15 @@
 * To avoid triggering a chain mining, you can hold sneaking.
 * In-game settings are available to control individual switches for chain mining, and each player has independent settings.
 
-### Ores
-* Supports the following 13 block types, including the Deepslate variants of the first 8 types.
-    - They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, Amethyst Cluster, Nether Quartz Ore, Nether Gold Ore, Gilded Blackstone, and Ancient Debris.
+### Overworld ores
+* Supports the following 9 block types, including the Deepslate variants of the first 8 types.
+    - They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, and Amethyst Cluster.
 * A proper Pickaxe is required to trigger the chain mining.
+
+### Nether ores
+* Supports these 5 block types: Nether Quartz Ore, Nether Gold Ore, Gilded Blackstone, Ancient Debris, and Glowstone.
+* A proper Pickaxe is required to trigger the chain mining, except for Glowstone.
+* Using a tool to mine Glowstone will consume its durability, but the enchantments will take effect.
 
 ### Logs and Stems
 * Supports these 12 block types: Oak Log, Spruce Log, Birch Log, Jungle Log, Acacia Log, Dark Oak Log, Mangrove Log, Mangrove Roots, Pale Oak Log, Cherry Log, Crimson Stem, and Warped Stem.
@@ -34,22 +39,18 @@
 * If the off-hand holds a Hoe, a 5×4×5 range of corresponding Leaves, Wart Blocks and Shroomlights will also be mined.
 * Mangrove Roots can be chained together with Mangrove Logs.
 
-### Stone-like Blocks
+### Rocks
 * Supports these 7 block types: Andesite, Diorite, Granite, Tuff, Calcite, Amethyst Block, and Magma Block.
 * A Pickaxe is required to trigger the chain mining.
 * The default setting for this category is OFF! Unless specifically needed, DO NOT turn it on in the settings (it may cause Pickaxes to break instantly).
 
-### Glowstone
-* Can be mined with any item (including bare hands).
-* Using a tool to mine Glowstone will consume its durability, but the enchantments will take effect.
-
-### Crops (Category 1)
+### Crops without hardness
 * Supports these 7 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Sugar Canes, and Sweet Berry Bushes.
 * Only mature crops can be chained, and they will be automatically replanted after being mined.
 * Using a tool does not consume its durability, and the Fortune enchantment will take effect.
 * For Sugar Canes, the ones at the very bottom will not be automatically mined.
 
-### Crops (Category 2)
+### Crops with hardness
 * Supports these 4 block types: Pumpkins, Melons, Cocoa, and Cactus.
 * An Axe is required to trigger the chain mining, except for Cactus.
 * Pumpkin Stems, Melon Stems, and Cactus at the very bottom will not be chain-mined.
@@ -58,6 +59,6 @@
 ### Other Features
 * Upon entering the world, players will receive a chat prompt that they can be clicked to view Settings, Instructions, or Changelogs.
 * Settings include:
-    - Independent switches for Ores, Logs/Stems, Stone-like blocks, Glowstone, Crops 1, and Crops 2.
+    - Independent switches for Overworld ores, Nether ores,  Logs/Stems, Rocks, Crops without hardness, and Crops with hardness.
     - A switch for automatically teleporting drops to the player.
-    - A function to uninstall this data pack (requires op permissions to execute).
+    - A function to uninstall this data pack (requiring op permissions to execute).
