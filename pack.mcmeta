@@ -1,9 +1,9 @@
 {
   "pack": {
-    "pack_format": 61,
+    "pack_format": 64,
     "supported_formats": [
       45,
-      61
+      64
     ],
     "description": [
       "Chain Mining v5.2.0 for 1.21.x\n",
@@ -18,9 +18,16 @@
       {
         "formats": [
           58,
-          61
+          1000
         ],
         "directory": "overlay_since_1_21_4"
+      },
+      {
+        "formats": [
+          62,
+          1000
+        ],
+        "directory": "overlay_since_1_21_5"
       }
     ]
   }
