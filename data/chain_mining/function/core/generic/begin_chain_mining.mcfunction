@@ -11,5 +11,5 @@ data modify storage chain_mining:data items.offhand set from entity @s Inventory
 execute unless data entity @s Inventory[{Slot:-106b}] run data remove storage chain_mining:data items.offhand
 data remove storage chain_mining:data items.offhand.Slot
 # 获取主副手物品信息
-function chain_mining:core/generic/mainhand/fetch_item_info
-function chain_mining:core/generic/offhand/fetch_item_info
+function chain_mining:core/generic/mainhand/fetch_components/main
+function chain_mining:core/generic/offhand/fetch_components/main

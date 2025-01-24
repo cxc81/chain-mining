@@ -4,7 +4,7 @@
 * [中文](README_zh.md)
 
 ## Introduction
-* Features: This data pack allows players to mine surrounding blocks of the same type automatically after breaking one block.
+* Features: This data pack allows players to mine adjacent blocks of the same type automatically after breaking one block.
 * Supported versions: Minecraft Java Edition 1.20.5 and above.
 
 ## Downloads
@@ -17,48 +17,48 @@
 * No additional blocks or entities are used to store data, aside from the functionality itself.
 
 ## Main Content
-* Supports mining these blocks: Ores, Logs/Stems, Stone-like Blocks, Glowstone, and Crops.
+* Supports mining these block types: Ores, Logs/Stems, Rocks, Glowstone, and Crops.
 * Players can trigger a chain mining when mining a block, allowing unlimited mining of adjacent same-type blocks.
-* If a tool is used, its durability will be consumed automatically (which may lead to tool breaking), but enchantments will take effect.
+* If the block has hardness and a tool is used, its durability will be consumed automatically (until tool breaking), but enchantments will take effect.
 * To avoid triggering a chain mining, you can hold sneaking.
 * In-game settings are available to control individual switches for chain mining, and each player has independent settings.
 
 ### Overworld ores
 * Supports the following 9 block types, including the Deepslate variants of the first 8 types.
     - They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, and Amethyst Cluster.
-* A proper Pickaxe is required to trigger the chain mining.
+* A proper pickaxe is required to trigger the chain mining.
 
 ### Nether ores
 * Supports these 5 block types: Nether Quartz Ore, Nether Gold Ore, Gilded Blackstone, Ancient Debris, and Glowstone.
-* A proper Pickaxe is required to trigger the chain mining, except for Glowstone.
+* A proper pickaxe is required to trigger the chain mining, except for Glowstone.
 * Using a tool to mine Glowstone will consume its durability, but the enchantments will take effect.
 
 ### Logs and Stems
 * Supports these 12 block types: Oak Log, Spruce Log, Birch Log, Jungle Log, Acacia Log, Dark Oak Log, Mangrove Log, Mangrove Roots, Pale Oak Log, Cherry Log, Crimson Stem, and Warped Stem.
-* An Axe is required to trigger the chain mining.
-* If the off-hand holds a Hoe, a 5×4×5 range of corresponding Leaves, Wart Blocks and Shroomlights will also be mined.
+* An axe is required to trigger the chain mining.
+* If the off-hand holds a hoe, a 5×4×5 range of corresponding Leaves, Wart Blocks and Shroomlights will also be mined.
 * Mangrove Roots can be chained together with Mangrove Logs.
 
 ### Rocks
 * Supports these 7 block types: Andesite, Diorite, Granite, Tuff, Calcite, Amethyst Block, and Magma Block.
-* A Pickaxe is required to trigger the chain mining.
+* A pickaxe is required to trigger the chain mining.
 * The default setting for this category is OFF! Unless specifically needed, DO NOT turn it on in the settings (it may cause Pickaxes to break instantly).
 
 ### Crops without hardness
 * Supports these 7 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Sugar Canes, and Sweet Berry Bushes.
-* Only mature crops can be chained, and they will be automatically replanted after being mined.
+* Only fully-grown crops can be chained, and they will be automatically replanted after being mined.
 * Using a tool does not consume its durability, and the Fortune enchantment will take effect.
 * For Sugar Canes, the ones at the very bottom will not be automatically mined.
 
 ### Crops with hardness
 * Supports these 4 block types: Pumpkins, Melons, Cocoa, and Cactus.
-* An Axe is required to trigger the chain mining, except for Cactus.
+* An axe is required to trigger the chain mining, except for Cactus.
 * Pumpkin Stems, Melon Stems, and Cactus at the very bottom will not be chain-mined.
 * Cocoa will be automatically replanted after being chain-mined.
 
 ### Other Features
-* Upon entering the world, players will receive a chat prompt that they can be clicked to view Settings, Instructions, or Changelogs.
+* Upon entering the world, players will receive a chat prompt that can be clicked to view settings, instructions, or changelogs.
 * Settings include:
-    - Independent switches for Overworld ores, Nether ores,  Logs/Stems, Rocks, Crops without hardness, and Crops with hardness.
+    - Independent switches for Overworld ores, Nether ores, Logs/Stems, Rocks, Crops without hardness, and Crops with hardness.
     - A switch for automatically teleporting drops to the player.
     - A function to uninstall this data pack (requiring op permissions to execute).
