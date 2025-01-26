@@ -1,3 +1,5 @@
+# @arguments
+#   blocks, mine_function
 # 寻找特定方块(blocks)，并调用特定的采集函数(mine_function)
 # 连锁范围：5×4×5
 # 遍历顺序：

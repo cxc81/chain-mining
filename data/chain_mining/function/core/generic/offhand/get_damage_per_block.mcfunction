@@ -1,3 +1,7 @@
+# @returns
+#   the item damage per block of mining, i.e., components."minecraft:tool".damage_per_block,
+#   or 0 if the current item is not a tool,
+#   or 1 if the current item is a tool, but does not have damage_per_block field
 # 获取副手工具的单方块耐久消耗量
 # 若手持不是挖掘工具，则直接返回0
 # 如果获取到了序列化的tool.damage_per_block，则直接返回值

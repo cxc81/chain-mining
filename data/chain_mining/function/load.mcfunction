@@ -5,7 +5,7 @@ function chain_mining:util/initialize_scoreboards
 data modify storage chain_mining:data data.data_version set value 1312
 function chain_mining:control/check_version/convert_to_string/data_version
 # 设置当前支持的Minecraft版本
-data modify storage chain_mining:data data.supported_minecraft_versions_str set value "1.21 - 1.21.4"
+data modify storage chain_mining:data data.supported_minecraft_versions_str set value "1.21 - 1.21.5"
 # 将游戏规则maxCommandChainLength设为至少1048576
 execute store result score gamerule_max_command_chain_length chain_mining_variables run gamerule maxCommandChainLength
 execute if score gamerule_max_command_chain_length chain_mining_variables matches ..1048575 run gamerule maxCommandChainLength 1048576

@@ -1,3 +1,6 @@
+# @returns
+#   the maximum durability, i.e., components."minecraft:max_damage",
+#   or 0 if the component does not exist
 # 获取主手工具的最大耐久度
 # 由于物品的最大耐久度必须是正整数，因此用0代表该物品不存在最大耐久度（即不会损耗耐久）
 # 按照以下逻辑：

@@ -1,3 +1,5 @@
+# @returns
+#   1 if the item can be considered a tool, or 0 otherwise
 # 判断主手持有的物品是否为挖掘工具（即拥有tool组件）
 # 当且仅当满足下列条件之一，为挖掘工具：
 #   /data命令成功获取到了该物品的tool组件

@@ -1,3 +1,6 @@
+# @returns
+#   the current item damage, i.e., components."minecraft:damage",
+#   or -1 if the component does not exist
 # 如果物品damage组件不存在，则视为-1
 # 对于默认拥有damage组件的物品，其默认值是0
 # 如果获取不到序列化的damage或!damage组件，则需要判断该物品是否默认可损伤

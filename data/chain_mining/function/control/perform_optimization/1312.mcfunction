@@ -1,0 +1,81 @@
+# v5.2.0 (1312) -> 未来版本
+# 将所有记分板(除trigger)的显示名称设置为默认值（与记分项名称相同）
+scoreboard objectives modify chain_mining_variables displayname "chain_mining_variables"
+
+# 主世界矿石
+scoreboard objectives modify chain_mining_coal_ore displayname "chain_mining_coal_ore"
+scoreboard objectives modify chain_mining_deepslate_coal_ore displayname "chain_mining_deepslate_coal_ore"
+scoreboard objectives modify chain_mining_iron_ore displayname "chain_mining_iron_ore"
+scoreboard objectives modify chain_mining_deepslate_iron_ore displayname "chain_mining_deepslate_iron_ore"
+scoreboard objectives modify chain_mining_copper_ore displayname "chain_mining_copper_ore"
+scoreboard objectives modify chain_mining_deepslate_copper_ore displayname "chain_mining_deepslate_copper_ore"
+scoreboard objectives modify chain_mining_lapis_ore displayname "chain_mining_lapis_ore"
+scoreboard objectives modify chain_mining_deepslate_lapis_ore displayname "chain_mining_deepslate_lapis_ore"
+scoreboard objectives modify chain_mining_gold_ore displayname "chain_mining_gold_ore"
+scoreboard objectives modify chain_mining_deepslate_gold_ore displayname "chain_mining_deepslate_gold_ore"
+scoreboard objectives modify chain_mining_redstone_ore displayname "chain_mining_redstone_ore"
+scoreboard objectives modify chain_mining_deepslate_redstone_ore displayname "chain_mining_deepslate_redstone_ore"
+scoreboard objectives modify chain_mining_diamond_ore displayname "chain_mining_diamond_ore"
+scoreboard objectives modify chain_mining_deepslate_diamond_ore displayname "chain_mining_deepslate_diamond_ore"
+scoreboard objectives modify chain_mining_emerald_ore displayname "chain_mining_emerald_ore"
+scoreboard objectives modify chain_mining_deepslate_emerald_ore displayname "chain_mining_deepslate_emerald_ore"
+scoreboard objectives modify chain_mining_amethyst_cluster displayname "chain_mining_amethyst_cluster"
+
+# 下界矿石
+scoreboard objectives modify chain_mining_nether_quartz_ore displayname "chain_mining_nether_quartz_ore"
+scoreboard objectives modify chain_mining_nether_gold_ore displayname "chain_mining_nether_gold_ore"
+scoreboard objectives modify chain_mining_gilded_blackstone displayname "chain_mining_gilded_blackstone"
+scoreboard objectives modify chain_mining_ancient_debris displayname "chain_mining_ancient_debris"
+scoreboard objectives modify chain_mining_glowstone displayname "chain_mining_glowstone"
+
+# 原木/菌柄/红树根
+scoreboard objectives modify chain_mining_oak_log displayname "chain_mining_oak_log"
+scoreboard objectives modify chain_mining_spruce_log displayname "chain_mining_spruce_log"
+scoreboard objectives modify chain_mining_birch_log displayname "chain_mining_birch_log"
+scoreboard objectives modify chain_mining_jungle_log displayname "chain_mining_jungle_log"
+scoreboard objectives modify chain_mining_acacia_log displayname "chain_mining_acacia_log"
+scoreboard objectives modify chain_mining_dark_oak_log displayname "chain_mining_dark_oak_log"
+scoreboard objectives modify chain_mining_mangrove_log displayname "chain_mining_mangrove_log"
+scoreboard objectives modify chain_mining_mangrove_roots displayname "chain_mining_mangrove_roots"
+scoreboard objectives modify chain_mining_cherry_log displayname "chain_mining_cherry_log"
+scoreboard objectives modify chain_mining_pale_oak_log displayname "chain_mining_pale_oak_log"
+scoreboard objectives modify chain_mining_crimson_stem displayname "chain_mining_crimson_stem"
+scoreboard objectives modify chain_mining_warped_stem displayname "chain_mining_warped_stem"
+
+# 岩石
+scoreboard objectives modify chain_mining_andesite displayname "chain_mining_andesite"
+scoreboard objectives modify chain_mining_diorite displayname "chain_mining_diorite"
+scoreboard objectives modify chain_mining_granite displayname "chain_mining_granite"
+scoreboard objectives modify chain_mining_tuff displayname "chain_mining_tuff"
+scoreboard objectives modify chain_mining_calcite displayname "chain_mining_calcite"
+scoreboard objectives modify chain_mining_amethyst_block displayname "chain_mining_amethyst_block"
+scoreboard objectives modify chain_mining_magma_block displayname "chain_mining_magma_block"
+
+# 无硬度作物
+scoreboard objectives modify chain_mining_wheat displayname "chain_mining_wheat"
+scoreboard objectives modify chain_mining_carrots displayname "chain_mining_carrots"
+scoreboard objectives modify chain_mining_potatoes displayname "chain_mining_potatoes"
+scoreboard objectives modify chain_mining_beetroots displayname "chain_mining_beetroots"
+scoreboard objectives modify chain_mining_nether_wart displayname "chain_mining_nether_wart"
+scoreboard objectives modify chain_mining_sugar_cane displayname "chain_mining_sugar_cane"
+scoreboard objectives modify chain_mining_sweet_berry_bush displayname "chain_mining_sweet_berry_bush"
+scoreboard objectives modify chain_mining_resin_clump displayname "chain_mining_resin_clump"
+
+# 有硬度作物
+scoreboard objectives modify chain_mining_pumpkin displayname "chain_mining_pumpkin"
+scoreboard objectives modify chain_mining_melon displayname "chain_mining_melon"
+scoreboard objectives modify chain_mining_cocoa displayname "chain_mining_cocoa"
+scoreboard objectives modify chain_mining_cactus displayname "chain_mining_cactus"
+
+# 设置与触发器
+scoreboard objectives modify chain_mining_setting_overworld_ores displayname "chain_mining_setting_overworld_ores"
+scoreboard objectives modify chain_mining_setting_nether_ores displayname "chain_mining_setting_nether_ores"
+scoreboard objectives modify chain_mining_setting_logs displayname "chain_mining_setting_logs"
+scoreboard objectives modify chain_mining_setting_rocks displayname "chain_mining_setting_rocks"
+scoreboard objectives modify chain_mining_setting_crops_no_hardness displayname "chain_mining_setting_crops_no_hardness"
+scoreboard objectives modify chain_mining_setting_crops_with_hardness displayname "chain_mining_setting_crops_with_hardness"
+scoreboard objectives modify chain_mining_setting_loot displayname "chain_mining_setting_loot"
+scoreboard objectives modify chain_mining_enter_detect displayname "chain_mining_enter_detect"
+
+# 其他设置
+scoreboard objectives modify chain_mining_constants displayname "chain_mining_constants"

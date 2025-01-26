@@ -1,0 +1,16 @@
+{
+  "pack": {
+    "pack_format": 46,
+    "supported_formats": [
+      32,
+      49
+    ],
+    "description": [
+      "Chain Mining Muiti-language Support\n",
+      {
+        "text": "by cxc81",
+        "color": "gray"
+      }
+    ]
+  }
+}
