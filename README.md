@@ -17,7 +17,7 @@
 * No additional blocks or entities are used to store data, aside from the functionality itself.
 
 ## Main Content
-* Supports mining these block types: Ores, Logs/Stems, Rocks, Glowstone, and Crops.
+* Supports mining these block types: Ores, Logs, Stems, Rocks, and Crops.
 * Players can trigger a chain mining when mining a block, allowing unlimited mining of adjacent same-type blocks.
 * If the block has hardness and a tool is used, its durability will be consumed automatically (until tool breaking), but enchantments will take effect.
 * To avoid triggering a chain mining, you can hold sneaking.
@@ -42,7 +42,7 @@
 ### Rocks
 * Supports these 7 block types: Andesite, Diorite, Granite, Tuff, Calcite, Amethyst Block, and Magma Block.
 * A pickaxe is required to trigger the chain mining.
-* The default setting for this category is OFF! Unless specifically needed, DO NOT turn it on in the settings (it may cause Pickaxes to break instantly).
+* The default setting for this category is OFF! Unless specifically needed, DO NOT turn it on in the settings (it may cause pickaxes to break instantly).
 
 ### Crops without hardness
 * Supports these 7 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Sugar Canes, and Sweet Berry Bushes.
