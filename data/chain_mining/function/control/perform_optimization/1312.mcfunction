@@ -1,4 +1,4 @@
-# v5.2.0 (1312) -> 未来版本
+# v5.2.0 (1312) -> v5.3.0 (1328)
 # 将所有记分板(除trigger)的显示名称设置为默认值（与记分项名称相同）
 scoreboard objectives modify chain_mining_variables displayname "chain_mining_variables"
 

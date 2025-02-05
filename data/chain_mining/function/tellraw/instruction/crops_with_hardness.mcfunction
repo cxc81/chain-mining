@@ -1,5 +1,5 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - 使用说明 (有硬度作物)"]
+tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - ", {"translate": "chain_mining.message.instruction.crops_with_hardness.title", "fallback": "使用说明 (有硬度作物)"}]
 tellraw @s [{"text": " 1. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.supported_blocks", "fallback": "支持%s；", "with": [{"translate": "chain_mining.message.instruction.these_blocks", "fallback": "[这%s种方块]", "with": ["4"], "color": "green", "hoverEvent": {"action": "show_text", "contents": {"translate": "chain_mining.message.instruction.crops_with_hardness.hover", "fallback": "南瓜、西瓜、可可果和仙人掌"}}}]}]
 tellraw @s [{"text": " 2. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.crops_with_hardness.line2", "fallback": "除了仙人掌外，必须使用斧才能触发连锁采集；"}]
 tellraw @s [{"text": " 3. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.crops_with_hardness.line3", "fallback": "南瓜茎、西瓜茎和最底部的仙人掌均不会被连锁采集；"}]

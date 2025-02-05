@@ -1,9 +1,9 @@
 {
   "pack": {
-    "pack_format": 64,
+    "pack_format": 65,
     "supported_formats": [
       62,
-      64
+      65
     ],
     "description": [
       "Chain Mining Overlay since 1.21.5\n",

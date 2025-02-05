@@ -1,5 +1,5 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - 使用说明 (原木/菌柄)"]
+tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - ", {"translate": "chain_mining.message.instruction.logs.title", "fallback": "使用说明 (原木/菌柄)"}]
 tellraw @s [{"text": " 1. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.supported_blocks", "fallback": "支持%s；", "with": [{"translate": "chain_mining.message.instruction.these_blocks", "fallback": "[这%s种方块]", "with": ["12"], "color": "green", "hover_event": {"action": "show_text", "value": {"translate": "chain_mining.message.instruction.logs.hover", "fallback": "橡木原木、云杉原木、白桦原木、丛林原木、金合欢原木、深色橡木原木、红树原木、红树根、樱花原木、苍白橡木原木、绯红菌柄和诡异菌柄"}}}]}]
 tellraw @s [{"text": " 2. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.logs.line2", "fallback": "必须使用斧采集，才能触发连锁；"}]
 tellraw @s [{"text": " 3. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.logs.line3", "fallback": "若副手持有锄，还会采集%s范围的对应树叶、疣块和菌光体；", "with": [{"translate": "chain_mining.message.instruction.logs.line3.arg1", "fallback": "5×4×5", "color": "green"}]}]

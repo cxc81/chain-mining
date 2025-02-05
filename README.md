@@ -24,7 +24,7 @@
 * In-game settings are available to control individual switches for chain mining, and each player has independent settings.
 
 ### Overworld ores
-* Supports the following 9 block types, including the Deepslate variants of the first 8 types.
+* Supports the following 9 block types, including the deepslate variants of the first 8 types.
     - They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, and Amethyst Cluster.
 * A proper pickaxe is required to trigger the chain mining.
 
@@ -46,7 +46,7 @@
 
 ### Crops without hardness
 * Supports these 7 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Sugar Canes, and Sweet Berry Bushes.
-* Only fully-grown crops can be chained, and they will be automatically replanted after being mined.
+* Only fully-grown crops can be chained, most of which will be automatically replanted after being mined.
 * Using a tool does not consume its durability, and the Fortune enchantment will take effect.
 * For Sugar Canes, the ones at the very bottom will not be automatically mined.
 

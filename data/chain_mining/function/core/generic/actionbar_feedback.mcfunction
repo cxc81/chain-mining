@@ -1,1 +1,1 @@
-title @s actionbar {"translate": "chain_mining.actionbar", "fallback": "共采集了%s", "color": "aqua", "with": [{"nbt": "function_call.actionbar[]", "storage": "chain_mining:data", "interpret": true, "separator": {"translate": "chain_mining.actionbar.separator", "fallback": "，"}}]}
+title @s actionbar {"translate": "chain_mining.message.actionbar", "fallback": "共采集了%s", "color": "aqua", "with": [{"nbt": "function_call.actionbar[]", "storage": "chain_mining:data", "interpret": true, "separator": {"translate": "chain_mining.message.actionbar.blocks.separator", "fallback": "，"}}]}

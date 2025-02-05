@@ -1,5 +1,5 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - 使用说明 (岩石)"]
+tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - ", {"translate": "chain_mining.message.instruction.rocks.title", "fallback": "使用说明 (岩石)"}]
 tellraw @s [{"text": " 1. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.supported_blocks", "fallback": "支持%s；", "with": [{"translate": "chain_mining.message.instruction.these_blocks", "fallback": "[这%s种方块]", "with": ["7"], "color": "green", "hoverEvent": {"action": "show_text", "contents": {"translate": "chain_mining.message.instruction.rocks.hover", "fallback": "安山岩、闪长岩、花岗岩、凝灰岩、方解石、紫水晶块和岩浆块"}}}]}]
 tellraw @s [{"text": " 2. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.rocks.line2", "fallback": "必须使用镐挖掘，才能触发连锁；"}]
 tellraw @s [{"text": " 3. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.rocks.line3", "fallback": "除非特有需求，否则%s在设置中开启岩石！(可能使镐子瞬间报废)", "with": [{"translate": "chain_mining.message.instruction.rocks.line3.arg1", "fallback": "不要", "color": "red", "bold": true}]}]

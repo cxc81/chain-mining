@@ -1,5 +1,5 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - 使用说明 (下界矿石)"]
+tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - ", {"translate": "chain_mining.message.instruction.nether_ores.title", "fallback": "使用说明 (下界矿石)"}]
 tellraw @s [{"text": " 1. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.supported_blocks", "fallback": "支持%s；", "with": [{"translate": "chain_mining.message.instruction.these_blocks", "fallback": "[这%s种方块]", "with": ["5"], "color": "green", "hover_event": {"action": "show_text", "value": {"translate": "chain_mining.message.instruction.nether_ores.hover", "fallback": "下界石英矿石、下界金矿石、镶金黑石、远古残骸和荧石"}}}]}]
 tellraw @s [{"text": " 2. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.nether_ores.line2", "fallback": "除荧石外，必须使用正确的镐挖掘，才能触发连锁；"}]
 tellraw @s [{"text": " 3. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.nether_ores.line3", "fallback": "采集荧石对工具无要求(但工具上的魔咒能生效)。"}]
