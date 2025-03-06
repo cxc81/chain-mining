@@ -1,0 +1,14 @@
+{
+  "condition": "minecraft:location_check",
+  "predicate": {
+    "block": {
+      "blocks": "minecraft:sweet_berry_bush",
+      "state": {
+        "age": {
+          "min": "2",
+          "max": "3"
+        }
+      }
+    }
+  }
+}

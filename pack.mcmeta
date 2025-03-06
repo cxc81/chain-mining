@@ -3,7 +3,7 @@
     "pack_format": 61,
     "supported_formats": [
       45,
-      65
+      70
     ],
     "description": [
       "Chain Mining v5.2.0 for 1.21.x\n",
