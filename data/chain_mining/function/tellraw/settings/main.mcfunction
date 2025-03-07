@@ -7,7 +7,7 @@ function chain_mining:tellraw/settings/line_1 with storage chain_mining:data fun
 function chain_mining:tellraw/settings/bind_variables {variable1: "logs", variable2: "rocks", index1: 3, index2: 4}
 function chain_mining:tellraw/settings/line_2 with storage chain_mining:data function_call.lines
 
-function chain_mining:tellraw/settings/bind_variables {variable1: "crops_no_hardness", variable2: "crops_with_hardness", index1: 5, index2: 6}
+function chain_mining:tellraw/settings/bind_variables {variable1: "soft_crops", variable2: "hard_crops", index1: 5, index2: 6}
 function chain_mining:tellraw/settings/line_3 with storage chain_mining:data function_call.lines
 
 function chain_mining:tellraw/settings/bind_variables {variable1: "loot", variable2: "", index1: 7, index2: 8}

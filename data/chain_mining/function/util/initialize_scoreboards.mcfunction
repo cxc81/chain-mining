@@ -53,7 +53,7 @@ scoreboard objectives add chain_mining_calcite minecraft.mined:minecraft.calcite
 scoreboard objectives add chain_mining_amethyst_block minecraft.mined:minecraft.amethyst_block
 scoreboard objectives add chain_mining_magma_block minecraft.mined:minecraft.magma_block
 
-# 5. 无硬度作物(小麦、胡萝卜、马铃薯、甜菜根、下界疣、甘蔗、甜浆果丛和树脂团)
+# 5. 软作物(小麦、胡萝卜、马铃薯、甜菜根、下界疣、甘蔗、甜浆果丛和树脂团)
 scoreboard objectives add chain_mining_wheat minecraft.mined:minecraft.wheat
 scoreboard objectives add chain_mining_carrots minecraft.mined:minecraft.carrots
 scoreboard objectives add chain_mining_potatoes minecraft.mined:minecraft.potatoes
@@ -62,7 +62,7 @@ scoreboard objectives add chain_mining_nether_wart minecraft.mined:minecraft.net
 scoreboard objectives add chain_mining_sugar_cane minecraft.mined:minecraft.sugar_cane
 scoreboard objectives add chain_mining_sweet_berry_bush minecraft.mined:minecraft.sweet_berry_bush
 
-# 6. 有硬度作物(南瓜、西瓜、可可果和仙人掌)
+# 6. 硬作物(南瓜、西瓜、可可果和仙人掌)
 scoreboard objectives add chain_mining_pumpkin minecraft.mined:minecraft.pumpkin
 scoreboard objectives add chain_mining_melon minecraft.mined:minecraft.melon
 scoreboard objectives add chain_mining_cocoa minecraft.mined:minecraft.cocoa
@@ -73,8 +73,8 @@ scoreboard objectives add chain_mining_setting_overworld_ores dummy
 scoreboard objectives add chain_mining_setting_nether_ores dummy
 scoreboard objectives add chain_mining_setting_logs dummy
 scoreboard objectives add chain_mining_setting_rocks dummy
-scoreboard objectives add chain_mining_setting_crops_no_hardness dummy
-scoreboard objectives add chain_mining_setting_crops_with_hardness dummy
+scoreboard objectives add chain_mining_setting_soft_crops dummy
+scoreboard objectives add chain_mining_setting_hard_crops dummy
 scoreboard objectives add chain_mining_setting_loot dummy
 scoreboard objectives add chain_mining_enter_detect dummy
 scoreboard objectives add chain_mining_trigger trigger {"translate": "chain_mining.scoreboard.trigger", "color": "gold", "fallback": "连锁采集：触发器"}

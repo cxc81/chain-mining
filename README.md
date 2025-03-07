@@ -10,18 +10,18 @@
 ## Downloads
 * Go to [the latest release](https://github.com/cxc81/chain-mining/releases/latest)。
 * Choose a corresponding data pack based on your Minecraft version, and download it。
-* For instructions on installing a data pack, see [here](https://minecraft.wiki/w/Tutorials/Installing_a_data_pack)。
+* Install this pack to your desired world, and run ```/reload``` if the world is already open. ([How to install](https://minecraft.wiki/w/Tutorial:Installing_a_data_pack))
 
 ## Compatibility
 * Namespace ```chain_mining``` is used, and all scoreboard objectives start with ```chain_mining```.
-* No additional blocks or entities are used to store data, aside from the functionality itself.
+* No temporary blocks or entities are created to store data.
 
 ## Main Content
 * Supports mining these block types: Ores, Logs, Stems, Rocks, and Crops.
-* Players can trigger a chain mining when mining a block, allowing unlimited mining of adjacent same-type blocks.
+* Players can trigger a "chain mining" when mining a block, allowing unlimited mining of adjacent same-type blocks.
 * If the block has hardness and a tool is used, its durability will be consumed automatically (until tool breaking), but enchantments will take effect.
 * To avoid triggering a chain mining, you can hold sneaking.
-* In-game settings are available to control individual switches for chain mining, and each player has independent settings.
+* In-game settings are available to control individual switches, and each player has independent settings.
 
 ### Overworld ores
 * Supports the following 9 block types, including the deepslate variants of the first 8 types.
@@ -44,13 +44,13 @@
 * A pickaxe is required to trigger the chain mining.
 * The default setting for this category is OFF! Unless specifically needed, DO NOT turn it on in the settings (it may cause pickaxes to break instantly).
 
-### Crops without hardness
+### Soft crops
 * Supports these 7 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Sugar Canes, and Sweet Berry Bushes.
 * Only fully-grown crops can be chained, most of which will be automatically replanted after being mined.
 * Using a tool does not consume its durability, and the Fortune enchantment will take effect.
 * For Sugar Canes, the ones at the very bottom will not be automatically mined.
 
-### Crops with hardness
+### Hard crops
 * Supports these 4 block types: Pumpkins, Melons, Cocoa, and Cactus.
 * An axe is required to trigger the chain mining, except for Cactus.
 * Pumpkin Stems, Melon Stems, and Cactus at the very bottom will not be chain-mined.
@@ -58,7 +58,8 @@
 
 ### Other Features
 * Upon entering the world, players will receive a chat prompt that can be clicked to view settings, instructions, or changelogs.
+* [This resource pack](https://github.com/cxc81/chain-mining/releases/download/v5.3.1/Chain_Mining_Muiti-language_Support.zip) in the repository can be installed to support multi-language. ([How to install](https://minecraft.wiki/w/Tutorial:Loading_a_resource_pack))
 * Settings include:
-    - Independent switches for Overworld ores, Nether ores, Logs/Stems, Rocks, Crops without hardness, and Crops with hardness.
+    - Independent switches for Overworld ores, Nether ores, Logs/Stems, Rocks, Soft crops, and Hard crops.
     - A switch for automatically teleporting drops to the player.
     - A function to uninstall this data pack (requiring op permissions to execute).

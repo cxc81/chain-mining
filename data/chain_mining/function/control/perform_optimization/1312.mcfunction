@@ -51,7 +51,7 @@ scoreboard objectives modify chain_mining_calcite displayname "chain_mining_calc
 scoreboard objectives modify chain_mining_amethyst_block displayname "chain_mining_amethyst_block"
 scoreboard objectives modify chain_mining_magma_block displayname "chain_mining_magma_block"
 
-# 无硬度作物
+# 软作物
 scoreboard objectives modify chain_mining_wheat displayname "chain_mining_wheat"
 scoreboard objectives modify chain_mining_carrots displayname "chain_mining_carrots"
 scoreboard objectives modify chain_mining_potatoes displayname "chain_mining_potatoes"
@@ -61,7 +61,7 @@ scoreboard objectives modify chain_mining_sugar_cane displayname "chain_mining_s
 scoreboard objectives modify chain_mining_sweet_berry_bush displayname "chain_mining_sweet_berry_bush"
 scoreboard objectives modify chain_mining_resin_clump displayname "chain_mining_resin_clump"
 
-# 有硬度作物
+# 硬作物
 scoreboard objectives modify chain_mining_pumpkin displayname "chain_mining_pumpkin"
 scoreboard objectives modify chain_mining_melon displayname "chain_mining_melon"
 scoreboard objectives modify chain_mining_cocoa displayname "chain_mining_cocoa"

@@ -6,10 +6,10 @@ execute if score @s chain_mining_trigger matches 30 run scoreboard players set @
 execute if score @s chain_mining_trigger matches 31 run scoreboard players set @s chain_mining_setting_logs 1
 execute if score @s chain_mining_trigger matches 40 run scoreboard players set @s chain_mining_setting_rocks 0
 execute if score @s chain_mining_trigger matches 41 run scoreboard players set @s chain_mining_setting_rocks 1
-execute if score @s chain_mining_trigger matches 50 run scoreboard players set @s chain_mining_setting_crops_no_hardness 0
-execute if score @s chain_mining_trigger matches 51 run scoreboard players set @s chain_mining_setting_crops_no_hardness 1
-execute if score @s chain_mining_trigger matches 60 run scoreboard players set @s chain_mining_setting_crops_with_hardness 0
-execute if score @s chain_mining_trigger matches 61 run scoreboard players set @s chain_mining_setting_crops_with_hardness 1
+execute if score @s chain_mining_trigger matches 50 run scoreboard players set @s chain_mining_setting_soft_crops 0
+execute if score @s chain_mining_trigger matches 51 run scoreboard players set @s chain_mining_setting_soft_crops 1
+execute if score @s chain_mining_trigger matches 60 run scoreboard players set @s chain_mining_setting_hard_crops 0
+execute if score @s chain_mining_trigger matches 61 run scoreboard players set @s chain_mining_setting_hard_crops 1
 execute if score @s chain_mining_trigger matches 70 run scoreboard players set @s chain_mining_setting_loot 0
 execute if score @s chain_mining_trigger matches 71 run scoreboard players set @s chain_mining_setting_loot 1
 
