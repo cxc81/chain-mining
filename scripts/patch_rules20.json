@@ -1,0 +1,21 @@
+{
+  "file_path_content_replace": {
+    "data/chain_mining/function/load.mcfunction": [
+      {
+        "old": "1.21 - 1.21.5",
+        "new": "1.20.5 - 1.20.6"
+      }
+    ]
+  },
+  "dir_path_rename": {
+    "data/chain_mining/function/": "data/chain_mining/functions/",
+    "data/chain_mining/predicate/": "data/chain_mining/predicates/",
+    "data/chain_mining/tags/block/": "data/chain_mining/tags/blocks/",
+    "data/chain_mining/tags/entity_type/": "data/chain_mining/tags/entity_types/",
+    "data/chain_mining/tags/item/": "data/chain_mining/tags/items/",
+    "data/minecraft/tags/function/": "data/minecraft/tags/functions/"
+  },
+  "file_path_rename": {
+    "pack20.mcmeta": "pack.mcmeta"
+  }
+}
