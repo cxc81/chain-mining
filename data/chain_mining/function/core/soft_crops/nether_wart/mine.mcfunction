@@ -1,6 +1,4 @@
-loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-setblock ~ ~ ~ minecraft:air destroy
-
+function chain_mining:core/generic/mainhand/destroy_block
 scoreboard players add num_blocks_mined chain_mining_variables 1
 execute as @e[predicate=chain_mining:item/nether_wart,tag=!chain_mining_detected,limit=1] run function chain_mining:core/soft_crops/nether_wart/replant
 

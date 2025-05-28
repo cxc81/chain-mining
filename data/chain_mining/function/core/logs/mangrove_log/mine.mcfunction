@@ -1,13 +1,11 @@
 execute unless function chain_mining:core/generic/mainhand/can_continue_mining run return fail
 
-loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-setblock ~ ~ ~ minecraft:air destroy
-
+function chain_mining:core/generic/mainhand/destroy_block
 scoreboard players add num_logs_mined chain_mining_variables 1
 function chain_mining:core/generic/mainhand/apply_damage
 
 function chain_mining:core/generic/tp_items
 execute if score holding_hoe_offhand chain_mining_variables matches 1 run \
-    function chain_mining:core/generic/find/huge {blocks: "minecraft:mangrove_leaves[persistent=false,waterlogged=false]", mine_function: "logs/generic/mine_leaves"}
+    function chain_mining:core/generic/find/huge {blocks: "minecraft:mangrove_leaves[persistent=false]", mine_function: "logs/generic/mine_leaves"}
 function chain_mining:core/generic/find/wide {blocks: "minecraft:mangrove_log", mine_function: "logs/mangrove_log/mine"}
 function chain_mining:core/logs/mangrove_log/find_roots

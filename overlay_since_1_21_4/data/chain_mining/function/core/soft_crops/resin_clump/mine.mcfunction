@@ -1,7 +1,4 @@
-loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-execute if block ~ ~ ~ minecraft:resin_clump[waterlogged=false] run setblock ~ ~ ~ minecraft:air destroy
-execute if block ~ ~ ~ minecraft:resin_clump[waterlogged=true] run setblock ~ ~ ~ minecraft:water destroy
-
+function chain_mining:core/generic/mainhand/destroy_block
 scoreboard players add num_blocks_mined chain_mining_variables 1
 
 function chain_mining:core/generic/tp_items

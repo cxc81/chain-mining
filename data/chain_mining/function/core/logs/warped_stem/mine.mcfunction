@@ -1,8 +1,6 @@
 execute unless function chain_mining:core/generic/mainhand/can_continue_mining run return fail
 
-loot spawn ~ ~ ~ mine ~ ~ ~ mainhand
-setblock ~ ~ ~ minecraft:air destroy
-
+function chain_mining:core/generic/mainhand/destroy_block
 scoreboard players add num_logs_mined chain_mining_variables 1
 function chain_mining:core/generic/mainhand/apply_damage
 
