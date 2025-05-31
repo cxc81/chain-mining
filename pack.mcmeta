@@ -3,10 +3,10 @@
     "pack_format": 71,
     "supported_formats": [
       45,
-      78
+      79
     ],
     "description": [
-      "Chain Mining v5.3.3 for 1.21.x\n",
+      "Chain Mining v5.3.4 for 1.21.x\n",
       {
         "text": "by cxc81",
         "color": "gray"
