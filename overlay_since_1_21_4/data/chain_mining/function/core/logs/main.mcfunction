@@ -1,3 +1,5 @@
+# @since 1.21.4
+
 execute if score @s chain_mining_oak_log matches 1.. run function chain_mining:core/logs/oak_log/prepare
 execute if score @s chain_mining_spruce_log matches 1.. run function chain_mining:core/logs/spruce_log/prepare
 execute if score @s chain_mining_birch_log matches 1.. run function chain_mining:core/logs/birch_log/prepare

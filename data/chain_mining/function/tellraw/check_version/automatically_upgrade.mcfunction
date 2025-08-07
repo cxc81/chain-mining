@@ -1,7 +1,6 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text": "提示：这个世界此前使用了旧版的连锁采集数据包！", "color": "yellow"}]
-tellraw @s [{"text": "", "color": "green"},{"text": "上次安装的版本：", "color": "aqua"}, \
-    {"nbt": "data.last_data_version_str", "storage": "chain_mining:data"}]
+tellraw @s [{"translate": "chain_mining.message.automatically_upgrade.line1", "fallback": "提示：这个世界此前使用了旧版的连锁采集数据包！", "color": "yellow"}]
+tellraw @s [{"translate": "chain_mining.message.automatically_upgrade.line2", "fallback": "上次安装的版本：%s", "color": "aqua", "with": [{"nbt": "data.last_data_version_str", "storage": "chain_mining:data", "color": "green"}]}]
 
 # 若版本位于下列范围，则自动执行优化
 # assert last_data_version >= 816

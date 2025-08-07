@@ -1,3 +1,4 @@
+import time
 import json
 import os
 import hashlib
@@ -14,13 +15,14 @@ class VersionPatcher():
         self.dir_path_rename_rules: dict = rules.get("dir_path_rename", {})
         self.file_path_rename_rules: dict = rules.get("file_path_rename", {})
 
-    def _apply_file_path_content_replace(self, file_path: str, zip_rel_path: str) -> tuple[bool, str]:
+    def _apply_file_path_content_replace(self, file_path: str, zip_rel_path: str) -> tuple[bool, str | None]:
         if zip_rel_path not in self.file_path_content_replace_rules:
             return False, None
         
         with open(file_path, "r", encoding="utf-8") as file:
             content: str = file.read()
         replacements = self.file_path_content_replace_rules.get(zip_rel_path)
+        assert replacements is not None
         for replacement in replacements:
             content = content.replace(
                 replacement["old"], 
@@ -35,15 +37,13 @@ class VersionPatcher():
         return zip_rel_path
     
     def _apply_file_path_rename(self, zip_rel_path: str) -> str:
-        if zip_rel_path in self.file_path_rename_rules:
-            return self.file_path_rename_rules.get(zip_rel_path)
-        return zip_rel_path
+        return self.file_path_rename_rules.get(zip_rel_path, zip_rel_path)
 
-    def apply_patches(self, file_path: str, zip_rel_path: str) -> tuple[str, bool, str]:
+    def apply_patches(self, file_path: str, zip_rel_path: str) -> tuple[bool, str, str | None]:
         patched, patched_content = self._apply_file_path_content_replace(file_path, zip_rel_path)
         zip_rel_path = self._apply_dir_path_rename(zip_rel_path)
         zip_rel_path = self._apply_file_path_rename(zip_rel_path)
-        return zip_rel_path, patched, patched_content
+        return patched, zip_rel_path, patched_content
 
 
 def calculate_file_hash(file_path: str) -> str:
@@ -65,9 +65,11 @@ def calculate_file_hash(file_path: str) -> str:
 
 def write_file_to_zip_with_patch(zipf: zipfile.ZipFile, patcher: VersionPatcher, file_path: str, zip_rel_path: str) -> None:
     zip_rel_path = zip_rel_path.replace("\\", "/")
-    patched_rel_path, patched, patched_content = patcher.apply_patches(file_path, zip_rel_path)
+    patched, patched_rel_path, patched_content = patcher.apply_patches(file_path, zip_rel_path)
     if patched:
-        zipf.writestr(zipfile.ZipInfo(patched_rel_path), patched_content)
+        assert patched_content is not None
+        original_date_time = time.localtime(os.stat(file_path).st_mtime)[:6]
+        zipf.writestr(zipfile.ZipInfo(patched_rel_path, original_date_time), patched_content)
     else:
         zipf.write(file_path, patched_rel_path)
 

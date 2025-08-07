@@ -1,6 +1,5 @@
 function chain_mining:tellraw/separate_line
-tellraw @s [{"text": "提示：这个世界此前使用了过于陈旧的连锁采集数据包！", "color": "yellow"}]
-tellraw @s [{"text": "", "color": "green"}, {"text": "上次安装的版本：", "color": "aqua"}, \
-    {"nbt": "data.last_data_version_str", "storage": "chain_mining:data"}]
-tellraw @s [{"text": "建议卸载此数据包，并使用v4.1.1版本的数据包进行一次优化！", "color": "green"}]
+tellraw @s [{"translate": "chain_mining.message.too_old.line1", "fallback": "提示：这个世界此前使用了过于陈旧的连锁采集数据包！", "color": "yellow"}]
+tellraw @s [{"translate": "chain_mining.message.too_old.line2", "fallback": "上次安装的版本：%s", "color": "aqua", "with": [{"nbt": "data.last_data_version_str", "storage": "chain_mining:data", "color": "green"}]}]
+tellraw @s [{"translate": "chain_mining.message.too_old.line3", "fallback": "建议卸载此数据包，并使用%s版本的数据包进行一次优化！", "color": "aqua", "with": [{"text": "[v4.1.1]", "color": "green", "clickEvent": {"action": "open_url", "value": "https://github.com/cxc81/chain-mining/releases/tag/v4.1.1"}, "click_event": {"action": "open_url", "url": "https://github.com/cxc81/chain-mining/releases/tag/v4.1.1"}, "hoverEvent": {"action": "show_text", "contents": [{"text": "https://github.com/cxc81/chain-mining/releases/tag/v4.1.1", "color": "yellow"}, "\n", {"translate": "chain_mining.button.hover.click_to_view", "fallback": "点击查看！"}]}, "hover_event": {"action": "show_text", "value": [{"text": "https://github.com/cxc81/chain-mining/releases/tag/v4.1.1", "color": "yellow"}, "\n", {"translate": "chain_mining.button.hover.click_to_view", "fallback": "点击查看！"}]}}]}]
 function chain_mining:tellraw/separate_line

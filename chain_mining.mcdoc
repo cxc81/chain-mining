@@ -1,0 +1,20 @@
+use ::java::util::slot::SlottedItem
+use ::java::world::entity::mob::player::PlayerSlot
+use ::java::world::item::ItemStack
+
+dispatch minecraft:storage[chain_mining:data] to struct ChainMiningStorageRoot {
+    data: struct ChainMiningStorageData {
+        data_version: int,
+        data_version_str: string,
+        last_data_version: int,
+        last_data_version_str: string,
+        supported_minecraft_versions_str: string,
+    },
+    items: struct ChainMiningStorageItems {
+        mainhand: ItemStack,
+        offhand: SlottedItem<::java::world::entity::mob::player::PlayerSlot>,
+    },
+    function_call: struct ChainMiningStorageFunctionCall {
+        [string]: any,
+    },
+}

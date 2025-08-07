@@ -18,6 +18,7 @@ execute unless items entity @s weapon.offhand #chain_mining:damagable run return
 execute if items entity @s weapon.offhand #chain_mining:tool/material/golden run return 32
 execute if items entity @s weapon.offhand #chain_mining:tool/material/wooden run return 59
 execute if items entity @s weapon.offhand #chain_mining:tool/material/stone run return 131
+execute if items entity @s weapon.offhand #chain_mining:tool/material/copper run return 190
 execute if items entity @s weapon.offhand #chain_mining:tool/material/iron run return 250
 execute if items entity @s weapon.offhand #chain_mining:tool/material/diamond run return 1561
 execute if items entity @s weapon.offhand #chain_mining:tool/material/netherite run return 2031
@@ -35,6 +36,10 @@ execute if items entity @s weapon.offhand minecraft:golden_helmet run return 77
 execute if items entity @s weapon.offhand minecraft:golden_chestplate run return 112
 execute if items entity @s weapon.offhand minecraft:golden_leggings run return 105
 execute if items entity @s weapon.offhand minecraft:golden_boots run return 91
+execute if items entity @s weapon.offhand #chain_mining:armor/material/copper_helmet run return 121
+execute if items entity @s weapon.offhand #chain_mining:armor/material/copper_chestplate run return 176
+execute if items entity @s weapon.offhand #chain_mining:armor/material/copper_leggings run return 165
+execute if items entity @s weapon.offhand #chain_mining:armor/material/copper_boots run return 143
 execute if items entity @s weapon.offhand #chain_mining:armor/material/iron_like_helmets run return 165
 execute if items entity @s weapon.offhand #chain_mining:armor/material/iron_like_chestplates run return 240
 execute if items entity @s weapon.offhand #chain_mining:armor/material/iron_like_leggings run return 225

@@ -1,3 +1,5 @@
+# @since 1.21.4
+
 execute if score @s chain_mining_wheat matches 1.. run function chain_mining:core/soft_crops/wheat/prepare
 execute if score @s chain_mining_carrots matches 1.. run function chain_mining:core/soft_crops/carrots/prepare
 execute if score @s chain_mining_potatoes matches 1.. run function chain_mining:core/soft_crops/potatoes/prepare

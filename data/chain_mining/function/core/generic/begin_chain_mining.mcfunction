@@ -1,3 +1,4 @@
+# @until 1.21.5
 # 所有连锁采集公共的开头
 
 tag @s add chain_mining_current_player

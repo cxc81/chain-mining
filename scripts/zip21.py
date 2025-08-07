@@ -95,6 +95,7 @@ def main() -> None:
     if resource_updated:
         target_dir = "../../../../launcher/.minecraft/resourcepacks/"
         shutil.copy("Chain Mining Muiti-language Support.zip", target_dir)
+        print("Copied the resource pack")
 
 if __name__ == "__main__":
     main()

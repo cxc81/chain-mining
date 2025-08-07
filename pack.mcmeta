@@ -1,12 +1,14 @@
 {
   "pack": {
-    "pack_format": 71,
+    "pack_format": 81,
     "supported_formats": [
       45,
-      79
+      83
     ],
+    "min_format": 45,
+    "max_format": 83,
     "description": [
-      "Chain Mining v5.3.4 for 1.21.x\n",
+      "Chain Mining v5.4.0 for 1.21.x\n",
       {
         "text": "by cxc81",
         "color": "gray"
@@ -20,6 +22,8 @@
           52,
           1000
         ],
+        "min_format": 52,
+        "max_format": 1000,
         "directory": "overlay_since_1_21_2"
       },
       {
@@ -27,6 +31,8 @@
           58,
           1000
         ],
+        "min_format": 58,
+        "max_format": 1000,
         "directory": "overlay_since_1_21_4"
       },
       {
@@ -34,6 +40,8 @@
           62,
           1000
         ],
+        "min_format": 62,
+        "max_format": 1000,
         "directory": "overlay_since_1_21_5"
       }
     ]

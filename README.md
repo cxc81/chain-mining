@@ -6,6 +6,7 @@
 ## Introduction
 * Features: This data pack allows players to mine adjacent blocks of the same type automatically after breaking one block.
 * Supported versions: Minecraft Java Edition 1.20.5 and above.
+* **Warning: 1.20.5 - 1.20.6 will be no longer supported in a future update!** All blocks are planned to be chain-mined; please see [here](#future_plans).
 
 ## Downloads
 * Go to [the latest release](https://github.com/cxc81/chain-mining/releases/latest)。
@@ -58,8 +59,22 @@
 
 ### Other Features
 * Upon entering the world, players will receive a chat prompt that can be clicked to view settings, instructions, or changelogs.
-* [This resource pack](https://github.com/cxc81/chain-mining/releases/download/v5.3.1/Chain_Mining_Muiti-language_Support.zip) in the repository can be installed to support multi-language. ([How to install](https://minecraft.wiki/w/Tutorial:Loading_a_resource_pack))
+* You can download the resource pack in [the latest release](https://github.com/cxc81/chain-mining/releases/latest) and install it, to support multi-language. ([How to install](https://minecraft.wiki/w/Tutorial:Loading_a_resource_pack))
 * Settings include:
     - Independent switches for Overworld ores, Nether ores, Logs/Stems, Rocks, Soft crops, and Hard crops.
     - A switch for automatically teleporting drops to the player.
     - A function to uninstall this data pack (requiring op permissions to execute).
+
+## Future Plans <a id="future_plans"></a>
+**The following features will be implemented in v6.0.0.**
+* Support for chain-mining all types of blocks.
+* Utilize the custom enchantment feature introduced in 1.21, and use the enchantment effect components to track the block being chain-mined.
+  - Administrators can choose from the following three modes:
+    - Fully Available - The Chain Mining enchantment is automatically added to every tool when it is held;
+    - Restricted - The Chain Mining enchantment can only be added individually through commands;
+    - Fully Disabled - If a player is holding an item with the Chain Mining enchantment, the enchantment will be immediately removed.
+* Add custom chain-mining rules for each type of block.
+  - Existing rules will be largely preserved.
+  - Support for custom configuration of chain-mining rules.
+* Support for more settings.
+  - Design new dialog interfaces for versions 1.21.6 and above, replacing the chat screen interfaces.

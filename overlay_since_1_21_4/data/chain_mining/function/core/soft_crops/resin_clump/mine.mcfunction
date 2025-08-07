@@ -1,3 +1,5 @@
+# @since 1.21.4
+
 function chain_mining:core/generic/mainhand/destroy_block
 scoreboard players add num_blocks_mined chain_mining_variables 1
 
