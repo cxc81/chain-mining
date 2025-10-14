@@ -58,6 +58,7 @@ scoreboard objectives remove chain_mining_melon
 scoreboard objectives remove chain_mining_cocoa
 scoreboard objectives remove chain_mining_cactus
 
+scoreboard objectives remove chain_mining_global_settings
 scoreboard objectives remove chain_mining_setting_overworld_ores
 scoreboard objectives remove chain_mining_setting_nether_ores
 scoreboard objectives remove chain_mining_setting_logs

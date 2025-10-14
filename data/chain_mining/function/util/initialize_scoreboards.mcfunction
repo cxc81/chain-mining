@@ -69,6 +69,7 @@ scoreboard objectives add chain_mining_cocoa minecraft.mined:minecraft.cocoa
 scoreboard objectives add chain_mining_cactus minecraft.mined:minecraft.cactus
 
 # 7. 设置与触发器
+scoreboard objectives add chain_mining_global_settings dummy
 scoreboard objectives add chain_mining_setting_overworld_ores dummy
 scoreboard objectives add chain_mining_setting_nether_ores dummy
 scoreboard objectives add chain_mining_setting_logs dummy

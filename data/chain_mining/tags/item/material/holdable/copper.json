@@ -20,6 +20,10 @@
     {
       "id": "minecraft:copper_sword",
       "required": false
+    },
+    {
+      "id": "minecraft:copper_spear",
+      "required": false
     }
   ]
 }

@@ -1,7 +1,1 @@
-tellraw @s [{"text": "  ", "color": "yellow"}, {"text": "·", "color": "light_purple", "bold": true}, " 游戏内容"]
-tellraw @s [{"text": "     ", "color": "aqua"}, {"text": "·", "color": "light_purple", "bold": true}, " 为", {"text": "1.21.9", "color": "green"}, "及以上版本加入了铜质工具的连锁支持。"]
-tellraw @s [{"text": "  ", "color": "yellow"}, {"text": "·", "color": "light_purple", "bold": true}, " 常规"]
-tellraw @s [{"text": "     ", "color": "aqua"}, {"text": "·", "color": "light_purple", "bold": true}, " 优化了使用说明中部分文本的表述。"]
-tellraw @s [{"text": "     ", "color": "aqua"}, {"text": "·", "color": "light_purple", "bold": true}, " 为部分硬编码文本添加了本地化翻译。"]
-tellraw @s [{"text": "  ", "color": "yellow"}, {"text": "·", "color": "light_purple", "bold": true}, " 修复"]
-tellraw @s [{"text": "     ", "color": "aqua"}, {"text": "·", "color": "light_purple", "bold": true}, " 修复了在", {"text": "1.21.4", "color": "green"}, "及以上版本卸载数据包时，有两个记分项未移除的问题。"]
+tellraw @s {"nbt": "data.changelog_lines[]", "storage": "chain_mining:data", "interpret": true, "separator": "\n"}

@@ -1,6 +1,7 @@
 use ::java::util::slot::SlottedItem
 use ::java::world::entity::mob::player::PlayerSlot
 use ::java::world::item::ItemStack
+use ::java::util::text::Text
 
 dispatch minecraft:storage[chain_mining:data] to struct ChainMiningStorageRoot {
     data: struct ChainMiningStorageData {
@@ -9,6 +10,8 @@ dispatch minecraft:storage[chain_mining:data] to struct ChainMiningStorageRoot {
         last_data_version: int,
         last_data_version_str: string,
         supported_minecraft_versions_str: string,
+        changelog_lines: [Text],
+        changelog_lines_patched: [Text],
     },
     items: struct ChainMiningStorageItems {
         mainhand: ItemStack,

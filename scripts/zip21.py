@@ -76,6 +76,7 @@ def main() -> None:
             "overlay_since_1_21_2/",
             "overlay_since_1_21_4/",
             "overlay_since_1_21_5/",
+            "overlay_since_1_21_6/",
             "pack.png"
         ]
     )
