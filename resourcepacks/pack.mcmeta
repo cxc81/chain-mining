@@ -3,12 +3,12 @@
     "pack_format": 69,
     "supported_formats": [
       32,
-      70
+      72
     ],
     "min_format": 32,
-    "max_format": 70,
+    "max_format": 72,
     "description": [
-      "Chain Mining Muiti-language Support\n",
+      "Chain Mining Multi-language Support\n",
       {
         "text": "by cxc81",
         "color": "gray"

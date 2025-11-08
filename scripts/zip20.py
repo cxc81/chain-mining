@@ -63,15 +63,18 @@ def calculate_file_hash(file_path: str) -> str:
     return hash_md5.hexdigest()
 
 
-def write_file_to_zip_with_patch(zipf: zipfile.ZipFile, patcher: VersionPatcher, file_path: str, zip_rel_path: str) -> None:
+Time = tuple[int, int, int, int, int, int]
+
+
+def write_file_to_zip_with_patch(patcher: VersionPatcher, file_path: str, zip_rel_path: str) -> tuple[str, str, Time | None]:
     zip_rel_path = zip_rel_path.replace("\\", "/")
-    patched, patched_rel_path, patched_content = patcher.apply_patches(file_path, zip_rel_path)
+    patched, patched_rel_path, patched_contents = patcher.apply_patches(file_path, zip_rel_path)
     if patched:
-        assert patched_content is not None
+        assert patched_contents is not None
         original_date_time = time.localtime(os.stat(file_path).st_mtime)[:6]
-        zipf.writestr(zipfile.ZipInfo(patched_rel_path, original_date_time), patched_content)
+        return (patched_contents, patched_rel_path, original_date_time)
     else:
-        zipf.write(file_path, patched_rel_path)
+        return (file_path, patched_rel_path, None)
 
 
 def create_zip_for_1_20_6(output_name: str, source_dir: str, candidates: List[str]) -> None:
@@ -89,16 +92,27 @@ def create_zip_for_1_20_6(output_name: str, source_dir: str, candidates: List[st
     # Create temporary ZIP file
     patcher = VersionPatcher()
     with zipfile.ZipFile(temp_file_name, "w", zipfile.ZIP_DEFLATED) as zipf:
+        files_to_add: list[tuple[str, str, Time | None]] = []
         for candidate in candidates:
             candidate_path = os.path.join(source_dir, candidate)
             if os.path.isfile(candidate_path):
-                write_file_to_zip_with_patch(zipf, patcher, candidate_path, candidate)
+                files_to_add.append(write_file_to_zip_with_patch(patcher, candidate_path, candidate))
                 continue
 
             for root, _, files in os.walk(candidate_path):
                 for file in files:
                     file_path = os.path.join(root, file)
-                    write_file_to_zip_with_patch(zipf, patcher, file_path, os.path.relpath(file_path, source_dir))
+                    files_to_add.append(write_file_to_zip_with_patch(patcher, file_path, os.path.relpath(file_path, source_dir)))
+
+        files_to_add.sort(key=lambda x: x[1])
+
+        for file_path_or_contents, relpath, date_time in files_to_add:
+            if date_time is not None:
+                # patched_contents, patched_rel_path, original_date_time
+                zipf.writestr(zipfile.ZipInfo(relpath, date_time), file_path_or_contents)
+            else:
+                # file_path, patched_rel_path, None
+                zipf.write(file_path_or_contents, relpath)
 
     # Execute replacement logic
     if os.path.exists(output_file_name):
