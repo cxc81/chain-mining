@@ -2,7 +2,7 @@ execute unless function chain_mining:core/generic/mainhand/can_continue_mining r
 
 function chain_mining:core/generic/mainhand/destroy_block
 scoreboard players add num_blocks_mined chain_mining_variables 1
-execute as @e[predicate=chain_mining:item/cocoa_beans,tag=!chain_mining_detected,limit=1] run function chain_mining:core/hard_crops/cocoa/replant
+execute as @e[type=minecraft:item,predicate=chain_mining:item/cocoa_beans,tag=!chain_mining_detected,limit=1] run function chain_mining:core/hard_crops/cocoa/replant
 function chain_mining:core/generic/mainhand/apply_damage
 
 function chain_mining:core/generic/tp_items

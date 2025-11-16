@@ -55,6 +55,15 @@
       },
       {
         "formats": [
+          82,
+          1000
+        ],
+        "min_format": 82,
+        "max_format": 1000,
+        "directory": "overlay_since_1_21_9"
+      },
+      {
+        "formats": [
           93,
           1000
         ],

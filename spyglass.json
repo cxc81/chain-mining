@@ -1,0 +1,5 @@
+{
+  "lint": {
+    "idOmitDefaultNamespace": false
+  }
+}

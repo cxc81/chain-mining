@@ -54,6 +54,7 @@ scoreboard objectives remove chain_mining_sugar_cane
 scoreboard objectives remove chain_mining_sweet_berry_bush
 
 scoreboard objectives remove chain_mining_pumpkin
+scoreboard objectives remove chain_mining_carved_pumpkin
 scoreboard objectives remove chain_mining_melon
 scoreboard objectives remove chain_mining_cocoa
 scoreboard objectives remove chain_mining_cactus

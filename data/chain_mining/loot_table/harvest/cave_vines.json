@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:block_interact",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glow_berries"
+        }
+      ]
+    }
+  ]
+}
+

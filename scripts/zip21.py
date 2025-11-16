@@ -104,13 +104,13 @@ def main() -> None:
     )
 
     resource_updated = create_zip(
-        output_name="Chain Mining Muiti-language Support",
+        output_name="Chain Mining Multi-language Support",
         candidates=["."],
         source_dir="resourcepacks"
     )
     if resource_updated:
         target_dir = "/mnt/d/directory/games/minecraft/launcher/.minecraft/resourcepacks/"
-        shutil.copy("Chain Mining Muiti-language Support.zip", target_dir)
+        shutil.copy("Chain Mining Multi-language Support.zip", target_dir)
         print("Copied the resource pack")
 
 if __name__ == "__main__":

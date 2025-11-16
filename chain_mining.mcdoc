@@ -15,7 +15,7 @@ dispatch minecraft:storage[chain_mining:data] to struct ChainMiningStorageRoot {
     },
     items: struct ChainMiningStorageItems {
         mainhand: ItemStack,
-        offhand: SlottedItem<::java::world::entity::mob::player::PlayerSlot>,
+        offhand: SlottedItem<PlayerSlot>,
     },
     function_call: struct ChainMiningStorageFunctionCall {
         [string]: any,

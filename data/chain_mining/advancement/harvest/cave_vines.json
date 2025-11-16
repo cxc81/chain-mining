@@ -1,0 +1,27 @@
+{
+  "criteria": {
+    "harvest_cave_vines": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:any_of",
+            "terms": [
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:cave_vines"
+              },
+              {
+                "condition": "minecraft:block_state_property",
+                "block": "minecraft:cave_vines_plant"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "chain_mining:core/harvest/cave_vines/prepare"
+  }
+}

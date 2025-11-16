@@ -1,0 +1,21 @@
+{
+  "criteria": {
+    "harvest_sweet_berry_bush": {
+      "trigger": "minecraft:any_block_use",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:block_state_property",
+            "block": "minecraft:sweet_berry_bush",
+            "properties": {
+              "age": "1"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "chain_mining:core/harvest/sweet_berry_bush/prepare"
+  }
+}
