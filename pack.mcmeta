@@ -3,10 +3,10 @@
     "pack_format": 88,
     "supported_formats": [
       45,
-      93
+      94
     ],
     "min_format": 45,
-    "max_format": 93,
+    "max_format": 94,
     "description": [
       "Chain Mining v5.4.2 for 1.21.x\n",
       {
@@ -64,10 +64,10 @@
       },
       {
         "formats": [
-          93,
+          94,
           1000
         ],
-        "min_format": 93,
+        "min_format": 94,
         "max_format": 1000,
         "directory": "overlay_since_1_21_11"
       }

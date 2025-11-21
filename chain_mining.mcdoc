@@ -1,23 +1,44 @@
 use ::java::util::slot::SlottedItem
+use ::java::world::entity::mob::player::Player
 use ::java::world::entity::mob::player::PlayerSlot
 use ::java::world::item::ItemStack
 use ::java::util::text::TextObject
 
-dispatch minecraft:storage[chain_mining:data] to struct ChainMiningStorageRoot {
-    data: struct ChainMiningStorageData {
-        data_version: int,
+dispatch minecraft:storage[chain_mining:data] to struct {
+    data: struct {
+        /// The version of this data pack as an integer, e.g. 1281 for `v5.0.1`.
+        data_version: int @ 1..,
+        /// The version of this data pack as a string, e.g. `v5.0.1`.
         data_version_str: string,
+        /// The previous version of this data pack installed in the world. Used to auto-upgrade this data pack.
         last_data_version: int,
+        /// The previous version of this data pack installed in the world. Used to show upgrade messages after auto-upgrading.
         last_data_version_str: string,
+        /// The supported Minecraft versions, e.g. `1.21 - 1.21.10`.
         supported_minecraft_versions_str: string,
         changelog_lines: [[TextObject]],
         changelog_lines_patched: [[TextObject]],
+        default_max_damage: ChainMiningDefaultMaxDamage,
     },
-    items: struct ChainMiningStorageItems {
+    /// Tracks the items of the player when they start chain-mining.
+    items: struct {
+        /// The item in the main hand, obtained from `SelectedItem` NBT tag.
         mainhand: ItemStack,
-        offhand: SlottedItem<PlayerSlot>,
+        /// The item in the offhand, obtained from `Inventory[{Slot:-106b}]` or `equipment.offhand` NBT tag, depending on the Minecraft version.
+        offhand: (
+            #[until="1.21.5"] SlottedItem<PlayerSlot> |
+            #[since="1.21.5"] ItemStack |
+        ),
     },
-    function_call: struct ChainMiningStorageFunctionCall {
+    function_call: struct {
         [string]: any,
     },
+}
+
+dispatch minecraft:storage[chain_mining:player_nbt] to struct {
+    data: Player,
+}
+
+struct ChainMiningDefaultMaxDamage {
+    [#[id=item] string]: int @ 1..,
 }
