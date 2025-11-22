@@ -7,10 +7,14 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "block": "minecraft:sweet_berry_bush",
-              "condition": "minecraft:block_state_property",
-              "properties": {
-                "age": "3"
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:sweet_berry_bush",
+                  "state": {
+                    "age": "3"
+                  }
+                }
               }
             }
           ],

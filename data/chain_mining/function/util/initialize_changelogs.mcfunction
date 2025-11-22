@@ -2,5 +2,15 @@
 # 为了兼容1.20.5 - 1.21.4，以NBT书写文本组件时，不能出现布尔值、异构列表或\n
 data modify storage chain_mining:data data.changelog_lines set value []
 
-data modify storage chain_mining:data data.changelog_lines append value [{text: "  ", color: "yellow"}, {text: "·", color: "light_purple"}, {text: " 技术性"}]
-data modify storage chain_mining:data data.changelog_lines append value [{text: "     ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 为"}, {text: "1.21.11", color: "green"}, {text: "及以上版本适配了对游戏规则ID的更改。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "  ", color: "yellow"}, {text: "·", color: "light_purple"}, {text: " 游戏内容"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "     ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 加入了对下列方块的连锁挖掘支持："}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 软作物："}, {text: "火把花", color: "gold"}, {text: "、"}, {text: "瓶子草植株", color: "gold"}, {text: "和"}, {text: "洞穴藤蔓", color: "gold"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "           ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 均不会自动补种。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 硬作物："}, {text: "雕刻南瓜", color: "gold"}, {text: "和"}, {text: "竹子", color: "gold"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "           ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 连锁范围只有"}, {text: "3×1×3", color: "green"}, {text: "区域。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "           ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 合适的工具是斧；对于竹子，还可以使用剑。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "     ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 加入了对"}, {text: "南瓜的剪刀雕刻", color: "gold"}, {text: "支持。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 功能受"}, {text: "硬作物", color: "green"}, {text: "开关控制，且连锁范围同南瓜的连锁挖掘。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "     ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 加入了对"}, {text: "甜浆果丛和洞穴藤蔓的右键采集", color: "gold"}, {text: "支持。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 功能受"}, {text: "软作物", color: "green"}, {text: "开关控制，且连锁范围同对应方块的连锁挖掘。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 甜浆果丛的采集掉落物暂时不受原版战利品表控制。"}]
