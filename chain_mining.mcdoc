@@ -1,8 +1,8 @@
 use ::java::util::slot::SlottedItem
+use ::java::util::text::TextObject
 use ::java::world::entity::mob::player::Player
 use ::java::world::entity::mob::player::PlayerSlot
 use ::java::world::item::ItemStack
-use ::java::util::text::TextObject
 
 dispatch minecraft:storage[chain_mining:data] to struct {
     data: struct {
@@ -16,8 +16,13 @@ dispatch minecraft:storage[chain_mining:data] to struct {
         last_data_version_str: string,
         /// The supported Minecraft versions, e.g. `1.21 - 1.21.10`.
         supported_minecraft_versions_str: string,
+        /// Contains the changelogs for this data pack version, separated in lines.
         changelog_lines: [[TextObject]],
+        /// Contains the changelogs for this data pack version, separated in lines.
+        /// This data is auto-generated from `changelog_lines`; the last element of each line is `{text: "\n"}`.
+        #[since="1.21.6"]
         changelog_lines_patched: [[TextObject]],
+        /// The default max_damage component values for all applicable items.
         default_max_damage: ChainMiningDefaultMaxDamage,
     },
     /// Tracks the items of the player when they start chain-mining.

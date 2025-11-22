@@ -1,0 +1,1 @@
+execute if score @s chain_mining_setting_loot matches 1 align xyz as @e[type=#chain_mining:detectable,tag=!chain_mining_detected,dx=0,dy=0,dz=0] run data modify entity @s Pos set from entity @a[tag=chain_mining_current_player,limit=1] Pos

@@ -2,4 +2,4 @@
 
 # @returns
 #   1 if the game rule block_drops is true, 0 otherwise
-return run gamerule block_drops
+return run gamerule minecraft:block_drops

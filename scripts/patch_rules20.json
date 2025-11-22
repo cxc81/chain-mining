@@ -8,7 +8,9 @@
     ]
   },
   "dir_path_rename": {
+    "data/chain_mining/advancement/": "data/chain_mining/advancements/",
     "data/chain_mining/function/": "data/chain_mining/functions/",
+    "data/chain_mining/loot_table/": "data/chain_mining/loot_tables/",
     "data/chain_mining/predicate/": "data/chain_mining/predicates/",
     "data/chain_mining/tags/block/": "data/chain_mining/tags/blocks/",
     "data/chain_mining/tags/entity_type/": "data/chain_mining/tags/entity_types/",

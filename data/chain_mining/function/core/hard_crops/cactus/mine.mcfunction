@@ -2,8 +2,8 @@
 execute unless block ~ ~-1 ~ minecraft:cactus run return fail
 
 function chain_mining:core/generic/mainhand/destroy_block
+function chain_mining:core/generic/tp_items
 scoreboard players add num_blocks_mined chain_mining_variables 1
 function chain_mining:core/generic/mainhand/apply_damage
 
-function chain_mining:core/generic/tp_items
 function chain_mining:core/generic/find/wide {blocks: "minecraft:cactus", mine_function: "hard_crops/cactus/mine"}

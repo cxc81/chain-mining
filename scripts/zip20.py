@@ -1,3 +1,4 @@
+import shutil
 import time
 import json
 import os
@@ -77,7 +78,7 @@ def write_file_to_zip_with_patch(patcher: VersionPatcher, file_path: str, zip_re
         return (file_path, patched_rel_path, None)
 
 
-def create_zip_for_1_20_6(output_name: str, source_dir: str, candidates: List[str]) -> None:
+def create_zip_for_1_20_6(output_name: str, source_dir: str, candidates: List[str]) -> bool:
     """
     Create a ZIP archive from specified files/directories within a source directory.
 
@@ -121,16 +122,17 @@ def create_zip_for_1_20_6(output_name: str, source_dir: str, candidates: List[st
         if temp_hash == existing_hash:
             os.remove(temp_file_name)
             print(f'Skipped "{output_file_name}" (identical to the existing file)')
-            return
+            return False
     
     os.replace(temp_file_name, output_file_name)
     print(f'Zipped into "{output_file_name}"')
+    return True
 
 def main() -> None:
     """
     Main execution function for packaging operations.
     """
-    create_zip_for_1_20_6(
+    pack_updated = create_zip_for_1_20_6(
         output_name="Chain Mining for 1.20.6",
         source_dir=".",
         candidates=[
@@ -139,6 +141,11 @@ def main() -> None:
             "pack.png"
         ]
     )
+
+    if pack_updated:
+        target_dir = "/mnt/d/directory/games/minecraft/launcher/.minecraft/versions/1.20.6/saves/Singleplayer Test 1.20.6/datapacks/"
+        shutil.copy("Chain Mining for 1.20.6.zip", target_dir)
+        print("Copied the data pack for 1.20.6")
 
 if __name__ == "__main__":
     main()

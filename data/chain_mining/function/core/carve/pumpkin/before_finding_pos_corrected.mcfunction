@@ -1,0 +1,4 @@
+execute if score #carved_pumpkin_facing chain_mining_variables matches 0 positioned ~ ~ ~1 run return run function chain_mining:core/generic/find/small {blocks: "minecraft:pumpkin", mine_function: "carve/pumpkin/mine"}
+execute if score #carved_pumpkin_facing chain_mining_variables matches 1 positioned ~-1 ~ ~ run return run function chain_mining:core/generic/find/small {blocks: "minecraft:pumpkin", mine_function: "carve/pumpkin/mine"}
+execute if score #carved_pumpkin_facing chain_mining_variables matches 2 positioned ~ ~ ~-1 run return run function chain_mining:core/generic/find/small {blocks: "minecraft:pumpkin", mine_function: "carve/pumpkin/mine"}
+execute if score #carved_pumpkin_facing chain_mining_variables matches 3 positioned ~1 ~ ~ run return run function chain_mining:core/generic/find/small {blocks: "minecraft:pumpkin", mine_function: "carve/pumpkin/mine"}
