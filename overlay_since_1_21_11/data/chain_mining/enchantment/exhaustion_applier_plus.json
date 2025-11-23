@@ -1,0 +1,35 @@
+{
+  "description": {
+    "translate": "enchantment.chain_mining.exhaustion_applier_plus",
+    "fallback": "Exhaustion Applier +"
+  },
+  "anvil_cost": 0,
+  "max_level": 255,
+  "weight": 1,
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "supported_items": "minecraft:recovery_compass",
+  "slots": [
+    "body"
+  ],
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:apply_exhaustion",
+          "amount": {
+            "type": "minecraft:linear",
+            "base": 1.28,
+            "per_level_above_first": 1.28
+          }
+        }
+      }
+    ]
+  }
+}

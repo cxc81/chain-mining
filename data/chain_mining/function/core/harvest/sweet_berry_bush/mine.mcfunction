@@ -1,5 +1,4 @@
-function chain_mining:core/harvest/sweet_berry_bush/spawn_loot
-setblock ~ ~ ~ minecraft:sweet_berry_bush[age=1]
+function chain_mining:core/harvest/sweet_berry_bush/harvest_block
 function chain_mining:core/generic/tp_items
 scoreboard players add num_blocks_mined chain_mining_variables 1
 

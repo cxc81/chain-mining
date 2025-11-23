@@ -6,9 +6,10 @@ data modify storage chain_mining:data data.data_version set value 1360
 function chain_mining:control/check_version/convert_to_string/data_version
 # 设置当前支持的Minecraft版本
 data modify storage chain_mining:data data.supported_minecraft_versions_str set value "1.21 - 1.21.11"
-# 初始化默认最大耐久度以及更新日志
+# 初始化一些固定的数据
 function chain_mining:util/initialize_default_max_damage
 function chain_mining:util/initialize_changelogs
+function chain_mining:util/initialize_supported_blocks
 # 确保单刻能执行足够命令
 function chain_mining:util/ensure_enough_command_sequence_length
 

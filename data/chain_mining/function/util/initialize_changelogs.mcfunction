@@ -14,3 +14,8 @@ data modify storage chain_mining:data data.changelog_lines append value [{text: 
 data modify storage chain_mining:data data.changelog_lines append value [{text: "     ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 加入了对"}, {text: "甜浆果丛和洞穴藤蔓的右键采集", color: "gold"}, {text: "支持。"}]
 data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 功能受"}, {text: "软作物", color: "green"}, {text: "开关控制，且连锁范围同对应方块的连锁挖掘。"}]
 data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 甜浆果丛的采集掉落物暂时不受原版战利品表控制。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "     ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 为"}, {text: "1.21.11", color: "green"}, {text: "及以上版本加入了饥饿值的扣除机制。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 遵循了原版的机制，即每挖掘一个方块会增加"}, {text: "0.005", color: "green"}, {text: "消耗度。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "        ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 这相当于每连锁"}, {text: "800", color: "green"}, {text: "个方块消耗"}, {text: "1", color: "green"}, {text: "点饥饿值或饱和度。"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "  ", color: "yellow"}, {text: "·", color: "light_purple"}, {text: " 界面"}]
+data modify storage chain_mining:data data.changelog_lines append value [{text: "     ", color: "aqua"}, {text: "·", color: "light_purple"}, {text: " 优化了部分界面的文字描述与对齐。"}]

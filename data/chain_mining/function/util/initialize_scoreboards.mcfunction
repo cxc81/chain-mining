@@ -92,3 +92,5 @@ scoreboard objectives add chain_mining_trigger trigger {"translate": "chain_mini
 function chain_mining:util/initialize_scoreboards/since_1_21_4
 scoreboard objectives add chain_mining_constants dummy
 scoreboard players set 16 chain_mining_constants 16
+scoreboard players set 256 chain_mining_constants 256
+scoreboard players set 65536 chain_mining_constants 65536

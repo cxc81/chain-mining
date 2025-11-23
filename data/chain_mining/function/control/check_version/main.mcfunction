@@ -16,7 +16,7 @@ execute if score last_data_version chain_mining_variables matches ..815 run \
 # 如果last_data_version介于[816, data_version)，进行自动升级
 execute if score last_data_version chain_mining_variables matches 816.. \
     if score last_data_version chain_mining_variables < data_version chain_mining_variables run \
-    function chain_mining:tellraw/check_version/automatically_upgrade
+    function chain_mining:control/check_version/automatically_upgrade
 
 # 如果last_data_version > data_version，说明玩家降低了数据包版本，但也自动进行降级
 execute if score last_data_version chain_mining_variables > data_version chain_mining_variables run \

@@ -5,4 +5,4 @@ function chain_mining:core/generic/tp_items
 # 此处需修正连锁位置，使其方块坐标位于雕刻南瓜
 execute align xyz positioned ~0.5 ~ ~0.5 run function chain_mining:core/carve/pumpkin/before_finding_pos_corrected
 
-function chain_mining:core/generic/add_feedback {score_holder: "num_blocks_mined", name_key: "block.minecraft.pumpkin"}
+function chain_mining:core/generic/add_actionbar_feedback {score_holder: "num_blocks_mined", name_key: "block.minecraft.pumpkin"}

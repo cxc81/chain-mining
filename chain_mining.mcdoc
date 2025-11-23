@@ -1,5 +1,6 @@
 use ::java::util::slot::SlottedItem
 use ::java::util::text::TextObject
+use ::java::util::text::TranslatedText
 use ::java::world::entity::mob::player::Player
 use ::java::world::entity::mob::player::PlayerSlot
 use ::java::world::item::ItemStack
@@ -24,6 +25,8 @@ dispatch minecraft:storage[chain_mining:data] to struct {
         changelog_lines_patched: [[TextObject]],
         /// The default max_damage component values for all applicable items.
         default_max_damage: ChainMiningDefaultMaxDamage,
+        /// The supported blocks for each category.
+        supported_blocks: ChainMiningSupportedBlocks,
     },
     /// Tracks the items of the player when they start chain-mining.
     items: struct {
@@ -46,4 +49,15 @@ dispatch minecraft:storage[chain_mining:player_nbt] to struct {
 
 struct ChainMiningDefaultMaxDamage {
     [#[id=item] string]: int @ 1..,
+}
+
+type ChainMiningSupportedBlocksCategory = [TranslatedText]
+
+struct ChainMiningSupportedBlocks {
+    overworld_ores: ChainMiningSupportedBlocksCategory,
+    nether_ores: ChainMiningSupportedBlocksCategory,
+    logs: ChainMiningSupportedBlocksCategory,
+    rocks: ChainMiningSupportedBlocksCategory,
+    soft_crops: ChainMiningSupportedBlocksCategory,
+    hard_crops: ChainMiningSupportedBlocksCategory,
 }

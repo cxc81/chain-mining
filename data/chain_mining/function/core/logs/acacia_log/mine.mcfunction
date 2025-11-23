@@ -2,7 +2,8 @@ execute unless function chain_mining:core/generic/mainhand/can_continue_mining r
 
 function chain_mining:core/generic/mainhand/destroy_block
 function chain_mining:core/generic/tp_items
-scoreboard players add num_logs_mined chain_mining_variables 1
+scoreboard players add num_blocks_mined chain_mining_variables 1
+scoreboard players add num_blocks_mined/log chain_mining_variables 1
 function chain_mining:core/generic/mainhand/apply_damage
 
 execute if score holding_hoe_offhand chain_mining_variables matches 1 run \
