@@ -1,4 +1,3 @@
-scoreboard players set num_blocks_mined chain_mining_variables 1
 scoreboard players set num_blocks_mined/log chain_mining_variables 1
 scoreboard players set num_blocks_mined/leaves chain_mining_variables 0
 function chain_mining:core/generic/tp_items

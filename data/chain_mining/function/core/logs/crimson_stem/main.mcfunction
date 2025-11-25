@@ -1,4 +1,3 @@
-scoreboard players set num_blocks_mined chain_mining_variables 1
 scoreboard players set num_blocks_mined/log chain_mining_variables 1
 scoreboard players set num_blocks_mined/wart_block chain_mining_variables 0
 scoreboard players set num_blocks_mined/shroomlight chain_mining_variables 0

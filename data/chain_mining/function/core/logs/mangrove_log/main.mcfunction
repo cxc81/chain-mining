@@ -1,4 +1,3 @@
-scoreboard players set num_blocks_mined chain_mining_variables 1
 execute store result score num_blocks_mined/log chain_mining_variables if score @s chain_mining_mangrove_log matches 1..
 execute store result score num_blocks_mined/mangrove_roots chain_mining_variables if score @s chain_mining_mangrove_roots matches 1..
 scoreboard players set num_blocks_mined/leaves chain_mining_variables 0

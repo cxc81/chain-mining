@@ -1,9 +1,5 @@
-# 不能连锁掉最下方的仙人掌，也就是说要连锁的仙人掌下方必须有仙人掌
-execute unless block ~ ~-1 ~ minecraft:cactus run return fail
-
 function chain_mining:core/generic/mainhand/destroy_block
 function chain_mining:core/generic/tp_items
-scoreboard players add num_blocks_mined chain_mining_variables 1
 function chain_mining:core/generic/mainhand/apply_damage
 
-function chain_mining:core/generic/find/wide {blocks: "minecraft:cactus", mine_function: "hard_crops/cactus/mine"}
+function chain_mining:core/generic/find/wide/using_predicate {predicate: "cactus/is_chainable", mine_function: "hard_crops/cactus/mine"}

@@ -1,6 +1,6 @@
-# 所有连锁采集公共的开头
-
+# 以下是所有连锁采集公共的开头
 tag @s add chain_mining_current_player
+scoreboard players set num_blocks_mined chain_mining_variables 1
 data modify storage chain_mining:data function_call.actionbar set value []
 data modify storage chain_mining:player_nbt data set from entity @s
 
