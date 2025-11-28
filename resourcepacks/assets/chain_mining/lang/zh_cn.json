@@ -51,7 +51,7 @@
   "chain_mining.message.instruction.logs.title": "使用说明 (原木/菌柄)",
   "chain_mining.message.instruction.logs.line2": "必须使用斧采集，才能触发连锁；",
   "chain_mining.message.instruction.logs.line3": "若副手持有锄，还会采集%s范围的对应树叶、疣块和菌光体；",
-  "chain_mining.message.instruction.logs.line3.arg1": "5×4×5",
+  "chain_mining.message.instruction.logs.line3.arg1": "5×2×5",
   "chain_mining.message.instruction.logs.line4": "红树根可以和红树原木一起连锁。",
   "chain_mining.message.instruction.rocks.title": "使用说明 (岩石)",
   "chain_mining.message.instruction.rocks.line2": "必须使用镐挖掘，才能触发连锁；",

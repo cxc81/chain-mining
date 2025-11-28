@@ -51,7 +51,7 @@
   "chain_mining.message.instruction.logs.title": "Instructions (Logs/Stems)",
   "chain_mining.message.instruction.logs.line2": "An axe is required to trigger the chain mining;",
   "chain_mining.message.instruction.logs.line3": "If the off-hand holds a hoe, a %s range of corresponding Leaves, Wart Blocks and Shroomlights will also be mined;",
-  "chain_mining.message.instruction.logs.line3.arg1": "5×4×5",
+  "chain_mining.message.instruction.logs.line3.arg1": "5×2×5",
   "chain_mining.message.instruction.logs.line4": "Mangrove Roots can be chained together with Mangrove Logs.",
   "chain_mining.message.instruction.rocks.title": "Instructions (Rocks)",
   "chain_mining.message.instruction.rocks.line2": "A pickaxe is required to trigger the chain mining;",

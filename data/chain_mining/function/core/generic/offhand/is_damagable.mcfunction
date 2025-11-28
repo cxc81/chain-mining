@@ -8,5 +8,5 @@ execute if score max_damage_offhand chain_mining_variables matches 0 run return 
 execute if score damage_offhand chain_mining_variables matches -1 run return 0
 
 execute if entity @s[tag=chain_mining_current_player_carve_pumpkin] run return 1
-execute if score holding_tool_offhand chain_mining_variables matches 0 run return 0
+execute if score tool_offhand chain_mining_variables matches 0 run return 0
 return 1

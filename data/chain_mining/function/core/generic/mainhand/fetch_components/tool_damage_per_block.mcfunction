@@ -9,7 +9,7 @@
 # 否则基于物品默认的tool组件，返回固定值：
 #   镐、斧、锄、锹、剪刀：消耗1耐久
 #   剑、三叉戟、重锤：消耗2耐久
-execute unless score holding_tool_mainhand chain_mining_variables matches 1 run return 0
+execute unless score tool_mainhand chain_mining_variables matches 1 run return 0
 execute if data storage chain_mining:data items.mainhand.components."minecraft:tool".damage_per_block run return run \
     data get storage chain_mining:data items.mainhand.components."minecraft:tool".damage_per_block
 execute if data storage chain_mining:data items.mainhand.components."minecraft:tool" run return 1

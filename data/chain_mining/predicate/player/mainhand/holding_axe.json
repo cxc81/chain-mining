@@ -5,7 +5,7 @@
       "type": "minecraft:score",
       "target": {
         "type": "minecraft:fixed",
-        "name": "holding_tool_mainhand"
+        "name": "tool_mainhand"
       },
       "score": "chain_mining_variables"
     },

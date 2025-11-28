@@ -5,7 +5,7 @@
       "type": "minecraft:score",
       "target": {
         "type": "minecraft:fixed",
-        "name": "holding_tool_offhand"
+        "name": "tool_offhand"
       },
       "score": "chain_mining_variables"
     },
