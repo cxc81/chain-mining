@@ -25,8 +25,8 @@
 * In-game settings are available to control individual switches, and each player has independent settings.
 
 ### Overworld ores
-* Supports the following 9 block types, including the deepslate variants of the first 8 types.
-    - They are: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, and Amethyst Cluster.
+* Supports the following 9 block types: Coal Ore, Copper Ore, Iron Ore, Lapis Lazuli Ore, Redstone Ore, Gold Ore, Diamond Ore, Emerald Ore, and Amethyst Cluster.
+    - This also includes the deepslate variants of the first 8 types.
 * A proper pickaxe is required to trigger the chain mining.
 
 ### Nether ores
@@ -37,7 +37,7 @@
 ### Logs and Stems
 * Supports these 12 block types: Oak Log, Spruce Log, Birch Log, Jungle Log, Acacia Log, Dark Oak Log, Mangrove Log, Mangrove Roots, Pale Oak Log, Cherry Log, Crimson Stem, and Warped Stem.
 * An axe is required to trigger the chain mining.
-* If the off-hand holds a hoe, a 5×4×5 range of corresponding Leaves, Wart Blocks and Shroomlights will also be mined.
+* If the off-hand holds a hoe, a 5×2×5 range of corresponding Leaves, Wart Blocks and Shroomlights will also be mined.
 * Mangrove Roots can be chained together with Mangrove Logs.
 
 ### Rocks
@@ -46,13 +46,14 @@
 * The default setting for this category is OFF! Unless specifically needed, DO NOT turn it on in the settings (it may cause pickaxes to break instantly).
 
 ### Soft crops
-* Supports these 7 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Sugar Canes, and Sweet Berry Bushes.
-* Only fully-grown crops can be chained, most of which will be automatically replanted after being mined.
-* Using a tool does not consume its durability, and the Fortune enchantment will take effect.
-* For Sugar Canes, the ones at the very bottom will not be automatically mined.
+* Supports these 11 block types: Wheat, Carrots, Potatoes, Beetroot, Nether Wart, Sweet Berry Bushes, Torchflower, Pitcher Crop, Sugar Canes, Cave Vines and Resin Clump.
+* Only fully-grown crops can be chained, the first 6 of which will be automatically replanted after being mined.
+* Fully-grown Sweet Berry Bushes and Cave Vines can also be harvested by right-clicking.
+* Using a tool does NOT consume its durability due to these blocks having no hardness.
+* The Sugar Cane at the very bottom will not be chain-mined.
 
 ### Hard crops
-* Supports these 4 block types: Pumpkins, Melons, Cocoa, and Cactus.
+* Supports these 6 block types: Pumpkin, Carved Pumpkin, Melon, Cocoa, Cactus, and Bamboo, as well as carving Pumpkins with shears.
 * An axe is required to trigger the chain mining, except for Cactus.
 * Pumpkin Stems, Melon Stems, and Cactus at the very bottom will not be chain-mined.
 * Cocoa will be automatically replanted after being chain-mined.

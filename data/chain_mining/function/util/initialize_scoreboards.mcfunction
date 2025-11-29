@@ -45,7 +45,7 @@ scoreboard objectives add chain_mining_crimson_stem minecraft.mined:minecraft.cr
 scoreboard objectives add chain_mining_warped_stem minecraft.mined:minecraft.warped_stem
 # 苍白橡木原木的初始化在末尾定义
 
-# 4. 岩石(安山岩、闪长岩、花岗岩、凝灰岩、方解石、紫水晶块和岩浆块)
+# 4. 岩石
 scoreboard objectives add chain_mining_andesite minecraft.mined:minecraft.andesite
 scoreboard objectives add chain_mining_diorite minecraft.mined:minecraft.diorite
 scoreboard objectives add chain_mining_granite minecraft.mined:minecraft.granite
@@ -54,16 +54,16 @@ scoreboard objectives add chain_mining_calcite minecraft.mined:minecraft.calcite
 scoreboard objectives add chain_mining_amethyst_block minecraft.mined:minecraft.amethyst_block
 scoreboard objectives add chain_mining_magma_block minecraft.mined:minecraft.magma_block
 
-# 5. 软作物(小麦、胡萝卜、马铃薯、甜菜根、火把花、瓶子草植株、下界疣、甘蔗、甜浆果丛、洞穴藤蔓和树脂团)
+# 5. 软作物
 scoreboard objectives add chain_mining_wheat minecraft.mined:minecraft.wheat
 scoreboard objectives add chain_mining_carrots minecraft.mined:minecraft.carrots
 scoreboard objectives add chain_mining_potatoes minecraft.mined:minecraft.potatoes
 scoreboard objectives add chain_mining_beetroots minecraft.mined:minecraft.beetroots
+scoreboard objectives add chain_mining_nether_wart minecraft.mined:minecraft.nether_wart
+scoreboard objectives add chain_mining_sweet_berry_bush minecraft.mined:minecraft.sweet_berry_bush
 scoreboard objectives add chain_mining_torchflower minecraft.mined:minecraft.torchflower
 scoreboard objectives add chain_mining_pitcher_crop minecraft.mined:minecraft.pitcher_crop
-scoreboard objectives add chain_mining_nether_wart minecraft.mined:minecraft.nether_wart
 scoreboard objectives add chain_mining_sugar_cane minecraft.mined:minecraft.sugar_cane
-scoreboard objectives add chain_mining_sweet_berry_bush minecraft.mined:minecraft.sweet_berry_bush
 scoreboard objectives add chain_mining_cave_vines minecraft.mined:minecraft.cave_vines
 scoreboard objectives add chain_mining_cave_vines_plant minecraft.mined:minecraft.cave_vines_plant
 # 树脂团的初始化在末尾定义

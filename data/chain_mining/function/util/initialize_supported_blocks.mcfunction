@@ -43,7 +43,7 @@ data modify storage chain_mining:data data.supported_blocks.rocks set value [\
     {translate: "block.minecraft.amethyst_block"}, \
     {translate: "block.minecraft.magma_block"}, \
 ]
-# 软作物(小麦、胡萝卜、马铃薯、甜菜根、下界疣、火把花、瓶子草植株、甘蔗、甜浆果丛、洞穴藤蔓和树脂团)
+# 软作物(小麦、胡萝卜、马铃薯、甜菜根、下界疣、甜浆果丛、火把花、瓶子草植株、甘蔗、洞穴藤蔓和树脂团)
 data modify storage chain_mining:data data.supported_blocks.soft_crops set value [\
     {translate: "block.minecraft.wheat"}, \
     {translate: "block.minecraft.carrots"}, \
