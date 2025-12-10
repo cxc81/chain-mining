@@ -41,6 +41,7 @@
   "chain_mining.message.instruction.more_instructions": "More instructions: %s %s %s %s %s %s",
   "chain_mining.message.instruction.supported_blocks": "Supports %s;",
   "chain_mining.message.instruction.supported_blocks.additional": "Supports %s as well as %s;",
+  "chain_mining.message.instruction.supported_blocks.hover_title": "Including these %s types of blocks:",
   "chain_mining.message.instruction.these_blocks": "[These %s blocks]",
   "chain_mining.message.instruction.overworld_ores.title": "Instructions (Overworld Ores)",
   "chain_mining.message.instruction.overworld_ores.supported_blocks.additional": "the deepslate variants of the first %s types",

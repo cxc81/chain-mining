@@ -96,7 +96,7 @@ def main() -> None:
         candidates=get_candidates_from_pack_mcmeta()
     )
     if datapack_updated:
-        shutil.copy("Chain Mining for 1.21.x.zip", "../../")
+        shutil.copy("Chain Mining for 1.21.x.zip", "../../output/")
     subprocess.run(
         ["make", "cp"],
         cwd="../../scripts/",

@@ -51,7 +51,10 @@ struct ChainMiningDefaultMaxDamage {
     [#[id=item] string]: int @ 1..,
 }
 
-type ChainMiningSupportedBlocksCategory = [TranslatedText]
+struct ChainMiningSupportedBlocksCategory {
+    num_block_types: int @ 1..,
+    message_lines: [[TextObject]],
+}
 
 struct ChainMiningSupportedBlocks {
     overworld_ores: ChainMiningSupportedBlocksCategory,
