@@ -1,6 +1,6 @@
 function chain_mining:tellraw/separate_line
 tellraw @s [{"text": "", "color": "gold"}, {"translate": "chain_mining.message.data_pack.title", "fallback": "连锁采集数据包", "bold": true}, " - ", {"translate": "chain_mining.message.instruction.title", "fallback": "使用说明"}]
-tellraw @s [{"text": " 1. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.main.line1", "fallback": "数据包版本：%s  (Minecraft版本：%s)", "with": [{"nbt": "data.data_version_str", "storage": "chain_mining:data", "color": "green"}, {"nbt": "data.supported_minecraft_versions_str", "storage": "chain_mining:data", "color": "green"}]}]
+tellraw @s [{"text": " 1. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.main.line1", "fallback": "数据包版本：%s  (Minecraft版本：%s)", "with": [{"nbt": "data.data_version_str", "storage": "chain_mining:data", "interpret": true, "color": "green"}, {"nbt": "data.supported_minecraft_versions_str", "storage": "chain_mining:data", "interpret": true, "color": "green"}]}]
 tellraw @s [{"text": " 2. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.main.line2", "fallback": "支持采集所有矿石、原木、菌柄、岩石和农作物；"}]
 tellraw @s [{"text": " 3. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.main.line3", "fallback": "会自动根据连锁方块的数量扣除工具耐久，且魔咒会生效；"}]
 tellraw @s [{"text": " 4. ", "color": "aqua"}, {"translate": "chain_mining.message.instruction.main.line4", "fallback": "按住潜行可以防止触发连锁；"}]

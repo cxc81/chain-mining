@@ -3,12 +3,12 @@
     "pack_format": 94,
     "supported_formats": [
       45,
-      94
+      99
     ],
     "min_format": 45,
-    "max_format": 94,
+    "max_format": 99,
     "description": [
-      "Chain Mining v5.5.2 for 1.21.x\n",
+      "Chain Mining v5.5.3 for 1.21+\n",
       {
         "text": "by cxc81",
         "color": "gray"
