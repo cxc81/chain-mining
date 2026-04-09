@@ -1,12 +1,12 @@
 {
   "pack": {
-    "pack_format": 75,
+    "pack_format": 84,
     "supported_formats": [
       32,
-      81
+      84
     ],
     "min_format": 32,
-    "max_format": 81,
+    "max_format": [84, 0],
     "description": [
       "Chain Mining Multi-language Support\n",
       {
