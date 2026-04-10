@@ -1,5 +1,8 @@
 {
   "lint": {
     "idOmitDefaultNamespace": false
+  },
+  "env": {
+    "gameVersion": "26.2"
   }
 }

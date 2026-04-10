@@ -1,14 +1,11 @@
 {
   "pack": {
     "pack_format": 101,
-    "supported_formats": [
-      45,
-      101
-    ],
+    "supported_formats": [45, 101],
     "min_format": 45,
-    "max_format": [101, 1],
+    "max_format": [101, 2],
     "description": [
-      "Chain Mining v5.5.3 for 1.21+\n",
+      "Chain Mining v5.6.0 for 1.21+\n",
       {
         "text": "by cxc81",
         "color": "gray"
@@ -18,58 +15,46 @@
   "overlays": {
     "entries": [
       {
-        "formats": [
-          52,
-          1000
-        ],
+        "formats": [52, 1000],
         "min_format": 52,
         "max_format": 1000,
         "directory": "overlay_since_1_21_2"
       },
       {
-        "formats": [
-          58,
-          1000
-        ],
+        "formats": [58, 1000],
         "min_format": 58,
         "max_format": 1000,
         "directory": "overlay_since_1_21_4"
       },
       {
-        "formats": [
-          62,
-          1000
-        ],
+        "formats": [62, 1000],
         "min_format": 62,
         "max_format": 1000,
         "directory": "overlay_since_1_21_5"
       },
       {
-        "formats": [
-          80,
-          1000
-        ],
+        "formats": [80, 1000],
         "min_format": 80,
         "max_format": 1000,
         "directory": "overlay_since_1_21_6"
       },
       {
-        "formats": [
-          82,
-          1000
-        ],
+        "formats": [82, 1000],
         "min_format": 82,
         "max_format": 1000,
         "directory": "overlay_since_1_21_9"
       },
       {
-        "formats": [
-          94,
-          1000
-        ],
+        "formats": [94, 1000],
         "min_format": 94,
         "max_format": 1000,
         "directory": "overlay_since_1_21_11"
+      },
+      {
+        "formats": [101, 1000],
+        "min_format": [101, 2],
+        "max_format": 1000,
+        "directory": "overlay_since_26_2"
       }
     ]
   }

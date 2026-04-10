@@ -5,3 +5,5 @@ execute if score @s chain_mining_tuff matches 1.. run function chain_mining:core
 execute if score @s chain_mining_calcite matches 1.. run function chain_mining:core/rocks/calcite/prepare
 execute if score @s chain_mining_amethyst_block matches 1.. run function chain_mining:core/rocks/amethyst_block/prepare
 execute if score @s chain_mining_magma_block matches 1.. run function chain_mining:core/rocks/magma_block/prepare
+execute if score @s chain_mining_sulfur matches 1.. run function chain_mining:core/rocks/sulfur/prepare
+execute if score @s chain_mining_cinnabar matches 1.. run function chain_mining:core/rocks/cinnabar/prepare

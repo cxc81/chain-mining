@@ -18,6 +18,7 @@ dispatch minecraft:storage[chain_mining:data] to struct {
         /// The supported Minecraft versions, e.g. `1.21 - 1.21.10`.
         supported_minecraft_versions_str: string,
         /// Contains the changelogs for this data pack version, separated in lines.
+        /// For compability, in each line, all the elements should be a compound.
         changelog_lines: [[TextObject]],
         /// Contains the changelogs for this data pack version, separated in lines.
         /// This data is auto-generated from `changelog_lines`; the last element of each line is `{text: "\n"}`.

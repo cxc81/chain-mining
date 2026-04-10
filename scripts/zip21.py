@@ -91,12 +91,12 @@ def main() -> None:
     Main execution function for packaging operations.
     """
     datapack_updated = create_zip(
-        output_name="Chain Mining for 1.21.x",
+        output_name="Chain Mining for 1.21+",
         source_dir=".",
         candidates=get_candidates_from_pack_mcmeta()
     )
     if datapack_updated:
-        shutil.copy("Chain Mining for 1.21.x.zip", "../../output/")
+        shutil.copy("Chain Mining for 1.21+.zip", "../../output/")
     subprocess.run(
         ["make", "cp"],
         cwd="../../scripts/",

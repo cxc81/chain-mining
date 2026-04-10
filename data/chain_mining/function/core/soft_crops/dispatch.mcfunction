@@ -9,4 +9,4 @@ execute if score @s chain_mining_pitcher_crop matches 1.. run function chain_min
 execute if score @s chain_mining_sugar_cane matches 1.. run function chain_mining:core/soft_crops/sugar_cane/prepare
 execute if score @s chain_mining_cave_vines matches 1.. run function chain_mining:core/soft_crops/cave_vines/prepare
 execute if score @s chain_mining_cave_vines_plant matches 1.. run function chain_mining:core/soft_crops/cave_vines/prepare
-function chain_mining:core/soft_crops/dispatch/resin_clump
+execute if score @s chain_mining_resin_clump matches 1.. run function chain_mining:core/soft_crops/resin_clump/prepare
